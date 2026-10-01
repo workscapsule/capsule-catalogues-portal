@@ -1,7 +1,7 @@
 ﻿const fs = require('fs');
 const path = require('path');
 
-const targets = ['dist', 'build'];
+const targets = ['public', 'dist', 'build'];
 
 for (const target of targets) {
   const targetDir = path.join(__dirname, target);
@@ -18,11 +18,14 @@ for (const target of targets) {
     }
   }
 
-  // Copy all PDFs
+  // Copy all PDFs from root if not already in target
   const files = fs.readdirSync(__dirname);
   for (const f of files) {
     if (f.endsWith('.pdf')) {
-      fs.copyFileSync(path.join(__dirname, f), path.join(targetDir, f));
+      const dest = path.join(targetDir, f);
+      if (!fs.existsSync(dest)) {
+        fs.copyFileSync(path.join(__dirname, f), dest);
+      }
     }
   }
 
