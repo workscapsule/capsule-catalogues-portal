@@ -1,7 +1,20 @@
 ﻿{
-  "cleanUrls": true,
+  "headers": [
+    {
+      "source": "/(.*)\\.pdf",
+      "headers": [
+        { "key": "Content-Type", "value": "application/pdf" },
+        { "key": "Content-Disposition", "value": "inline" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
+      ]
+    }
+  ],
   "rewrites": [
-    { "source": "/", "destination": "/index.html" },
     { "source": "/wardrobe", "destination": "/Capsule_Interiors_Wardrobe_Catalogue.pdf" },
     { "source": "/modular-kitchen", "destination": "/Capsule_Interiors_Modular_Kitchen_Catalogue.pdf" },
     { "source": "/kitchen", "destination": "/Capsule_Interiors_Modular_Kitchen_Catalogue.pdf" },
@@ -18,20 +31,5 @@
     { "source": "/ceiling", "destination": "/Capsule_Interiors_Ceiling_Design_Catalogue.pdf" },
     { "source": "/crockery-unit", "destination": "/Capsule_Interiors_Concrete_Unit_Catalogue.pdf" },
     { "source": "/company-brochure", "destination": "/Capsule_Company_Official_Brochure.pdf" }
-  ],
-  "headers": [
-    {
-      "source": "/(.*)\\.pdf",
-      "headers": [
-        { "key": "Content-Type", "value": "application/pdf" },
-        { "key": "Content-Disposition", "value": "inline" }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        { "key": "Access-Control-Allow-Origin", "value": "*" }
-      ]
-    }
   ]
 }
