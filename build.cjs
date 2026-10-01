@@ -9,8 +9,14 @@ for (const target of targets) {
     fs.mkdirSync(targetDir, { recursive: true });
   }
 
-  // Copy root files
-  const rootFiles = ['index.html', 'logo.png', 'logo-transparent.png', 'vercel.json'];
+  // Remove any misplaced vercel.json in target directory
+  const misplacedVercelJson = path.join(targetDir, 'vercel.json');
+  if (fs.existsSync(misplacedVercelJson)) {
+    fs.unlinkSync(misplacedVercelJson);
+  }
+
+  // Copy root web assets (excluding config files like vercel.json)
+  const rootFiles = ['index.html', 'logo.png', 'logo-transparent.png'];
   for (const f of rootFiles) {
     const src = path.join(__dirname, f);
     if (fs.existsSync(src)) {
@@ -18,7 +24,7 @@ for (const target of targets) {
     }
   }
 
-  // Copy all PDFs from root if not already in target
+  // Copy all PDFs from root
   const files = fs.readdirSync(__dirname);
   for (const f of files) {
     if (f.endsWith('.pdf')) {
