@@ -1,0 +1,17 @@
+﻿{
+  "name": "capsule-catalogues-portal",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Capsule Company – Luxury Architectural Digital Catalogues Portal",
+  "scripts": {
+    "build": "node build.cjs",
+    "start": "node server.cjs"
+  },
+  "keywords": [
+    "capsule-company",
+    "interior-design",
+    "catalogues"
+  ],
+  "author": "Capsule Company",
+  "license": "UNLICENSED"
+}

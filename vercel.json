@@ -1,87 +1,36 @@
-{
-  "version": 2,
+﻿{
   "cleanUrls": true,
-  "routes": [
-    {
-      "src": "/wardrobe",
-      "dest": "/Capsule_Interiors_Wardrobe_Catalogue.pdf"
-    },
-    {
-      "src": "/modular-kitchen",
-      "dest": "/Capsule_Interiors_Modular_Kitchen_Catalogue.pdf"
-    },
-    {
-      "src": "/kitchen",
-      "dest": "/Capsule_Interiors_Modular_Kitchen_Catalogue.pdf"
-    },
-    {
-      "src": "/bedrooms",
-      "dest": "/Capsule_Interiors_Kids_Bed_Catalogue.pdf"
-    },
-    {
-      "src": "/beds",
-      "dest": "/Capsule_Interiors_Kids_Bed_Catalogue.pdf"
-    },
-    {
-      "src": "/kids-bed",
-      "dest": "/Capsule_Interiors_Kids_Bed_Catalogue.pdf"
-    },
-    {
-      "src": "/tv-units",
-      "dest": "/Capsule_Interiors_TV_Unit_Catalogue.pdf"
-    },
-    {
-      "src": "/tv-unit",
-      "dest": "/Capsule_Interiors_TV_Unit_Catalogue.pdf"
-    },
-    {
-      "src": "/bar-counter",
-      "dest": "/Capsule_Interiors_Bar_Counter_Catalogue.pdf"
-    },
-    {
-      "src": "/temple-space",
-      "dest": "/Capsule_Interiors_Temple_Design_Catalogue.pdf"
-    },
-    {
-      "src": "/temple",
-      "dest": "/Capsule_Interiors_Temple_Design_Catalogue.pdf"
-    },
-    {
-      "src": "/pop-ceiling",
-      "dest": "/Capsule_Interiors_POP_Design_Catalogue.pdf"
-    },
-    {
-      "src": "/pop",
-      "dest": "/Capsule_Interiors_POP_Design_Catalogue.pdf"
-    },
-    {
-      "src": "/ceiling",
-      "dest": "/Capsule_Interiors_Ceiling_Design_Catalogue.pdf"
-    },
-    {
-      "src": "/crockery-unit",
-      "dest": "/Capsule_Interiors_Concrete_Unit_Catalogue.pdf"
-    },
-    {
-      "src": "/company-brochure",
-      "dest": "/Capsule_Company_Official_Brochure.pdf"
-    },
-    {
-      "handle": "filesystem"
-    }
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/wardrobe", "destination": "/Capsule_Interiors_Wardrobe_Catalogue.pdf" },
+    { "source": "/modular-kitchen", "destination": "/Capsule_Interiors_Modular_Kitchen_Catalogue.pdf" },
+    { "source": "/kitchen", "destination": "/Capsule_Interiors_Modular_Kitchen_Catalogue.pdf" },
+    { "source": "/bedrooms", "destination": "/Capsule_Interiors_Kids_Bed_Catalogue.pdf" },
+    { "source": "/beds", "destination": "/Capsule_Interiors_Kids_Bed_Catalogue.pdf" },
+    { "source": "/kids-bed", "destination": "/Capsule_Interiors_Kids_Bed_Catalogue.pdf" },
+    { "source": "/tv-units", "destination": "/Capsule_Interiors_TV_Unit_Catalogue.pdf" },
+    { "source": "/tv-unit", "destination": "/Capsule_Interiors_TV_Unit_Catalogue.pdf" },
+    { "source": "/bar-counter", "destination": "/Capsule_Interiors_Bar_Counter_Catalogue.pdf" },
+    { "source": "/temple-space", "destination": "/Capsule_Interiors_Temple_Design_Catalogue.pdf" },
+    { "source": "/temple", "destination": "/Capsule_Interiors_Temple_Design_Catalogue.pdf" },
+    { "source": "/pop-ceiling", "destination": "/Capsule_Interiors_POP_Design_Catalogue.pdf" },
+    { "source": "/pop", "destination": "/Capsule_Interiors_POP_Design_Catalogue.pdf" },
+    { "source": "/ceiling", "destination": "/Capsule_Interiors_Ceiling_Design_Catalogue.pdf" },
+    { "source": "/crockery-unit", "destination": "/Capsule_Interiors_Concrete_Unit_Catalogue.pdf" },
+    { "source": "/company-brochure", "destination": "/Capsule_Company_Official_Brochure.pdf" }
   ],
   "headers": [
     {
       "source": "/(.*)\\.pdf",
       "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/pdf"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "inline"
-        }
+        { "key": "Content-Type", "value": "application/pdf" },
+        { "key": "Content-Disposition", "value": "inline" }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Access-Control-Allow-Origin", "value": "*" }
       ]
     }
   ]
