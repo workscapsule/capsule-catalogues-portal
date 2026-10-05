@@ -33,11 +33,11 @@
     },
     {
       "source": "/catalogues",
-      "destination": "/index.html"
+      "destination": "/capsule-catalogue-index.html"
     },
     {
       "source": "/portal",
-      "destination": "/index.html"
+      "destination": "/capsule-catalogue-index.html"
     },
     {
       "source": "/corporate",
