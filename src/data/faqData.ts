@@ -38,7 +38,7 @@ export const faqData: FAQItem[] = [
   },
   {
     question: 'Do you provide free consultation?',
-    answer: 'Yes! Capsule Company provides a 100% Free Consultation. You can connect with our project planners via our website form, phone call (+91 96321 24422), or WhatsApp to discuss your requirements and budget.',
+    answer: 'Yes! Capsule Company provides a 100% Free Consultation. You can connect with our project planners via our website form, phone call (+91 91879 24723), or WhatsApp to discuss your requirements and budget.',
     category: 'Consultation'
   },
   {
@@ -53,7 +53,7 @@ export const faqData: FAQItem[] = [
   },
   {
     question: 'How can I contact Capsule Company?',
-    answer: 'You can call us directly at +91 96321 24422, message us on WhatsApp, submit the consultation form on this website, or visit our office at N.173, 1st & 2nd Floor, SLV Complex, Hebbal Kempapura, Ammanikere, Outer Ring Road, Kariyamma Layout, Bengaluru (Urban), Karnataka – 560024.',
+    answer: 'You can call us directly at +91 91879 24723, message us on WhatsApp, submit the consultation form on this website, or visit our office at N.173, 1st & 2nd Floor, SLV Complex, Hebbal Kempapura, Ammanikere, Outer Ring Road, Kariyamma Layout, Bengaluru (Urban), Karnataka – 560024.',
     category: 'Contact'
   }
 ];

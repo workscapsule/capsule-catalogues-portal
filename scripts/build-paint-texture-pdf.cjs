@@ -748,7 +748,7 @@ const htmlContent = `<!DOCTYPE html>
       <div class="contact-cards-grid">
         <div class="contact-card">
           <div class="contact-card-label">Direct Studio Hotline</div>
-          <div class="contact-card-val">9636124422</div>
+          <div class="contact-card-val">9187924723</div>
           <div class="contact-card-sub">Mon – Sat: 9:30 AM to 8:30 PM</div>
         </div>
         <div class="contact-card">

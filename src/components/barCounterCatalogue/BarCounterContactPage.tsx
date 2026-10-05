@@ -88,7 +88,7 @@ export const BarCounterContactPage: React.FC = () => {
               <Phone className="w-3.5 h-3.5" />
               <span>DIRECT LINE</span>
             </div>
-            <p className="text-white/90 font-mono text-[11px]">+91 98800 00000</p>
+            <p className="text-white/90 font-mono text-[11px]">+91 91879 24723</p>
             <p className="text-white/50 text-[10px]">Mon – Sat • 9 AM – 7 PM</p>
           </div>
 

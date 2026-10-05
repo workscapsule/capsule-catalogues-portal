@@ -89,7 +89,7 @@ export const CeilingContactPage: React.FC = () => {
               <Phone className="w-3.5 h-3.5" />
               <span>Phone</span>
             </div>
-            <p className="text-white font-mono text-[13px] font-bold">+91 96321 24422</p>
+            <p className="text-white font-mono text-[13px] font-bold">+91 91879 24723</p>
           </div>
 
           <div className="space-y-1 bg-white/5 p-4 rounded-lg border border-white/10">

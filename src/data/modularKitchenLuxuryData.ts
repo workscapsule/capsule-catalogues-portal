@@ -36,7 +36,7 @@ export const modularKitchenLuxuryData: KitchenCatalogueData = {
   contact: {
     companyName: 'CAPSULE COMPANY',
     tagline: 'Ideas Into Space',
-    phone: '+91 96321 24422',
+    phone: '+91 91879 24723',
     email: 'capsulecompany@gmail.com',
     website: 'www.capsulecompany.in',
     address: 'N.173, 1st & 2nd Floor, SLV Complex, Hebbal Kempapura, Ammanikere, Outer Ring Road, Kariyamma Layout, Bengaluru (Urban), Karnataka – 560024',

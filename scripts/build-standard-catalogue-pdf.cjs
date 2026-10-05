@@ -1533,7 +1533,7 @@ const htmlContent = `<!DOCTYPE html>
       <div class="contact-cards-grid">
         <div class="contact-box">
           <div class="contact-box-label">Direct Studio Phone</div>
-          <div class="contact-box-val">+91 96361 24422</div>
+          <div class="contact-box-val">+91 91879 24723</div>
           <div class="contact-box-sub">Mon–Sat • 9:30 AM to 7:00 PM</div>
         </div>
 

@@ -84,7 +84,7 @@ export const OurPromise: React.FC<OurPromiseProps> = ({ onOpenConsultation }) =>
                 className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-xs font-bold tracking-widest uppercase rounded-full transition-all text-center flex items-center justify-center gap-2"
               >
                 <PhoneCall className="w-3.5 h-3.5 text-brand-copper" />
-                <span>+91 96321 24422</span>
+                <span>{companyConfig.phone}</span>
               </a>
             </div>
           </div>

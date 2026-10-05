@@ -65,8 +65,8 @@ export const ConcreteContactPage: React.FC = () => {
             <Phone className="w-4 h-4 text-[#C59A6F] mt-0.5 shrink-0" />
             <div>
               <span className="block text-[10px] font-mono uppercase text-white/50 tracking-wider">Direct Consultation</span>
-              <a href="tel:+919876543210" className="text-xs font-semibold text-white hover:text-[#C59A6F] transition-colors">
-                +91 96062 03333
+              <a href="tel:+919187924723" className="text-xs font-semibold text-white hover:text-[#C59A6F] transition-colors">
+                +91 91879 24723
               </a>
             </div>
           </div>

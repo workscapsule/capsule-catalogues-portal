@@ -65,7 +65,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
                     WhatsApp Chat
                   </span>
                   <h4 className="text-lg font-bold text-brand-black group-hover:text-[#128C7E] transition-colors">
-                    +91 96321 24422
+                    {companyConfig.phone}
                   </h4>
                   <p className="text-xs text-brand-muted mt-0.5">
                     Fast response for plans & quick questions
