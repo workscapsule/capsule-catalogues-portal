@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
     { label: 'Why Capsule', to: '/why-capsule' },
     { label: 'FAQ', to: '/faq' },
     { label: 'Contact', to: '/contact' },
-    { label: 'Design Catalogues', to: '/capsule-catalogue-index.html', isExternal: true },
+    { label: 'Design Catalogues', to: 'https://capsule-catalogues-portal-ni9l.vercel.app', isExternal: true },
   ];
 
   const serviceLinks = [
@@ -137,6 +137,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                   {(item as any).isExternal ? (
                     <a
                       href={item.to}
+                      target="_blank"
+                      rel="noopener noreferrer"
                       className="hover:text-brand-copper transition-colors inline-flex items-center gap-1.5"
                     >
                       <span>{item.label}</span>
