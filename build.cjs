@@ -15,14 +15,7 @@ for (const target of targets) {
     fs.unlinkSync(misplacedVercelJson);
   }
 
-  // Ensure catalogue portal is available as capsule-catalogue-index.html
-  const cataloguePortalSrc = path.join(__dirname, 'capsule-catalogue-index.html');
-  if (fs.existsSync(cataloguePortalSrc)) {
-    fs.copyFileSync(cataloguePortalSrc, path.join(targetDir, 'capsule-catalogue-index.html'));
-  }
-
-  // In dist, if vite build generated index.html (the main website), keep it as index.html
-  // and also provide website.html and corporate.html aliases
+  // In dist, preserve the corporate React website build as corporate.html and website.html
   if (target === 'dist') {
     const distIndex = path.join(targetDir, 'index.html');
     const distWebsite = path.join(targetDir, 'website.html');
@@ -30,8 +23,16 @@ for (const target of targets) {
     if (fs.existsSync(distIndex)) {
       fs.copyFileSync(distIndex, distWebsite);
       fs.copyFileSync(distIndex, distCorporate);
-      console.log('Verified dist/index.html as Capsule website with aliases website.html and corporate.html');
+      console.log('Preserved corporate React website to dist/corporate.html and dist/website.html');
     }
+  }
+
+  // Ensure 17-catalogue portal is set as index.html and capsule-catalogue-index.html
+  const cataloguePortalSrc = path.join(__dirname, 'capsule-catalogue-index.html');
+  if (fs.existsSync(cataloguePortalSrc)) {
+    fs.copyFileSync(cataloguePortalSrc, path.join(targetDir, 'index.html'));
+    fs.copyFileSync(cataloguePortalSrc, path.join(targetDir, 'capsule-catalogue-index.html'));
+    console.log(`Verified ${target}/index.html as 17-catalogue portal`);
   }
 
   // Copy root web assets (excluding config files like vercel.json)
