@@ -1,4 +1,5 @@
 {
+  "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "cleanUrls": true,
   "headers": [
@@ -26,6 +27,30 @@
     }
   ],
   "rewrites": [
+    {
+      "source": "/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/catalogues",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/portal",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/corporate",
+      "destination": "/corporate.html"
+    },
+    {
+      "source": "/company",
+      "destination": "/corporate.html"
+    },
+    {
+      "source": "/website",
+      "destination": "/corporate.html"
+    },
     {
       "source": "/wardrobe",
       "destination": "/Capsule_Interiors_Wardrobe_Catalogue.pdf"
@@ -85,6 +110,86 @@
     {
       "source": "/crockery-unit",
       "destination": "/Capsule_Interiors_Concrete_Unit_Catalogue.pdf"
+    },
+    {
+      "source": "/wall-panels",
+      "destination": "/Capsule_Interiors_Wall_Panel_Design_Catalogue.pdf"
+    },
+    {
+      "source": "/wall-panel",
+      "destination": "/Capsule_Interiors_Wall_Panel_Design_Catalogue.pdf"
+    },
+    {
+      "source": "/wooden-flooring",
+      "destination": "/Capsule_Company_Wooden_Flooring_Catalogue.pdf"
+    },
+    {
+      "source": "/flooring",
+      "destination": "/Capsule_Company_Wooden_Flooring_Catalogue.pdf"
+    },
+    {
+      "source": "/wall-fabric",
+      "destination": "/Capsule_Company_Wall_Fabric_Catalogue.pdf"
+    },
+    {
+      "source": "/fabric",
+      "destination": "/Capsule_Company_Wall_Fabric_Catalogue.pdf"
+    },
+    {
+      "source": "/vinyl-flooring",
+      "destination": "/Capsule_Company_Vinyl_Flooring_Catalogue.pdf"
+    },
+    {
+      "source": "/vinyl",
+      "destination": "/Capsule_Company_Vinyl_Flooring_Catalogue.pdf"
+    },
+    {
+      "source": "/paint-texture",
+      "destination": "/Capsule_Company_Paint_Texture_Catalogue.pdf"
+    },
+    {
+      "source": "/paint",
+      "destination": "/Capsule_Company_Paint_Texture_Catalogue.pdf"
+    },
+    {
+      "source": "/wooden-polish",
+      "destination": "/Capsule_Company_Wooden_Polish_Catalogue.pdf"
+    },
+    {
+      "source": "/wood-polish",
+      "destination": "/Capsule_Company_Wooden_Polish_Catalogue.pdf"
+    },
+    {
+      "source": "/polish",
+      "destination": "/Capsule_Company_Wooden_Polish_Catalogue.pdf"
+    },
+    {
+      "source": "/upvc",
+      "destination": "/Capsule_Company_UPVC_Windows_Doors_Catalogue.pdf"
+    },
+    {
+      "source": "/upvc-windows-doors",
+      "destination": "/Capsule_Company_UPVC_Windows_Doors_Catalogue.pdf"
+    },
+    {
+      "source": "/mini-home-theater",
+      "destination": "/Capsule_Company_Mini_Home_Theater_Catalogue.pdf"
+    },
+    {
+      "source": "/home-theater",
+      "destination": "/Capsule_Company_Mini_Home_Theater_Catalogue.pdf"
+    },
+    {
+      "source": "/theater",
+      "destination": "/Capsule_Company_Mini_Home_Theater_Catalogue.pdf"
+    },
+    {
+      "source": "/lighting",
+      "destination": "/Capsule_Company_Lighting_Design_Catalogue.pdf"
+    },
+    {
+      "source": "/lighting-design",
+      "destination": "/Capsule_Company_Lighting_Design_Catalogue.pdf"
     },
     {
       "source": "/company-brochure",
