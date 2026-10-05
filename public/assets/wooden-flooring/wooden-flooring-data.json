@@ -1,0 +1,959 @@
+{
+  "catalogueTitle": "Wooden Flooring Design Catalogue 2026",
+  "company": "Capsule Company",
+  "tagline": "Your Space Maker",
+  "totalPages": 32,
+  "totalModels": 30,
+  "categories": [
+    {
+      "id": "cat-chevron-herringbone",
+      "name": "CHEVRON & HERRINGBONE",
+      "sectionCode": "CH",
+      "description": "Artisanal angled parquetry engineered with precision 45-degree chevron and 90-degree herringbone interlocking blocks.",
+      "items": [
+        {
+          "code": "WF-01",
+          "name": "CHEVRON BLONDE OAK",
+          "category": "CHEVRON & HERRINGBONE",
+          "image": "assets/wooden-flooring/wf-01.jpg",
+          "desc": "Classic 45-degree French chevron engineered European oak planks featuring a luminous blonde tone that reflects natural daylight across spacious open living salons.",
+          "highlights": [
+            "Prime grade European white oak top wear layer (4mm)",
+            "Micro-beveled 45-degree angle precision milled joints",
+            "UV-cured ultra-matte natural oil polyurethane finish",
+            "Multi-ply birch core engineered for thermal underfloor heating"
+          ],
+          "tagline": "European White Oak • French Chevron • Capsule Company"
+        },
+        {
+          "code": "WF-09",
+          "name": "CLASSIC NORDIC HERRINGBONE",
+          "category": "CHEVRON & HERRINGBONE",
+          "image": "assets/wooden-flooring/wf-09.jpg",
+          "desc": "Traditional 90-degree Scandinavian herringbone parquet in an untreated raw oak tone, offering architectural geometry and refined acoustic composure.",
+          "highlights": [
+            "Precision 90-degree herringbone blocks (120x600mm)",
+            "Nordic blonde raw timber finish with anti-yellowing UV shield",
+            "Beveled four-sided edge micro-grooves defining each block",
+            "Certified suitable for hydronic underfloor heating grids"
+          ],
+          "tagline": "Nordic Herringbone • Raw Matte Oak • Capsule Company"
+        },
+        {
+          "code": "WF-15",
+          "name": "SMOKED WALNUT CONTRAST CHEVRON",
+          "category": "CHEVRON & HERRINGBONE",
+          "image": "assets/wooden-flooring/wf-15.jpg",
+          "desc": "Dramatic dark smoked walnut chevron parquetry featuring bold contrast grain ribbons that define luxurious masculine lounges and library suites.",
+          "highlights": [
+            "Thermal vacuum-smoked walnut with through-body rich tone",
+            "Sharp 45-degree angle chevron alignment creating dynamic energy",
+            "Deep matte lacquer seal with 5% ultra-low reflection sheen",
+            "Engineered multi-ply substrate resisting seasonal warpage"
+          ],
+          "tagline": "Smoked Walnut • French Chevron • Capsule Company"
+        },
+        {
+          "code": "WF-28",
+          "name": "TRI-TONE GEOMETRIC CHEVRON",
+          "category": "CHEVRON & HERRINGBONE",
+          "image": "assets/wooden-flooring/wf-28.jpg",
+          "desc": "Dynamic tri-color chevron parquetry interweaving natural blonde oak, warm cognac, and dark smoked walnut for an energetic contemporary statement floor.",
+          "highlights": [
+            "Artistic tri-color geometric rhythm alternating three timber tones",
+            "Crisp precision 45-degree angled chevron interlocking profiles",
+            "High-grade commercial matte protective seal with low sheen",
+            "Architectural focal flooring for design studios and luxury lofts"
+          ],
+          "tagline": "Tri-Tone Chevron • Dynamic Rhythm • Capsule Company"
+        }
+      ]
+    },
+    {
+      "id": "cat-versailles-marquetry",
+      "name": "VERSAILLES & INLAY PARQUET",
+      "sectionCode": "VP",
+      "description": "Handcrafted historical Versailles panels, radial starburst medallions, and geometric marquetry assembled by master wood artisans.",
+      "items": [
+        {
+          "code": "WF-02",
+          "name": "VERSAILLES PALACE PARQUET",
+          "category": "VERSAILLES & INLAY PARQUET",
+          "image": "assets/wooden-flooring/wf-02.jpg",
+          "desc": "Opulent 800x800mm Versailles pattern marquetry panels crafted from aged European oak and French walnut, evoking the timeless grandeur of classical chateaux.",
+          "highlights": [
+            "Authentic hand-assembled Versailles basketweave pattern",
+            "Dual-tone French oak with aged smoked walnut inserts",
+            "Hand-scraped and wire-brushed antique surface texture",
+            "Commercial grade heavy-traffic matte protective seal"
+          ],
+          "tagline": "Versailles Pattern • Hand-Assembled • Capsule Company"
+        },
+        {
+          "code": "WF-03",
+          "name": "ARTISAN INLAID MARQUETRY",
+          "category": "VERSAILLES & INLAY PARQUET",
+          "image": "assets/wooden-flooring/wf-03.jpg",
+          "desc": "Intricate geometric parquet flooring combining quarter-sawn oak frames with rich walnut inlays, handcrafted for stately drawing rooms and dining salons.",
+          "highlights": [
+            "Bespoke artisanal geometric framing and marquetry inlays",
+            "Select quarter-sawn timber minimizing seasonal expansion",
+            "Precision tongue-and-groove perimeter panel interlocking",
+            "Satin-rubbed zero-VOC organic wax oil topcoat"
+          ],
+          "tagline": "Quarter-Sawn Oak • Walnut Inlays • Capsule Company"
+        },
+        {
+          "code": "WF-12",
+          "name": "ROYAL SUNBURST MARQUETRY",
+          "category": "VERSAILLES & INLAY PARQUET",
+          "image": "assets/wooden-flooring/wf-12.jpg",
+          "desc": "Bespoke artisanal radial starburst parquet medallion handcrafted with multi-segmented oak and walnut rays radiating from a central architectural focal point.",
+          "highlights": [
+            "Artisanal radial sunburst medallion with over 120 hand-cut rays",
+            "Contrasting grain angles creating optical 3D luminescence",
+            "Laser-calibrated mitred joinery with zero-gap tolerances",
+            "Signature centerpiece installation for grand foyers and salons"
+          ],
+          "tagline": "Radial Marquetry • Starburst Centerpiece • Capsule Company"
+        },
+        {
+          "code": "WF-20",
+          "name": "ISOMETRIC CUBE PARQUET",
+          "category": "VERSAILLES & INLAY PARQUET",
+          "image": "assets/wooden-flooring/wf-20.jpg",
+          "desc": "Intricate geometric three-dimensional isometric cube parquet combining walnut, oak, and maple rhombuses to create an astounding trompe l'oeil optical relief.",
+          "highlights": [
+            "Three-wood geometric composition: Walnut, Oak, and Maple",
+            "Optical 3D tumbling cube pattern creating spatial depth",
+            "Precision laser-cut rhombuses assembled with master tolerances",
+            "Antique oil-rubbed patina finish enhancing wood luster"
+          ],
+          "tagline": "3D Tumbling Cube • Trompe L'Oeil • Capsule Company"
+        },
+        {
+          "code": "WF-22",
+          "name": "HEXAGON PARQUET MARQUETRY",
+          "category": "VERSAILLES & INLAY PARQUET",
+          "image": "assets/wooden-flooring/wf-22.jpg",
+          "desc": "Statement luxury living room floor composed of interlocking geometric oak hexagons framed by smoked wood borders, defining upscale European salons.",
+          "highlights": [
+            "Artisan geometric hexagonal parquet interlocking geometry",
+            "Smoked dark oak border framing blonde center hexagonal tiles",
+            "Hand-finished edges with subtle micro-bevel definitions",
+            "High wear-layer allowing multiple lifetime re-sanding cycles"
+          ],
+          "tagline": "Hexagon Parquet • Smoked Borders • Capsule Company"
+        }
+      ]
+    },
+    {
+      "id": "cat-european-oak",
+      "name": "EUROPEAN OAK PLANKS",
+      "sectionCode": "EO",
+      "description": "Super-wide and long-format engineered European white oak boards finished with organic hardwax oils and invisible matte shields.",
+      "items": [
+        {
+          "code": "WF-04",
+          "name": "MULTI-TONE RUSTIC OAK",
+          "category": "EUROPEAN OAK PLANKS",
+          "image": "assets/wooden-flooring/wf-04.jpg",
+          "desc": "Dynamic multi-width timber planks featuring alternating tonal stains and rich character knots, delivering warmth and visual cadence beside natural stone fireplaces.",
+          "highlights": [
+            "Random width and multi-tonal hand-stained plank layout",
+            "Enhanced grain character with filled rustic knots and cracks",
+            "High-durability aluminum oxide scratch-resistant wear layer",
+            "Silent-step acoustic underlay compatibility"
+          ],
+          "tagline": "Multi-Tonal Oak • Rustic Grain • Capsule Company"
+        },
+        {
+          "code": "WF-07",
+          "name": "GOLDEN NATURAL WIDE OAK",
+          "category": "EUROPEAN OAK PLANKS",
+          "image": "assets/wooden-flooring/wf-07.jpg",
+          "desc": "Grand 220mm extra-wide engineered oak planks radiating a warm honey-amber glow under direct sunlight, visually elongating open master suites.",
+          "highlights": [
+            "Super-wide 220mm format boards up to 2200mm length",
+            "Subtle wire-brushed surface highlighting natural oak cathedrals",
+            "Cross-laminated multi-layer core resisting seasonal cupping",
+            "Stain-resistant topcoat safeguarding against daily spills"
+          ],
+          "tagline": "Wide Plank Oak • Honey Amber • Capsule Company"
+        },
+        {
+          "code": "WF-11",
+          "name": "DIAGONAL OAK LINEAR",
+          "category": "EUROPEAN OAK PLANKS",
+          "image": "assets/wooden-flooring/wf-11.jpg",
+          "desc": "Engineered white oak planks installed on a 45-degree diagonal axis to visually expand room boundaries and break conventional orthogonal layouts.",
+          "highlights": [
+            "Architectural diagonal installation expanding perceived space",
+            "Consistent straight rift-and-quartered grain selection",
+            "Double-lacquered aluminum oxide ceramic wear coat",
+            "Precision square-edge profile for a seamless planar surface"
+          ],
+          "tagline": "Rift White Oak • Diagonal Layout • Capsule Company"
+        },
+        {
+          "code": "WF-21",
+          "name": "GIANT PALE OAK GALLERY",
+          "category": "EUROPEAN OAK PLANKS",
+          "image": "assets/wooden-flooring/wf-21.jpg",
+          "desc": "Expansive Scandinavian pale white-oil giant oak planks providing an ethereal, sunlit foundation for modern art galleries and contemporary lounges.",
+          "highlights": [
+            "Architectural giant format boards up to 300mm wide",
+            "White pigmented breathable hardwax oil surface finish",
+            "Light-reflective tone maximizing natural ambient light",
+            "Triple-core structural engineering for underfloor heating"
+          ],
+          "tagline": "Scandinavian Oak • Giant Format • Capsule Company"
+        },
+        {
+          "code": "WF-26",
+          "name": "SUN-DRENCHED RAW OAK",
+          "category": "EUROPEAN OAK PLANKS",
+          "image": "assets/wooden-flooring/wf-26.jpg",
+          "desc": "Extra-wide prime European white oak boards finished with an invisible raw lacquer, maintaining the exact look and touch of freshly sawn natural timber.",
+          "highlights": [
+            "Super-matte invisible lacquer retaining raw wood appearance",
+            "Wide 240mm boards highlighting sweeping cathedral grain",
+            "Engineered balanced cross-grain birch core",
+            "Anti-scratch and UV-blocking formula preventing wood yellowing"
+          ],
+          "tagline": "Raw Timber Look • Invisible Seal • Capsule Company"
+        }
+      ]
+    },
+    {
+      "id": "cat-exotic-hardwoods",
+      "name": "EXOTIC HARDWOODS & TEAK",
+      "sectionCode": "EH",
+      "description": "Lustrous American walnut, Burmese teak, Brazilian cherry, and advanced rigid-core resilient flooring for high-traffic elegance.",
+      "items": [
+        {
+          "code": "WF-08",
+          "name": "AMERICAN WALNUT SALON",
+          "category": "EXOTIC HARDWOODS & TEAK",
+          "image": "assets/wooden-flooring/wf-08.jpg",
+          "desc": "Refined deep cocoa American walnut planks showcasing flowing chocolate grain ribbons and natural purple undertones for sophisticated living spaces.",
+          "highlights": [
+            "Authentic prime American black walnut (Juglans nigra)",
+            "Deep lustrous natural cocoa heartwood with minimal sapwood",
+            "Ultra-smooth satin lacquer finish emphasizing grain depth",
+            "Concealed glued-down installation for maximum underfoot stability"
+          ],
+          "tagline": "American Walnut • Flowing Grain • Capsule Company"
+        },
+        {
+          "code": "WF-10",
+          "name": "BURMESE TEAK GOURMET",
+          "category": "EXOTIC HARDWOODS & TEAK",
+          "image": "assets/wooden-flooring/wf-10.jpg",
+          "desc": "Rich golden-brown Burmese teak planks with natural silica and essential oils, providing unmatched moisture resistance in gourmet kitchen and dining zones.",
+          "highlights": [
+            "Genuine old-growth teak timber rich in natural protective oils",
+            "Outstanding dimensional stability in humid kitchen environments",
+            "Warm caramel tone that darkens into a deep amber patina",
+            "Food-safe zero-VOC protective natural oil treatment"
+          ],
+          "tagline": "Burmese Teak • Moisture-Immune • Capsule Company"
+        },
+        {
+          "code": "WF-13",
+          "name": "BRAZILIAN CHERRY STAIR & PLANK",
+          "category": "EXOTIC HARDWOODS & TEAK",
+          "image": "assets/wooden-flooring/wf-13.jpg",
+          "desc": "Exotic Jatoba Brazilian cherry hardwood with deep auburn-russet undertones, seamlessly transitioning from expansive floors onto cantilevered staircases.",
+          "highlights": [
+            "High Janka hardness rating (2350 lbf) resisting heavy wear",
+            "Integrated matching stair tread nosing and riser profiles",
+            "Deep reddish-brown exotic grain that enriches with ambient light",
+            "Multi-coat UV high-gloss cured commercial grade seal"
+          ],
+          "tagline": "Brazilian Cherry • Integrated Stair • Capsule Company"
+        },
+        {
+          "code": "WF-14",
+          "name": "SEAMLESS BLONDE SPC",
+          "category": "EXOTIC HARDWOODS & TEAK",
+          "image": "assets/wooden-flooring/wf-14.jpg",
+          "desc": "Rigid-core Stone Polymer Composite flooring with synchronized 3D embossed oak wood grain, offering 100% waterproof performance for entry foyers.",
+          "highlights": [
+            "High-density limestone composite rigid core (SPC)",
+            "100% waterproof construction impervious to standing water",
+            "Integrated acoustic IXPE backing absorbing footfall sound",
+            "Synchronized in-register embossed surface texture"
+          ],
+          "tagline": "Waterproof SPC • Synchronized Grain • Capsule Company"
+        },
+        {
+          "code": "WF-23",
+          "name": "RESILIENT HONEY OAK LVP",
+          "category": "EXOTIC HARDWOODS & TEAK",
+          "image": "assets/wooden-flooring/wf-23.jpg",
+          "desc": "Commercial-grade pet-friendly luxury vinyl plank flooring combining authentic timber visual depth with total resistance against pet claws and household spills.",
+          "highlights": [
+            "Heavy-duty 0.55mm commercial wear layer resisting pet scratches",
+            "100% waterproof high-density rigid core substrate",
+            "Anti-slip surface texture with authentic embossed wood grain",
+            "Attached sound-absorbing high-density acoustic underlay"
+          ],
+          "tagline": "Pet-Friendly LVP • Scratch-Resistant • Capsule Company"
+        },
+        {
+          "code": "WF-30",
+          "name": "MULTI-WIDTH RANDOM WALNUT",
+          "category": "EXOTIC HARDWOODS & TEAK",
+          "image": "assets/wooden-flooring/wf-30.jpg",
+          "desc": "Sophisticated random-width engineered American walnut and hickory planks with rich dark heartwood ribbons and contrasting golden sapwood accents.",
+          "highlights": [
+            "Staggered random width plank layout (130mm, 180mm, 220mm)",
+            "Natural contrasting heartwood and sapwood character grain",
+            "Ultra-matte protective polyurethane seal resisting foot traffic",
+            "Precision milled edges ensuring perfectly level floor plane"
+          ],
+          "tagline": "Random Width Walnut • High Contrast • Capsule Company"
+        }
+      ]
+    },
+    {
+      "id": "cat-sustainable-bamboo-cork",
+      "name": "SUSTAINABLE BAMBOO & CORK",
+      "sectionCode": "SBC",
+      "description": "Rapid-renewable strand bamboo and harvested Portuguese cork bark offering acoustic cushioning and thermal insulation.",
+      "items": [
+        {
+          "code": "WF-05",
+          "name": "NATURAL CORK BURL TILES",
+          "category": "SUSTAINABLE BAMBOO & CORK",
+          "image": "assets/wooden-flooring/wf-05.jpg",
+          "desc": "Natural Portuguese cork flooring engineered with organic swirl burl patterns, providing supreme underfoot thermal warmth and natural acoustic dampening.",
+          "highlights": [
+            "100% renewable harvested Mediterranean cork oak bark",
+            "Supreme impact sound reduction up to 19dB",
+            "Naturally anti-microbial, hypoallergenic, and water-repellent",
+            "Flexible ergonomic underfoot cushion relieving joint fatigue"
+          ],
+          "tagline": "Renewable Cork • Acoustic Cushion • Capsule Company"
+        },
+        {
+          "code": "WF-06",
+          "name": "ZEN STRAND-WOVEN BAMBOO",
+          "category": "SUSTAINABLE BAMBOO & CORK",
+          "image": "assets/wooden-flooring/wf-06.jpg",
+          "desc": "Ultra-dense vertical strand-woven natural bamboo planks in a warm caramel hue, bringing clean Scandinavian minimalism to luxury master bedrooms.",
+          "highlights": [
+            "High-density strand-woven bamboo twice as hard as red oak",
+            "Eco-certified rapid-renewable organic Moso bamboo",
+            "Precision click-lock floating installation system",
+            "Low-VOC protective matte polyurethane protective finish"
+          ],
+          "tagline": "Strand Bamboo • High Density • Capsule Company"
+        },
+        {
+          "code": "WF-17",
+          "name": "PORTUGUESE NATURAL CORK PLANK",
+          "category": "SUSTAINABLE BAMBOO & CORK",
+          "image": "assets/wooden-flooring/wf-17.jpg",
+          "desc": "Sustainable honey-tone cork plank flooring installed across open gourmet kitchens, delivering thermal insulation and shock-absorbing ergonomic resilience.",
+          "highlights": [
+            "Engineered cork construction with water-resistant core",
+            "Warm underfoot surface reducing energy consumption",
+            "Cushioned cell structure reducing impact shock on dropped china",
+            "Sealed with non-toxic polyurethane resisting moisture & grease"
+          ],
+          "tagline": "Portuguese Cork • Thermal Insulation • Capsule Company"
+        },
+        {
+          "code": "WF-18",
+          "name": "BLEACHED TEXTURED CORK GALLERY",
+          "category": "SUSTAINABLE BAMBOO & CORK",
+          "image": "assets/wooden-flooring/wf-18.jpg",
+          "desc": "Light bleached cork flooring with subtle linear striated texture, reflecting soft skylight through long art galleries and serene residential hallways.",
+          "highlights": [
+            "Artisanal bleached cork surface with organic linear striations",
+            "Superior acoustic sound baffling eliminating hall echo",
+            "Eco-friendly FSC-certified sustainable timber harvest",
+            "Matte nano-shield finish protecting against UV fading"
+          ],
+          "tagline": "Bleached Cork • Sound Baffling • Capsule Company"
+        },
+        {
+          "code": "WF-19",
+          "name": "NATURAL HORIZONTAL BAMBOO",
+          "category": "SUSTAINABLE BAMBOO & CORK",
+          "image": "assets/wooden-flooring/wf-19.jpg",
+          "desc": "Classic horizontal grain natural bamboo flooring showcasing characteristic bamboo nodes and a bright golden wheat hue beside stone fireplaces.",
+          "highlights": [
+            "Distinctive horizontal grain pattern highlighting growth nodes",
+            "Fast-growing sustainable bamboo with rapid harvest cycle",
+            "High dimensional stability resisting moisture swings",
+            "Pre-finished with 7 coats of scratch-resistant UV seal"
+          ],
+          "tagline": "Horizontal Bamboo • Golden Wheat • Capsule Company"
+        },
+        {
+          "code": "WF-27",
+          "name": "CARAMEL STRAND WOVEN BAMBOO",
+          "category": "SUSTAINABLE BAMBOO & CORK",
+          "image": "assets/wooden-flooring/wf-27.jpg",
+          "desc": "Caramelized high-density strand woven bamboo planks providing rich amber warmth and extreme dent resistance in sunlit residential apartments.",
+          "highlights": [
+            "Thermal caramelized sugar reaction producing natural warm tone",
+            "Engineered strand compression delivering unmatched hardness",
+            "Precision tongue-and-groove system for nail-down or glue-down",
+            "Non-toxic eco-adhesives with zero formaldehyde emissions"
+          ],
+          "tagline": "Caramel Bamboo • Dent-Resistant • Capsule Company"
+        }
+      ]
+    },
+    {
+      "id": "cat-reclaimed-textures",
+      "name": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "sectionCode": "RAT",
+      "description": "Authentic reclaimed heritage timbers, intense wire-brushed grain reliefs, and transitional wood-to-tile architectural integrations.",
+      "items": [
+        {
+          "code": "WF-16",
+          "name": "MINIMALIST ARCHITECTURAL OAK",
+          "category": "RECLAIMED & ARCHITECTURAL TEXTURES",
+          "image": "assets/wooden-flooring/wf-16.jpg",
+          "desc": "Understated pale biscuit oak strip flooring laid with continuous sightlines through open doorways, creating seamless transitions across minimalist flats.",
+          "highlights": [
+            "Continuous uninterrupted board layout across all rooms",
+            "Soft neutral biscuit hue pairing seamlessly with white walls",
+            "Concealed expansion threshold trims at door openings",
+            "Commercial AC4 scratch and abrasion resistance rating"
+          ],
+          "tagline": "Architectural Oak • Seamless Transitions • Capsule Company"
+        },
+        {
+          "code": "WF-24",
+          "name": "TERRACOTTA & TIMBER ACCENT",
+          "category": "RECLAIMED & ARCHITECTURAL TEXTURES",
+          "image": "assets/wooden-flooring/wf-24.jpg",
+          "desc": "Architectural interior corridor uniting antique terracotta patterned tiles with warm oak wood flooring, creating an evocative Mediterranean transition.",
+          "highlights": [
+            "Dual-material transitional junction between wood and encaustic tiles",
+            "Solid brass divider threshold profile with flush alignment",
+            "Smooth matte natural oak boards complementing artisanal ceramics",
+            "Heritage architectural character for entrance galleries"
+          ],
+          "tagline": "Tile & Oak Transition • Brass Reveal • Capsule Company"
+        },
+        {
+          "code": "WF-25",
+          "name": "RECLAIMED TEXTURED BARNWOOD",
+          "category": "RECLAIMED & ARCHITECTURAL TEXTURES",
+          "image": "assets/wooden-flooring/wf-25.jpg",
+          "desc": "Deep wire-brushed reclaimed oak flooring highlighting weathered grain valleys, sawmill saw marks, and authentic historic character for rustic retreats.",
+          "highlights": [
+            "Authentic reclaimed European barn timbers with rich patina",
+            "Intense wire-brushed surface exposing natural annual ring valleys",
+            "Zero-sheen dead-matte breathable oil seal",
+            "Unrepeatable historic character marks, knots, and nail scars"
+          ],
+          "tagline": "Reclaimed Barnwood • Deep Wire-Brushed • Capsule Company"
+        },
+        {
+          "code": "WF-29",
+          "name": "TIGERWOOD STRIATED CORK",
+          "category": "RECLAIMED & ARCHITECTURAL TEXTURES",
+          "image": "assets/wooden-flooring/wf-29.jpg",
+          "desc": "Exotic striated natural cork flooring featuring dramatic dark tiger-stripe grain fissures, delivering avant-garde tactile texture and supreme sound insulation.",
+          "highlights": [
+            "Dramatic natural striated cork grain pattern with dark mineral veins",
+            "Supreme footfall noise dampening ideal for multi-story residences",
+            "Warm and soft underfoot ergonomics reducing muscle strain",
+            "Hardwearing commercial ceramic wear topcoat"
+          ],
+          "tagline": "Striated Cork • Avant-Garde Texture • Capsule Company"
+        }
+      ]
+    }
+  ],
+  "orderedItems": [
+    {
+      "code": "WF-01",
+      "name": "CHEVRON BLONDE OAK",
+      "category": "CHEVRON & HERRINGBONE",
+      "image": "assets/wooden-flooring/wf-01.jpg",
+      "desc": "Classic 45-degree French chevron engineered European oak planks featuring a luminous blonde tone that reflects natural daylight across spacious open living salons.",
+      "highlights": [
+        "Prime grade European white oak top wear layer (4mm)",
+        "Micro-beveled 45-degree angle precision milled joints",
+        "UV-cured ultra-matte natural oil polyurethane finish",
+        "Multi-ply birch core engineered for thermal underfloor heating"
+      ],
+      "tagline": "European White Oak • French Chevron • Capsule Company",
+      "categoryName": "CHEVRON & HERRINGBONE",
+      "sectionCode": "CH"
+    },
+    {
+      "code": "WF-02",
+      "name": "VERSAILLES PALACE PARQUET",
+      "category": "VERSAILLES & INLAY PARQUET",
+      "image": "assets/wooden-flooring/wf-02.jpg",
+      "desc": "Opulent 800x800mm Versailles pattern marquetry panels crafted from aged European oak and French walnut, evoking the timeless grandeur of classical chateaux.",
+      "highlights": [
+        "Authentic hand-assembled Versailles basketweave pattern",
+        "Dual-tone French oak with aged smoked walnut inserts",
+        "Hand-scraped and wire-brushed antique surface texture",
+        "Commercial grade heavy-traffic matte protective seal"
+      ],
+      "tagline": "Versailles Pattern • Hand-Assembled • Capsule Company",
+      "categoryName": "VERSAILLES & INLAY PARQUET",
+      "sectionCode": "VP"
+    },
+    {
+      "code": "WF-03",
+      "name": "ARTISAN INLAID MARQUETRY",
+      "category": "VERSAILLES & INLAY PARQUET",
+      "image": "assets/wooden-flooring/wf-03.jpg",
+      "desc": "Intricate geometric parquet flooring combining quarter-sawn oak frames with rich walnut inlays, handcrafted for stately drawing rooms and dining salons.",
+      "highlights": [
+        "Bespoke artisanal geometric framing and marquetry inlays",
+        "Select quarter-sawn timber minimizing seasonal expansion",
+        "Precision tongue-and-groove perimeter panel interlocking",
+        "Satin-rubbed zero-VOC organic wax oil topcoat"
+      ],
+      "tagline": "Quarter-Sawn Oak • Walnut Inlays • Capsule Company",
+      "categoryName": "VERSAILLES & INLAY PARQUET",
+      "sectionCode": "VP"
+    },
+    {
+      "code": "WF-04",
+      "name": "MULTI-TONE RUSTIC OAK",
+      "category": "EUROPEAN OAK PLANKS",
+      "image": "assets/wooden-flooring/wf-04.jpg",
+      "desc": "Dynamic multi-width timber planks featuring alternating tonal stains and rich character knots, delivering warmth and visual cadence beside natural stone fireplaces.",
+      "highlights": [
+        "Random width and multi-tonal hand-stained plank layout",
+        "Enhanced grain character with filled rustic knots and cracks",
+        "High-durability aluminum oxide scratch-resistant wear layer",
+        "Silent-step acoustic underlay compatibility"
+      ],
+      "tagline": "Multi-Tonal Oak • Rustic Grain • Capsule Company",
+      "categoryName": "EUROPEAN OAK PLANKS",
+      "sectionCode": "EO"
+    },
+    {
+      "code": "WF-05",
+      "name": "NATURAL CORK BURL TILES",
+      "category": "SUSTAINABLE BAMBOO & CORK",
+      "image": "assets/wooden-flooring/wf-05.jpg",
+      "desc": "Natural Portuguese cork flooring engineered with organic swirl burl patterns, providing supreme underfoot thermal warmth and natural acoustic dampening.",
+      "highlights": [
+        "100% renewable harvested Mediterranean cork oak bark",
+        "Supreme impact sound reduction up to 19dB",
+        "Naturally anti-microbial, hypoallergenic, and water-repellent",
+        "Flexible ergonomic underfoot cushion relieving joint fatigue"
+      ],
+      "tagline": "Renewable Cork • Acoustic Cushion • Capsule Company",
+      "categoryName": "SUSTAINABLE BAMBOO & CORK",
+      "sectionCode": "SBC"
+    },
+    {
+      "code": "WF-06",
+      "name": "ZEN STRAND-WOVEN BAMBOO",
+      "category": "SUSTAINABLE BAMBOO & CORK",
+      "image": "assets/wooden-flooring/wf-06.jpg",
+      "desc": "Ultra-dense vertical strand-woven natural bamboo planks in a warm caramel hue, bringing clean Scandinavian minimalism to luxury master bedrooms.",
+      "highlights": [
+        "High-density strand-woven bamboo twice as hard as red oak",
+        "Eco-certified rapid-renewable organic Moso bamboo",
+        "Precision click-lock floating installation system",
+        "Low-VOC protective matte polyurethane protective finish"
+      ],
+      "tagline": "Strand Bamboo • High Density • Capsule Company",
+      "categoryName": "SUSTAINABLE BAMBOO & CORK",
+      "sectionCode": "SBC"
+    },
+    {
+      "code": "WF-07",
+      "name": "GOLDEN NATURAL WIDE OAK",
+      "category": "EUROPEAN OAK PLANKS",
+      "image": "assets/wooden-flooring/wf-07.jpg",
+      "desc": "Grand 220mm extra-wide engineered oak planks radiating a warm honey-amber glow under direct sunlight, visually elongating open master suites.",
+      "highlights": [
+        "Super-wide 220mm format boards up to 2200mm length",
+        "Subtle wire-brushed surface highlighting natural oak cathedrals",
+        "Cross-laminated multi-layer core resisting seasonal cupping",
+        "Stain-resistant topcoat safeguarding against daily spills"
+      ],
+      "tagline": "Wide Plank Oak • Honey Amber • Capsule Company",
+      "categoryName": "EUROPEAN OAK PLANKS",
+      "sectionCode": "EO"
+    },
+    {
+      "code": "WF-08",
+      "name": "AMERICAN WALNUT SALON",
+      "category": "EXOTIC HARDWOODS & TEAK",
+      "image": "assets/wooden-flooring/wf-08.jpg",
+      "desc": "Refined deep cocoa American walnut planks showcasing flowing chocolate grain ribbons and natural purple undertones for sophisticated living spaces.",
+      "highlights": [
+        "Authentic prime American black walnut (Juglans nigra)",
+        "Deep lustrous natural cocoa heartwood with minimal sapwood",
+        "Ultra-smooth satin lacquer finish emphasizing grain depth",
+        "Concealed glued-down installation for maximum underfoot stability"
+      ],
+      "tagline": "American Walnut • Flowing Grain • Capsule Company",
+      "categoryName": "EXOTIC HARDWOODS & TEAK",
+      "sectionCode": "EH"
+    },
+    {
+      "code": "WF-09",
+      "name": "CLASSIC NORDIC HERRINGBONE",
+      "category": "CHEVRON & HERRINGBONE",
+      "image": "assets/wooden-flooring/wf-09.jpg",
+      "desc": "Traditional 90-degree Scandinavian herringbone parquet in an untreated raw oak tone, offering architectural geometry and refined acoustic composure.",
+      "highlights": [
+        "Precision 90-degree herringbone blocks (120x600mm)",
+        "Nordic blonde raw timber finish with anti-yellowing UV shield",
+        "Beveled four-sided edge micro-grooves defining each block",
+        "Certified suitable for hydronic underfloor heating grids"
+      ],
+      "tagline": "Nordic Herringbone • Raw Matte Oak • Capsule Company",
+      "categoryName": "CHEVRON & HERRINGBONE",
+      "sectionCode": "CH"
+    },
+    {
+      "code": "WF-10",
+      "name": "BURMESE TEAK GOURMET",
+      "category": "EXOTIC HARDWOODS & TEAK",
+      "image": "assets/wooden-flooring/wf-10.jpg",
+      "desc": "Rich golden-brown Burmese teak planks with natural silica and essential oils, providing unmatched moisture resistance in gourmet kitchen and dining zones.",
+      "highlights": [
+        "Genuine old-growth teak timber rich in natural protective oils",
+        "Outstanding dimensional stability in humid kitchen environments",
+        "Warm caramel tone that darkens into a deep amber patina",
+        "Food-safe zero-VOC protective natural oil treatment"
+      ],
+      "tagline": "Burmese Teak • Moisture-Immune • Capsule Company",
+      "categoryName": "EXOTIC HARDWOODS & TEAK",
+      "sectionCode": "EH"
+    },
+    {
+      "code": "WF-11",
+      "name": "DIAGONAL OAK LINEAR",
+      "category": "EUROPEAN OAK PLANKS",
+      "image": "assets/wooden-flooring/wf-11.jpg",
+      "desc": "Engineered white oak planks installed on a 45-degree diagonal axis to visually expand room boundaries and break conventional orthogonal layouts.",
+      "highlights": [
+        "Architectural diagonal installation expanding perceived space",
+        "Consistent straight rift-and-quartered grain selection",
+        "Double-lacquered aluminum oxide ceramic wear coat",
+        "Precision square-edge profile for a seamless planar surface"
+      ],
+      "tagline": "Rift White Oak • Diagonal Layout • Capsule Company",
+      "categoryName": "EUROPEAN OAK PLANKS",
+      "sectionCode": "EO"
+    },
+    {
+      "code": "WF-12",
+      "name": "ROYAL SUNBURST MARQUETRY",
+      "category": "VERSAILLES & INLAY PARQUET",
+      "image": "assets/wooden-flooring/wf-12.jpg",
+      "desc": "Bespoke artisanal radial starburst parquet medallion handcrafted with multi-segmented oak and walnut rays radiating from a central architectural focal point.",
+      "highlights": [
+        "Artisanal radial sunburst medallion with over 120 hand-cut rays",
+        "Contrasting grain angles creating optical 3D luminescence",
+        "Laser-calibrated mitred joinery with zero-gap tolerances",
+        "Signature centerpiece installation for grand foyers and salons"
+      ],
+      "tagline": "Radial Marquetry • Starburst Centerpiece • Capsule Company",
+      "categoryName": "VERSAILLES & INLAY PARQUET",
+      "sectionCode": "VP"
+    },
+    {
+      "code": "WF-13",
+      "name": "BRAZILIAN CHERRY STAIR & PLANK",
+      "category": "EXOTIC HARDWOODS & TEAK",
+      "image": "assets/wooden-flooring/wf-13.jpg",
+      "desc": "Exotic Jatoba Brazilian cherry hardwood with deep auburn-russet undertones, seamlessly transitioning from expansive floors onto cantilevered staircases.",
+      "highlights": [
+        "High Janka hardness rating (2350 lbf) resisting heavy wear",
+        "Integrated matching stair tread nosing and riser profiles",
+        "Deep reddish-brown exotic grain that enriches with ambient light",
+        "Multi-coat UV high-gloss cured commercial grade seal"
+      ],
+      "tagline": "Brazilian Cherry • Integrated Stair • Capsule Company",
+      "categoryName": "EXOTIC HARDWOODS & TEAK",
+      "sectionCode": "EH"
+    },
+    {
+      "code": "WF-14",
+      "name": "SEAMLESS BLONDE SPC",
+      "category": "EXOTIC HARDWOODS & TEAK",
+      "image": "assets/wooden-flooring/wf-14.jpg",
+      "desc": "Rigid-core Stone Polymer Composite flooring with synchronized 3D embossed oak wood grain, offering 100% waterproof performance for entry foyers.",
+      "highlights": [
+        "High-density limestone composite rigid core (SPC)",
+        "100% waterproof construction impervious to standing water",
+        "Integrated acoustic IXPE backing absorbing footfall sound",
+        "Synchronized in-register embossed surface texture"
+      ],
+      "tagline": "Waterproof SPC • Synchronized Grain • Capsule Company",
+      "categoryName": "EXOTIC HARDWOODS & TEAK",
+      "sectionCode": "EH"
+    },
+    {
+      "code": "WF-15",
+      "name": "SMOKED WALNUT CONTRAST CHEVRON",
+      "category": "CHEVRON & HERRINGBONE",
+      "image": "assets/wooden-flooring/wf-15.jpg",
+      "desc": "Dramatic dark smoked walnut chevron parquetry featuring bold contrast grain ribbons that define luxurious masculine lounges and library suites.",
+      "highlights": [
+        "Thermal vacuum-smoked walnut with through-body rich tone",
+        "Sharp 45-degree angle chevron alignment creating dynamic energy",
+        "Deep matte lacquer seal with 5% ultra-low reflection sheen",
+        "Engineered multi-ply substrate resisting seasonal warpage"
+      ],
+      "tagline": "Smoked Walnut • French Chevron • Capsule Company",
+      "categoryName": "CHEVRON & HERRINGBONE",
+      "sectionCode": "CH"
+    },
+    {
+      "code": "WF-16",
+      "name": "MINIMALIST ARCHITECTURAL OAK",
+      "category": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "image": "assets/wooden-flooring/wf-16.jpg",
+      "desc": "Understated pale biscuit oak strip flooring laid with continuous sightlines through open doorways, creating seamless transitions across minimalist flats.",
+      "highlights": [
+        "Continuous uninterrupted board layout across all rooms",
+        "Soft neutral biscuit hue pairing seamlessly with white walls",
+        "Concealed expansion threshold trims at door openings",
+        "Commercial AC4 scratch and abrasion resistance rating"
+      ],
+      "tagline": "Architectural Oak • Seamless Transitions • Capsule Company",
+      "categoryName": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "sectionCode": "RAT"
+    },
+    {
+      "code": "WF-17",
+      "name": "PORTUGUESE NATURAL CORK PLANK",
+      "category": "SUSTAINABLE BAMBOO & CORK",
+      "image": "assets/wooden-flooring/wf-17.jpg",
+      "desc": "Sustainable honey-tone cork plank flooring installed across open gourmet kitchens, delivering thermal insulation and shock-absorbing ergonomic resilience.",
+      "highlights": [
+        "Engineered cork construction with water-resistant core",
+        "Warm underfoot surface reducing energy consumption",
+        "Cushioned cell structure reducing impact shock on dropped china",
+        "Sealed with non-toxic polyurethane resisting moisture & grease"
+      ],
+      "tagline": "Portuguese Cork • Thermal Insulation • Capsule Company",
+      "categoryName": "SUSTAINABLE BAMBOO & CORK",
+      "sectionCode": "SBC"
+    },
+    {
+      "code": "WF-18",
+      "name": "BLEACHED TEXTURED CORK GALLERY",
+      "category": "SUSTAINABLE BAMBOO & CORK",
+      "image": "assets/wooden-flooring/wf-18.jpg",
+      "desc": "Light bleached cork flooring with subtle linear striated texture, reflecting soft skylight through long art galleries and serene residential hallways.",
+      "highlights": [
+        "Artisanal bleached cork surface with organic linear striations",
+        "Superior acoustic sound baffling eliminating hall echo",
+        "Eco-friendly FSC-certified sustainable timber harvest",
+        "Matte nano-shield finish protecting against UV fading"
+      ],
+      "tagline": "Bleached Cork • Sound Baffling • Capsule Company",
+      "categoryName": "SUSTAINABLE BAMBOO & CORK",
+      "sectionCode": "SBC"
+    },
+    {
+      "code": "WF-19",
+      "name": "NATURAL HORIZONTAL BAMBOO",
+      "category": "SUSTAINABLE BAMBOO & CORK",
+      "image": "assets/wooden-flooring/wf-19.jpg",
+      "desc": "Classic horizontal grain natural bamboo flooring showcasing characteristic bamboo nodes and a bright golden wheat hue beside stone fireplaces.",
+      "highlights": [
+        "Distinctive horizontal grain pattern highlighting growth nodes",
+        "Fast-growing sustainable bamboo with rapid harvest cycle",
+        "High dimensional stability resisting moisture swings",
+        "Pre-finished with 7 coats of scratch-resistant UV seal"
+      ],
+      "tagline": "Horizontal Bamboo • Golden Wheat • Capsule Company",
+      "categoryName": "SUSTAINABLE BAMBOO & CORK",
+      "sectionCode": "SBC"
+    },
+    {
+      "code": "WF-20",
+      "name": "ISOMETRIC CUBE PARQUET",
+      "category": "VERSAILLES & INLAY PARQUET",
+      "image": "assets/wooden-flooring/wf-20.jpg",
+      "desc": "Intricate geometric three-dimensional isometric cube parquet combining walnut, oak, and maple rhombuses to create an astounding trompe l'oeil optical relief.",
+      "highlights": [
+        "Three-wood geometric composition: Walnut, Oak, and Maple",
+        "Optical 3D tumbling cube pattern creating spatial depth",
+        "Precision laser-cut rhombuses assembled with master tolerances",
+        "Antique oil-rubbed patina finish enhancing wood luster"
+      ],
+      "tagline": "3D Tumbling Cube • Trompe L'Oeil • Capsule Company",
+      "categoryName": "VERSAILLES & INLAY PARQUET",
+      "sectionCode": "VP"
+    },
+    {
+      "code": "WF-21",
+      "name": "GIANT PALE OAK GALLERY",
+      "category": "EUROPEAN OAK PLANKS",
+      "image": "assets/wooden-flooring/wf-21.jpg",
+      "desc": "Expansive Scandinavian pale white-oil giant oak planks providing an ethereal, sunlit foundation for modern art galleries and contemporary lounges.",
+      "highlights": [
+        "Architectural giant format boards up to 300mm wide",
+        "White pigmented breathable hardwax oil surface finish",
+        "Light-reflective tone maximizing natural ambient light",
+        "Triple-core structural engineering for underfloor heating"
+      ],
+      "tagline": "Scandinavian Oak • Giant Format • Capsule Company",
+      "categoryName": "EUROPEAN OAK PLANKS",
+      "sectionCode": "EO"
+    },
+    {
+      "code": "WF-22",
+      "name": "HEXAGON PARQUET MARQUETRY",
+      "category": "VERSAILLES & INLAY PARQUET",
+      "image": "assets/wooden-flooring/wf-22.jpg",
+      "desc": "Statement luxury living room floor composed of interlocking geometric oak hexagons framed by smoked wood borders, defining upscale European salons.",
+      "highlights": [
+        "Artisan geometric hexagonal parquet interlocking geometry",
+        "Smoked dark oak border framing blonde center hexagonal tiles",
+        "Hand-finished edges with subtle micro-bevel definitions",
+        "High wear-layer allowing multiple lifetime re-sanding cycles"
+      ],
+      "tagline": "Hexagon Parquet • Smoked Borders • Capsule Company",
+      "categoryName": "VERSAILLES & INLAY PARQUET",
+      "sectionCode": "VP"
+    },
+    {
+      "code": "WF-23",
+      "name": "RESILIENT HONEY OAK LVP",
+      "category": "EXOTIC HARDWOODS & TEAK",
+      "image": "assets/wooden-flooring/wf-23.jpg",
+      "desc": "Commercial-grade pet-friendly luxury vinyl plank flooring combining authentic timber visual depth with total resistance against pet claws and household spills.",
+      "highlights": [
+        "Heavy-duty 0.55mm commercial wear layer resisting pet scratches",
+        "100% waterproof high-density rigid core substrate",
+        "Anti-slip surface texture with authentic embossed wood grain",
+        "Attached sound-absorbing high-density acoustic underlay"
+      ],
+      "tagline": "Pet-Friendly LVP • Scratch-Resistant • Capsule Company",
+      "categoryName": "EXOTIC HARDWOODS & TEAK",
+      "sectionCode": "EH"
+    },
+    {
+      "code": "WF-24",
+      "name": "TERRACOTTA & TIMBER ACCENT",
+      "category": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "image": "assets/wooden-flooring/wf-24.jpg",
+      "desc": "Architectural interior corridor uniting antique terracotta patterned tiles with warm oak wood flooring, creating an evocative Mediterranean transition.",
+      "highlights": [
+        "Dual-material transitional junction between wood and encaustic tiles",
+        "Solid brass divider threshold profile with flush alignment",
+        "Smooth matte natural oak boards complementing artisanal ceramics",
+        "Heritage architectural character for entrance galleries"
+      ],
+      "tagline": "Tile & Oak Transition • Brass Reveal • Capsule Company",
+      "categoryName": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "sectionCode": "RAT"
+    },
+    {
+      "code": "WF-25",
+      "name": "RECLAIMED TEXTURED BARNWOOD",
+      "category": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "image": "assets/wooden-flooring/wf-25.jpg",
+      "desc": "Deep wire-brushed reclaimed oak flooring highlighting weathered grain valleys, sawmill saw marks, and authentic historic character for rustic retreats.",
+      "highlights": [
+        "Authentic reclaimed European barn timbers with rich patina",
+        "Intense wire-brushed surface exposing natural annual ring valleys",
+        "Zero-sheen dead-matte breathable oil seal",
+        "Unrepeatable historic character marks, knots, and nail scars"
+      ],
+      "tagline": "Reclaimed Barnwood • Deep Wire-Brushed • Capsule Company",
+      "categoryName": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "sectionCode": "RAT"
+    },
+    {
+      "code": "WF-26",
+      "name": "SUN-DRENCHED RAW OAK",
+      "category": "EUROPEAN OAK PLANKS",
+      "image": "assets/wooden-flooring/wf-26.jpg",
+      "desc": "Extra-wide prime European white oak boards finished with an invisible raw lacquer, maintaining the exact look and touch of freshly sawn natural timber.",
+      "highlights": [
+        "Super-matte invisible lacquer retaining raw wood appearance",
+        "Wide 240mm boards highlighting sweeping cathedral grain",
+        "Engineered balanced cross-grain birch core",
+        "Anti-scratch and UV-blocking formula preventing wood yellowing"
+      ],
+      "tagline": "Raw Timber Look • Invisible Seal • Capsule Company",
+      "categoryName": "EUROPEAN OAK PLANKS",
+      "sectionCode": "EO"
+    },
+    {
+      "code": "WF-27",
+      "name": "CARAMEL STRAND WOVEN BAMBOO",
+      "category": "SUSTAINABLE BAMBOO & CORK",
+      "image": "assets/wooden-flooring/wf-27.jpg",
+      "desc": "Caramelized high-density strand woven bamboo planks providing rich amber warmth and extreme dent resistance in sunlit residential apartments.",
+      "highlights": [
+        "Thermal caramelized sugar reaction producing natural warm tone",
+        "Engineered strand compression delivering unmatched hardness",
+        "Precision tongue-and-groove system for nail-down or glue-down",
+        "Non-toxic eco-adhesives with zero formaldehyde emissions"
+      ],
+      "tagline": "Caramel Bamboo • Dent-Resistant • Capsule Company",
+      "categoryName": "SUSTAINABLE BAMBOO & CORK",
+      "sectionCode": "SBC"
+    },
+    {
+      "code": "WF-28",
+      "name": "TRI-TONE GEOMETRIC CHEVRON",
+      "category": "CHEVRON & HERRINGBONE",
+      "image": "assets/wooden-flooring/wf-28.jpg",
+      "desc": "Dynamic tri-color chevron parquetry interweaving natural blonde oak, warm cognac, and dark smoked walnut for an energetic contemporary statement floor.",
+      "highlights": [
+        "Artistic tri-color geometric rhythm alternating three timber tones",
+        "Crisp precision 45-degree angled chevron interlocking profiles",
+        "High-grade commercial matte protective seal with low sheen",
+        "Architectural focal flooring for design studios and luxury lofts"
+      ],
+      "tagline": "Tri-Tone Chevron • Dynamic Rhythm • Capsule Company",
+      "categoryName": "CHEVRON & HERRINGBONE",
+      "sectionCode": "CH"
+    },
+    {
+      "code": "WF-29",
+      "name": "TIGERWOOD STRIATED CORK",
+      "category": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "image": "assets/wooden-flooring/wf-29.jpg",
+      "desc": "Exotic striated natural cork flooring featuring dramatic dark tiger-stripe grain fissures, delivering avant-garde tactile texture and supreme sound insulation.",
+      "highlights": [
+        "Dramatic natural striated cork grain pattern with dark mineral veins",
+        "Supreme footfall noise dampening ideal for multi-story residences",
+        "Warm and soft underfoot ergonomics reducing muscle strain",
+        "Hardwearing commercial ceramic wear topcoat"
+      ],
+      "tagline": "Striated Cork • Avant-Garde Texture • Capsule Company",
+      "categoryName": "RECLAIMED & ARCHITECTURAL TEXTURES",
+      "sectionCode": "RAT"
+    },
+    {
+      "code": "WF-30",
+      "name": "MULTI-WIDTH RANDOM WALNUT",
+      "category": "EXOTIC HARDWOODS & TEAK",
+      "image": "assets/wooden-flooring/wf-30.jpg",
+      "desc": "Sophisticated random-width engineered American walnut and hickory planks with rich dark heartwood ribbons and contrasting golden sapwood accents.",
+      "highlights": [
+        "Staggered random width plank layout (130mm, 180mm, 220mm)",
+        "Natural contrasting heartwood and sapwood character grain",
+        "Ultra-matte protective polyurethane seal resisting foot traffic",
+        "Precision milled edges ensuring perfectly level floor plane"
+      ],
+      "tagline": "Random Width Walnut • High Contrast • Capsule Company",
+      "categoryName": "EXOTIC HARDWOODS & TEAK",
+      "sectionCode": "EH"
+    }
+  ]
+}

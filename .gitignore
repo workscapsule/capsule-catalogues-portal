@@ -6,3 +6,6 @@ scratch/
 .env.*
 *_backup*
 backup_originals/
+scripts/*-template.html
+scripts/candidates_images/
+scripts/category_snaps/

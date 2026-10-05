@@ -53,7 +53,7 @@ export const faqData: FAQItem[] = [
   },
   {
     question: 'How can I contact Capsule Company?',
-    answer: 'You can call us directly at +91 96321 24422, message us on WhatsApp, submit the consultation form on this website, or visit our office at SLV Complex, 17/3, Outer Ring Rd, Kariyana Layout, Hebbal Kempapura, Bengaluru.',
+    answer: 'You can call us directly at +91 96321 24422, message us on WhatsApp, submit the consultation form on this website, or visit our office at N.173, 1st & 2nd Floor, SLV Complex, Hebbal Kempapura, Ammanikere, Outer Ring Road, Kariyamma Layout, Bengaluru (Urban), Karnataka – 560024.',
     category: 'Contact'
   }
 ];

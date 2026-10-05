@@ -1,0 +1,364 @@
+{
+  "orderedItems": [
+    {
+      "index": 1,
+      "code": "WPL-01",
+      "fileName": "wpl-02.jpg",
+      "title": "ARTISANAL WHITE OAK SHAKER POLISH",
+      "category": "NATURAL MATTE POLYURETHANE",
+      "subtitle": "White Oak Veneer • Matte PU Sealer • Capsule Company",
+      "desc": "Bespoke white oak shaker cabinetry finished in an ultra-matte, non-yellowing polyurethane sealer that accentuates the delicate pale blonde wood grain. Formulated with UV inhibitors and moisture barriers for lasting kitchen and pantry durability.",
+      "bullets": [
+        "Two-component non-yellowing acrylic polyurethane matte clear coat",
+        "True-to-nature 5% dead-matte sheen preserving tactile wood warmth",
+        "High resistance against cooking steam, grease, and household detergents",
+        "Micro-porous grain enhancement highlighting subtle oak medullary rays"
+      ]
+    },
+    {
+      "index": 2,
+      "code": "WPL-02",
+      "fileName": "wpl-03.jpg",
+      "title": "FULL-HEIGHT NATURAL OAK SATIN CABINETRY",
+      "category": "NATURAL MATTE POLYURETHANE",
+      "subtitle": "Solid Oak & Veneer • Clear Satin PU • Capsule Company",
+      "desc": "Floor-to-ceiling modular kitchen casework showcasing continuous vertical wood grains sealed under premium architectural satin polyurethane. Designed for upscale culinary environments where natural timber warmth meets high-traffic resilience.",
+      "bullets": [
+        "Multi-coat polyurethane system offering superior scratch and scuff defense",
+        "Even pigment toners evening out natural timber tone variations seamlessly",
+        "Anti-bacterial topcoat additive inhibiting microbial surface growth",
+        "Compatible with concealed under-cabinet warm linear LED lighting"
+      ]
+    },
+    {
+      "index": 3,
+      "code": "WPL-03",
+      "fileName": "wpl-04.jpg",
+      "title": "BURMA TEAK MIRROR GLOSS FINISH",
+      "category": "HIGH-GLOSS MIRROR & POLYESTER",
+      "subtitle": "Burma Teakwood • 95% Wet-Gloss Polish • Capsule Company",
+      "desc": "Masterfully hand-finished solid teak panel doors treated with a multi-stage high-gloss polyurethane glaze delivering wet-mirror optical reflectivity. The warm golden-amber teak grain radiates deep dimensional luminosity under direct light.",
+      "bullets": [
+        "95% wet-look mirror gloss achieving true distortion-free reflections",
+        "Multi-stage buffing and wool-pad compound polishing for glass smoothness",
+        "High solids resin barrier preventing moisture penetration and grain lifting",
+        "Accentuated natural golden-brown teak streaks and undulating growth rings"
+      ]
+    },
+    {
+      "index": 4,
+      "code": "WPL-04",
+      "fileName": "wpl-05.jpg",
+      "title": "HAND-RUBBED HARDWAX OIL & GRAIN POLISH",
+      "category": "ARTISANAL OILS & HAND-RUBBED POLISH",
+      "subtitle": "Rustic Elm & Pine • Botanical Hardwax Oil • Capsule Company",
+      "desc": "Traditional artisan wood finishing utilizing natural carnauba and beeswax infused with botanical hardening oils. Penetrates deep into open wood pores to create a breathable, water-resistant surface with an incomparable organic touch.",
+      "bullets": [
+        "100% natural solvent-free plant oil and beeswax formulation",
+        "Open-pore micro-finish leaving the natural timber texture completely tactile",
+        "Effortless spot repairability without needing complete surface strip-downs",
+        "Deep antique amber patina highlighting knots, swirls, and natural fissures"
+      ]
+    },
+    {
+      "index": 5,
+      "code": "WPL-05",
+      "fileName": "wpl-06.jpg",
+      "title": "CONTEMPORARY AMERICAN WALNUT ULTRA-MATTE",
+      "category": "BESPOKE WARDROBES & CABINETRY",
+      "subtitle": "American Walnut • Zero-Gloss Melamine • Capsule Company",
+      "desc": "Architectural full-height master wardrobe suite finished in a refined zero-gloss walnut melamine sealer. Delivers an understated luxury aesthetic that balances rich espresso wood undertones with modern monolithic minimalism.",
+      "bullets": [
+        "Dead-flat matte formulation completely eliminating unwanted glare",
+        "Anti-fingerprint technology minimizing marks on frequently touched doors",
+        "Superior edge-banding adhesion sealing plywood cores against humidity",
+        "Rich chocolate and taupe grain highlights complementing warm interior palettes"
+      ]
+    },
+    {
+      "index": 6,
+      "code": "WPL-06",
+      "fileName": "wpl-07.jpg",
+      "title": "ROYAL HERITAGE CARVED MAHOGANY POLISH",
+      "category": "HERITAGE CARVED & ANTIQUE PATINA",
+      "subtitle": "Solid Mahogany • Hand-Applied Antique Glaze • Capsule Company",
+      "desc": "Grand ornamental royal bedstead crafted from kiln-seasoned tropical mahogany, treated with layered antique shaded glazes and hand-burnished highlights. Deep shadow tones accentuate intricate hand-carved floral flourishes and fluted columns.",
+      "bullets": [
+        "Hand-shaded antique glaze accentuating intricate carvings and moldings",
+        "Traditional shellac and lacquer multi-coat build with rich amber depth",
+        "Hand-buffed wax topcoat yielding a luxurious soft-sheen museum patina",
+        "Permanent timber pore sealing preventing seasonal hairline crazing"
+      ]
+    },
+    {
+      "index": 7,
+      "code": "WPL-07",
+      "fileName": "wpl-08.jpg",
+      "title": "SCANDINAVIAN HONEY OAK SUITE FINISH",
+      "category": "BESPOKE WARDROBES & CABINETRY",
+      "subtitle": "Natural European Oak • Honey Tone Sealer • Capsule Company",
+      "desc": "Refined modern bedroom collection crafted from select European white oak, tinted in a gentle honey wash and sealed with waterborne acrylic polyurethane. Promotes a calming, light-filled atmosphere with serene Japandi and Nordic sensibilities.",
+      "bullets": [
+        "Subtle warm honey pigment enhancing natural wood fiber warmth",
+        "Water-based eco polyurethane finish with ultra-low odor and zero toxins",
+        "Silky tactile texture inviting touch across headboard and dresser surfaces",
+        "UV-stabilized formula protecting against fading from natural daylight"
+      ]
+    },
+    {
+      "index": 8,
+      "code": "WPL-08",
+      "fileName": "wpl-09.jpg",
+      "title": "CLASSICAL WALNUT CREDENZA FRENCH POLISH",
+      "category": "HERITAGE CARVED & ANTIQUE PATINA",
+      "subtitle": "Carved Walnut • Traditional Spirit Polish • Capsule Company",
+      "desc": "Artisanal entertainment credenza featuring ornamental scrollwork and recessed door panels, finished using historic French spirit polishing techniques. Successive micro-thin coats of de-waxed blonde shellac build an unmatched optical depth and warmth.",
+      "bullets": [
+        "Authentic button shellac applied by hand using traditional polishing pads",
+        "Exceptional optical clarity allowing chatoyance and grain figure to dance",
+        "Subtle burnished luster that matures and enriches beautifully with age",
+        "Fine-rubbed rottenstone powder finish delivering satiny smooth feel"
+      ]
+    },
+    {
+      "index": 9,
+      "code": "WPL-09",
+      "fileName": "wpl-10.jpg",
+      "title": "MINIMALIST WARM TEAK SLIDING WARDROBE",
+      "category": "BESPOKE WARDROBES & CABINETRY",
+      "subtitle": "Natural Teak Veneer • Satin Clear Polyurethane • Capsule Company",
+      "desc": "Full-wall sliding wardrobe installation in premium natural teak veneer, coated in clear satin polyurethane. Features discreet grooved finger-pull detailing and seamless vertical grain alignment from floor to ceiling cornice.",
+      "bullets": [
+        "Consistent satin sheen level resisting light scuffs from daily wardrobe use",
+        "Precision seal along slide track edges preventing warping or binding",
+        "Non-yellowing clear topcoat preserving authentic golden teak color",
+        "Integrated sealing barrier protecting against tropical humidity fluctuation"
+      ]
+    },
+    {
+      "index": 10,
+      "code": "WPL-10",
+      "fileName": "wpl-11.jpg",
+      "title": "FLUTED SOLID TIMBER ARCHITECTURAL DOOR",
+      "category": "ARCHITECTURAL DOORS & ENTRANCES",
+      "subtitle": "Solid Teak Jamb & Leaf • Micro-Satin Polish • Capsule Company",
+      "desc": "Modern interior passage door featuring rhythmically spaced horizontal grooving and an ornate relief border, finished in a silky micro-satin clear coat. Elevates interior hallways with a seamless blend of contemporary geometry and natural wood charm.",
+      "bullets": [
+        "Precision spray application coating inside narrow fluted grooves evenly",
+        "Durable multi-surface adhesion across door frame, architrave, and leaf",
+        "Resistant to thermal contraction and expansion throughout changing seasons",
+        "Complements luxury brushed bronze and matte black architectural hardware"
+      ]
+    },
+    {
+      "index": 11,
+      "code": "WPL-11",
+      "fileName": "wpl-12.jpg",
+      "title": "HORIZONTAL GROOVED BURMA TEAK MAIN DOOR",
+      "category": "ARCHITECTURAL DOORS & ENTRANCES",
+      "subtitle": "Burma Teak • Exterior-Grade Polyurethane • Capsule Company",
+      "desc": "Monumental pivot entrance door crafted from seasoned Burma teak slats with clean shadow-gap reveals, coated in exterior-grade UV-resistant polyurethane. Designed to withstand outdoor weathering while maintaining a rich, warm interior greeting.",
+      "bullets": [
+        "Marine-grade exterior polyurethane shielding against direct rain and sun",
+        "Advanced UV absorbers preventing color silvering and photo-oxidation",
+        "Deep grain saturation enriching Burma teak natural golden-brown hues",
+        "Coordinated solid wood architrave and jamb finished to matching standards"
+      ]
+    },
+    {
+      "index": 12,
+      "code": "WPL-12",
+      "fileName": "wpl-13.jpg",
+      "title": "MODULAR GEOMETRIC BLOCK WALNUT DOOR",
+      "category": "ARCHITECTURAL DOORS & ENTRANCES",
+      "subtitle": "American Walnut • Open-Pore Matte Finish • Capsule Company",
+      "desc": "Avant-garde interior door crafted with alternating grain blocks and recessed vertical jamb flutes, sealed in an open-pore natural matte finish. Offers a striking tactile architectural statement for modern urban apartments and penthouses.",
+      "bullets": [
+        "Open-pore finish preserving the authentic textural topography of walnut",
+        "Dead-matte 5% gloss preventing distracting glints from hallway lights",
+        "Deep brown and violet walnut grain tones brought out without heavy dyes",
+        "Precision CNC-routed joinery sealed against dust accumulation"
+      ]
+    },
+    {
+      "index": 13,
+      "code": "WPL-13",
+      "fileName": "wpl-14.jpg",
+      "title": "HERRINGBONE & SLAT COMPOSITE ENTRANCE DOOR",
+      "category": "ARCHITECTURAL DOORS & ENTRANCES",
+      "subtitle": "Light Oak & Teak • Architectural Satin Sealer • Capsule Company",
+      "desc": "Custom entryway door combining linear horizontal paneling with diagonal slat infills and metal inlay studs. Sealed in a resilient satin topcoat that highlights contrasting grain directions and complex joinery craftsmanship.",
+      "bullets": [
+        "Uniform sheen across contrasting horizontal and diagonal grain facets",
+        "Multi-pass sanding delivering ultra-smooth edges along all slat transitions",
+        "Tough elastomeric film absorbing minor door impacts and key scrapes",
+        "Enhanced grain depth that accentuates the door architectural relief"
+      ]
+    },
+    {
+      "index": 14,
+      "code": "WPL-14",
+      "fileName": "wpl-15.jpg",
+      "title": "SEAMLESS FLUSH NATURAL TEAK ENTRY DOOR",
+      "category": "ARCHITECTURAL DOORS & ENTRANCES",
+      "subtitle": "Quarter-Cut Teak • Hand-Burnished Polyurethane • Capsule Company",
+      "desc": "Understated luxury flush door featuring straight-grain quarter-cut natural teak veneer, hand-burnished with high-grade architectural polyurethane. Seamlessly links bedrooms and private suites with an aura of quiet sophistication.",
+      "bullets": [
+        "Silky smooth hand-burnished finish with zero orange-peel texture",
+        "Full perimeter sealing protecting internal core from seasonal swelling",
+        "Warm natural honey-brown luster complementing soft cove lighting",
+        "Engineered for long-lasting stability in air-conditioned interiors"
+      ]
+    },
+    {
+      "index": 15,
+      "code": "WPL-15",
+      "fileName": "wpl-16.jpg",
+      "title": "PIANO HIGH-GLOSS EXOTIC ZEBRAWOOD POLISH",
+      "category": "HIGH-GLOSS MIRROR & POLYESTER",
+      "subtitle": "Exotic Rosewood / Zebrawood • Polyester Mirror Polish • Capsule Company",
+      "desc": "Extraordinary mirror-gloss polyester finish applied to dramatic linear exotic hardwood, creating a liquid-glass surface that reflects chandeliers and skylights with zero distortion. The pinnacle of luxury furniture finishing.",
+      "bullets": [
+        "Multi-layer high-build polyester coating polished up to 10,000 grit",
+        "True 100% optical mirror reflection with zero surface ripple or haze",
+        "Extreme hardness resisting heat, alcohol spills, and light abrasions",
+        "Hypnotic 3D optical depth making exotic grain ribbons pop vibrantly"
+      ]
+    },
+    {
+      "index": 16,
+      "code": "WPL-16",
+      "fileName": "wpl-17.jpg",
+      "title": "HAND-CARVED MANDALA TEAK ANTIQUE PATINA",
+      "category": "HERITAGE CARVED & ANTIQUE PATINA",
+      "subtitle": "Solid Teakwood • Antique Walnut Wax Glaze • Capsule Company",
+      "desc": "Monumental master bedroom door featuring a dramatic hand-carved floral mandala centerpiece within a fluted frame. Finished with an antiqued walnut wax glaze that settles deep into carved valleys, creating timeless museum-grade visual drama.",
+      "bullets": [
+        "Hand-applied dark wax glaze accentuating intricate floral carving depths",
+        "Burnished highlight technique brightening high points for sculptured depth",
+        "Traditional oil and wax blend providing natural moisture resistance",
+        "Authentic heirloom appearance that improves in character over decades"
+      ]
+    },
+    {
+      "index": 17,
+      "code": "WPL-17",
+      "fileName": "wpl-18.jpg",
+      "title": "MID-CENTURY CURVED TEAK VANITY ARMOIRE",
+      "category": "BESPOKE WARDROBES & CABINETRY",
+      "subtitle": "Teakwood & Mirror • Danish Oil & Satin Finish • Capsule Company",
+      "desc": "Sculptural dressing armoire featuring graceful rounded corners, an integrated arched mirror, and warm internal display shelving. Hand-buffed in Danish oil and sealed with satin polyurethane for a velvety mid-century aesthetic.",
+      "bullets": [
+        "Danish oil penetration highlighting golden teak amber glow from within",
+        "Protective satin topcoat resisting cosmetics, perfumes, and water rings",
+        "Flawless finish on delicate curved timber corners and arched framing",
+        "Integrated warm 3000K shelf lighting highlighting internal woodwork"
+      ]
+    },
+    {
+      "index": 18,
+      "code": "WPL-18",
+      "fileName": "wpl-19.jpg",
+      "title": "ORGANIC SOLID TEAK LIVING ROOM SUITE",
+      "category": "ARTISANAL OILS & HAND-RUBBED POLISH",
+      "subtitle": "Solid Plantation Teak • Bio-Polyurethane Matte • Capsule Company",
+      "desc": "Sprawling contemporary living room suite featuring low-profile solid teak sofa frames, slatted coffee tables, and matching lounge armchairs. Coated in a sustainable bio-based polyurethane matte polish that honors raw timber authenticity.",
+      "bullets": [
+        "Bio-polyurethane derived from renewable plant oils with zero VOCs",
+        "Dead-matte finish creating an organic, unvarnished raw wood ambiance",
+        "Sweat- and spill-resistant formulation ideal for everyday family living",
+        "Warm golden honey teak tones coordinating with linen and bouclé upholstery"
+      ]
+    },
+    {
+      "index": 19,
+      "code": "WPL-19",
+      "fileName": "wpl-20.jpg",
+      "title": "FRENCH ARCHED SOLID WOOD WARDROBE",
+      "category": "BESPOKE WARDROBES & CABINETRY",
+      "subtitle": "Rich Cognac Walnut • Classical Satin Lacquer • Capsule Company",
+      "desc": "Provincial French-inspired freestanding wardrobe featuring triple arched panel doors, hand-turned finials, and subtle crown molding. Coated in a rich cognac walnut satin lacquer that radiates Old World charm and European craftsmanship.",
+      "bullets": [
+        "Cognac tinted base coat creating rich, warm, multi-tonal wood depth",
+        "Satin lacquer finish offering silky tactile feel and smooth door action",
+        "Precision seal preventing timber cracking around arched door panels",
+        "Heirloom construction suited for heritage homes and master bedrooms"
+      ]
+    },
+    {
+      "index": 20,
+      "code": "WPL-20",
+      "fileName": "wpl-21.jpg",
+      "title": "JAPANDI LIGHT OAK BEDROOM SUITE",
+      "category": "BESPOKE WARDROBES & CABINETRY",
+      "subtitle": "White Oak • Waterborne Ultra-Matte Sealer • Capsule Company",
+      "desc": "Zen-inspired master bedroom set with a clean-lined spindle headboard, matching nightstands, and dressing chest in natural light oak. Finished with a breathable waterborne ultra-matte sealer that keeps the oak looking freshly planed.",
+      "bullets": [
+        "Non-yellowing clear sealer preserving natural pale Nordic oak tones",
+        "Ultra-matte 3% sheen eliminating artificial plastic shine completely",
+        "Silky tactile texture smooth to the touch across all headboard rails",
+        "Certified green coating contributing to healthy bedroom indoor air quality"
+      ]
+    },
+    {
+      "index": 21,
+      "code": "WPL-21",
+      "fileName": "wpl-22.jpg",
+      "title": "CHEVRON BOOKMATCHED WALNUT WARDROBE",
+      "category": "BESPOKE WARDROBES & CABINETRY",
+      "subtitle": "Figured Walnut • Clear Satin PU Topcoat • Capsule Company",
+      "desc": "Architectural wardrobe featuring dramatic chevron bookmatched walnut door fronts with center mirrored panels and upper storage lockers. Finished in a crystal-clear satin polyurethane that dramatizes the dynamic directional wood grain.",
+      "bullets": [
+        "Crystal-clear clarity accentuating chevron grain symmetry and flow",
+        "Precision spray coating around beveled mirror inserts with zero overspray",
+        "Durable protection against fingernail scratches and daily door opening",
+        "Rich contrast between dark heartwood and lighter golden sapwood bands"
+      ]
+    },
+    {
+      "index": 22,
+      "code": "WPL-22",
+      "fileName": "wpl-23.jpg",
+      "title": "CONCERT PIANO MIRROR GLOSS DINING TABLE",
+      "category": "HIGH-GLOSS MIRROR & POLYESTER",
+      "subtitle": "Burl Walnut & Brass • High-Solid Polyester Mirror • Capsule Company",
+      "desc": "Showstopping luxury dining table featuring a bookmatched burl walnut top with brass inlay banding, finished in a 100% mirror piano gloss. Produces an opulent glassy surface that mirrors ceiling chandeliers with breathtaking clarity.",
+      "bullets": [
+        "Hand-buffed mirror finish with zero optical distortion or orange peel",
+        "Heat, alcohol, and moisture resistant resin formulated for dining use",
+        "Spectacular magnifying effect on exotic burl swirls and chatoyance",
+        "Beveled solid wood perimeter edges sealed against heavy chair bumps"
+      ]
+    },
+    {
+      "index": 23,
+      "code": "WPL-23",
+      "fileName": "wpl-24.jpg",
+      "title": "FULL-WALL MONOLITHIC WALNUT WARDROBE",
+      "category": "BESPOKE WARDROBES & CABINETRY",
+      "subtitle": "Vertical Grain Walnut • Velvety Matte Polish • Capsule Company",
+      "desc": "Wall-to-wall contemporary wardrobe featuring towering floor-to-ceiling doors with seamless grain continuity and full-length brass edge pulls. Treated with a velvety soft-touch matte polyurethane that resists smudges and looks effortlessly sophisticated.",
+      "bullets": [
+        "Soft-touch velvety finish that feels warm and gentle to hand contact",
+        "Anti-glare optical properties preventing reflection from ceiling spots",
+        "Seamless multi-door grain matching across all 4 wardrobe sections",
+        "Engineered for large luxury walk-in closets and modern master suites"
+      ]
+    },
+    {
+      "index": 24,
+      "code": "WPL-24",
+      "fileName": "wpl-25.jpg",
+      "title": "VERTICAL FLUTED TEAK ENTRANCE DOOR",
+      "category": "ARCHITECTURAL DOORS & ENTRANCES",
+      "subtitle": "Solid Teak & Tinted Glass • Exterior Satin PU • Capsule Company",
+      "desc": "Contemporary architectural entrance door featuring vertical rhythmic teak fluting and a slim integrated black glass vision panel. Coated in exterior-grade satin polyurethane with built-in ultraviolet and moisture shields.",
+      "bullets": [
+        "Even spray coverage inside deep fluted vertical channels",
+        "Weather-resistant exterior topcoat preventing water absorption and warp",
+        "Sleek contrast between warm amber teak and flush black tinted glass",
+        "Equipped with heavy-duty pivot hinge compatibility and perimeter seal"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,478 @@
+{
+  "catalogue": {
+    "id": "paint-texture",
+    "title": "Capsule Company - Paint Texture Wall Design Catalogue 2026",
+    "subtitle": "Sculptural 3D Relieves, Mineral Stucco Plasters, Rustic Brick Veneers & Contemporary Murals",
+    "company": "CAPSULE COMPANY",
+    "tagline": "YOUR SPACE MAKER",
+    "location": "BANGALORE",
+    "year": 2026,
+    "totalModels": 33,
+    "totalPages": 35,
+    "pdfFileName": "Capsule_Company_Paint_Texture_Catalogue.pdf"
+  },
+  "orderedItems": [
+    {
+      "code": "PTW-01",
+      "name": "GEOMETRIC ORIGAMI 3D RELIEF",
+      "category": "SCULPTURAL 3D & BAS-RELIEF",
+      "image": "assets/paint-texture/ptw-01.jpg",
+      "desc": "Faceted geometric triangular relief panels finished in fine micro-cement plaster, creating dynamic light and shadow interplay under warm directional architectural spotlights.",
+      "highlights": [
+        "High-definition faceted modular 3D polymer composite panels",
+        "Seamless joint skim-coat plastering for monolithic wall continuity",
+        "Ultra-fine mineral micro-cement matte topcoat resisting surface dust",
+        "Integrated perimeter LED grazing channel accentuating geometric facet depths"
+      ],
+      "tagline": "Faceted Origami Relief • Micro-Cement Finish • Capsule Company"
+    },
+    {
+      "code": "PTW-02",
+      "name": "HERITAGE EXPOSED BRICK TEXTURE",
+      "category": "RUSTIC BRICK & MASONRY",
+      "image": "assets/paint-texture/ptw-02.jpg",
+      "desc": "Authentic reclaimed kiln-fired brick veneer finished with antiqued lime mortar pointing, imparting timeless architectural warmth and urban loft character to living spaces.",
+      "highlights": [
+        "Genuine reclaimed clay brick slips with hand-struck irregular textures",
+        "Breathable hydraulic lime mortar joints preventing moisture entrapment",
+        "Protective matte siloxane sealer guarding against dust shedding and stains",
+        "Warm directional wall washer lighting enhancing natural textural variance"
+      ],
+      "tagline": "Reclaimed Brick Veneer • Antiqued Lime Mortar • Capsule Company"
+    },
+    {
+      "code": "PTW-03",
+      "name": "TRAVERTINE VEIN STONE TEXTURE",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-03.jpg",
+      "desc": "Hand-troweled Italian travertine stone plaster displaying organic striated fissures and earthy ochre tones, paired seamlessly with vertical natural fluted oak paneling.",
+      "highlights": [
+        "Authentic crushed Carrara marble and slaked lime mineral composition",
+        "Artisanal wet-trowel technique replicating natural sedimentary stone strata",
+        "Zero-VOC natural formulation promoting exceptional indoor environmental air quality",
+        "Micro-porous breathable finish naturally resistant to mildew and bacteria"
+      ],
+      "tagline": "Travertine Plaster • Hand-Troweled Strata • Capsule Company"
+    },
+    {
+      "code": "PTW-04",
+      "name": "INDUSTRIAL BRICK WITH TIMBER SHELVING",
+      "category": "RUSTIC BRICK & MASONRY",
+      "image": "assets/paint-texture/ptw-04.jpg",
+      "desc": "Weathered industrial brick masonry wall integrated with floating solid live-edge timber shelving, creating a balanced organic display wall for books and botanical collections.",
+      "highlights": [
+        "Textured brick surface with rich tonal variations from terracotta to charcoal",
+        "Heavy-duty concealed steel brackets supporting solid timber floating shelves",
+        "Protective clear matte hydrophobic coat preventing surface dusting completely",
+        "Bespoke lighting alignment highlighting architectural masonry depth"
+      ],
+      "tagline": "Industrial Clay Masonry • Solid Timber Shelving • Capsule Company"
+    },
+    {
+      "code": "PTW-05",
+      "name": "DAMASK EMBOSSED FLORAL STUCCO",
+      "category": "ORNAMENTAL STENCIL & EMBOSSED",
+      "image": "assets/paint-texture/ptw-05.jpg",
+      "desc": "Delicate floral motif stenciled in high-build Venetian plaster with subtle metallic bronze accents, infusing traditional Indian luxury into transitional hallways and dining rooms.",
+      "highlights": [
+        "High-build acrylic-lime paste creating crisp 2mm raised floral relief",
+        "Hand-applied metallic mica wax highlights catching ambient light",
+        "Washable and scrub-resistant surface engineered for high-traffic hallways",
+        "Custom color matching compatible with any architectural interior palette"
+      ],
+      "tagline": "Raised Damask Stucco • Metallic Mica Accents • Capsule Company"
+    },
+    {
+      "code": "PTW-06",
+      "name": "ARCHITECTURAL COLOR-BLOCK ARCHES",
+      "category": "CONTEMPORARY COLOR-BLOCK & MURALS",
+      "image": "assets/paint-texture/ptw-06.jpg",
+      "desc": "Geometric architectural painted arches and linear accents in muted sage, taupe, and alabaster, framing focal furnishings and establishing refined visual zones.",
+      "highlights": [
+        "Precision laser-guided painted color separation lines with zero bleeding",
+        "Ultra-matte low-sheen velvet architectural emulsion finish",
+        "Durable stain-shield formulation resistant to scuffs and household smudges",
+        "Spatial visual zoning technique enlarging perceived room proportions"
+      ],
+      "tagline": "Geometric Color Block • Ultra-Matte Emulsion • Capsule Company"
+    },
+    {
+      "code": "PTW-07",
+      "name": "VERTICAL FLUTED TIMBER ACOUSTIC WALL",
+      "category": "WOODEN SLATS & ARCHITECTURAL FLUTES",
+      "image": "assets/paint-texture/ptw-07.jpg",
+      "desc": "Floor-to-ceiling slender fluted oak panels finished with matte polyurethane sealant, offering sophisticated linear rhythm and superior acoustic reverberation control.",
+      "highlights": [
+        "Precision CNC-machined architectural fluting with consistent 35mm rib spacing",
+        "FSC-certified European white oak veneer on acoustic dampening MDF core",
+        "Concealed tongue-and-groove jointing providing seamless horizontal continuity",
+        "Natural matte polyurethane finish preserving raw wood grain warmth"
+      ],
+      "tagline": "Linear Oak Flutes • Acoustic Reverberation Control • Capsule Company"
+    },
+    {
+      "code": "PTW-08",
+      "name": "TEXTURED HERRINGBONE STUCCO",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-08.jpg",
+      "desc": "Rhythmic herringbone pattern hand-carved into coarse lime stucco plaster, combining classical geometric order with tactile artisanal wall craftsmanship.",
+      "highlights": [
+        "Coarse aggregate mineral stucco paste providing tactile depth and tooth",
+        "Hand-combed geometric herringbone motif created during wet plaster cure",
+        "Non-reflective matte mineral finish diffusing glare across large walls",
+        "Class A1 non-combustible mineral composition for maximum fire safety"
+      ],
+      "tagline": "Hand-Combed Herringbone • Mineral Lime Stucco • Capsule Company"
+    },
+    {
+      "code": "PTW-09",
+      "name": "MONUMENTAL BOTANICAL BAS-RELIEF",
+      "category": "SCULPTURAL 3D & BAS-RELIEF",
+      "image": "assets/paint-texture/ptw-09.jpg",
+      "desc": "Sweeping oversized tropical palm leaves sculpted in high-relief gypsum plaster, creating a monumental sculptural art statement for master living rooms and penthouse salons.",
+      "highlights": [
+        "Artisanal hand-sculpted organic palm frond relief with up to 50mm dimensional projection",
+        "Warm earth-tone layered patina wash emphasizing leaf veins and contours",
+        "Reinforced fiberglass gypsum substrate ensuring permanent structural stability",
+        "Perimeter recessed warm LED grazing washing across sculptural curves"
+      ],
+      "tagline": "High-Relief Botanical • Hand-Sculpted Gypsum • Capsule Company"
+    },
+    {
+      "code": "PTW-10",
+      "name": "ILLUMINATED BOTANICAL LEAF RELIEF",
+      "category": "SCULPTURAL 3D & BAS-RELIEF",
+      "image": "assets/paint-texture/ptw-10.jpg",
+      "desc": "Ethereal sculptural leaf relief wall with integrated concealed LED fiber-optic edge illumination that makes the organic botanical forms appear to float away from the wall.",
+      "highlights": [
+        "Concealed indirect halo LED channels integrated behind leaf petal perimeters",
+        "Velvety smooth gypsum plaster finish tinted in warm champagne alabaster",
+        "Dimmable warm 2700K ambient illumination creating evening tranquility",
+        "Custom modular panel installation allowing rapid on-site assembly"
+      ],
+      "tagline": "Halo Edge Lighting • Floating Gypsum Relief • Capsule Company"
+    },
+    {
+      "code": "PTW-11",
+      "name": "COARSE SANDSTONE LIMEWASH PLASTER",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-11.jpg",
+      "desc": "Heavy pitted sandstone lime wash texture created with graded silica sands and slaked lime, providing an authentic rustic Mediterranean exterior-interior fusion.",
+      "highlights": [
+        "Graded coarse silica sand aggregates delivering authentic sandstone grit",
+        "Traditional multi-coat lime wash application creating natural tonal clouds",
+        "Breathable porous surface naturally balancing indoor room humidity",
+        "Durable matte protective wax coat resisting water splash and staining"
+      ],
+      "tagline": "Coarse Silica Grit • Traditional Lime Wash • Capsule Company"
+    },
+    {
+      "code": "PTW-12",
+      "name": "SPLIT-FACE STACKED LEDGE STONE",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-12.jpg",
+      "desc": "Dimensional stacked natural quartzite ledge stone tiles illuminated by recessed downlights, casting dramatic linear shadows across luxury living room seating nooks.",
+      "highlights": [
+        "Genuine split-face natural quartzite stone with crystalline mineral sparkle",
+        "Interlocking Z-shaped stone panels providing seamless grout-free installation",
+        "Recessed ceiling spotlights grazing stone edges for intense textural contrast",
+        "High thermal mass providing natural acoustic absorption and insulation"
+      ],
+      "tagline": "Split-Face Quartzite • Z-Shaped Seamless Panels • Capsule Company"
+    },
+    {
+      "code": "PTW-13",
+      "name": "ORGANIC FEATHER RELIEF DETAIL",
+      "category": "SCULPTURAL 3D & BAS-RELIEF",
+      "image": "assets/paint-texture/ptw-13.jpg",
+      "desc": "Close-up architectural macro study of sculpted feather plumes finished in soft satin bone-white plaster, showcasing delicate barbule contours and shadow gradation.",
+      "highlights": [
+        "Micro-detailed plaster sculpting capturing realistic plume filament textures",
+        "Satin-sheen mineral protective topcoat highlighting dimensional edges",
+        "Acoustic-absorbing composite substrate minimizing room flutter echoes",
+        "Bespoke architectural sizing tailored to master suite headboard dimensions"
+      ],
+      "tagline": "Micro-Detailed Plume • Satin Bone-White • Capsule Company"
+    },
+    {
+      "code": "PTW-14",
+      "name": "TIMBER SLAT WALL WITH ILLUMINATED SHELVING",
+      "category": "WOODEN SLATS & ARCHITECTURAL FLUTES",
+      "image": "assets/paint-texture/ptw-14.jpg",
+      "desc": "Warm blonde oak architectural slat wall paneling fitted with modular floating display shelves, illuminated by warm integrated undershelf LED strip lights.",
+      "highlights": [
+        "Vertical oak slats backed by sound-absorbing high-density acoustic polyester felt",
+        "Solid hardwood floating shelves with hidden aluminum reinforcement brackets",
+        "Diffused 3000K warm LED strips recessed into precision underside routed channels",
+        "Modular shelf positioning allowing custom arrangement of curated decor"
+      ],
+      "tagline": "Acoustic Slat Backing • Recessed Undershelf LED • Capsule Company"
+    },
+    {
+      "code": "PTW-15",
+      "name": "TERRACOTTA & SAGE COLOR-BLOCK MURAL",
+      "category": "CONTEMPORARY COLOR-BLOCK & MURALS",
+      "image": "assets/paint-texture/ptw-15.jpg",
+      "desc": "Playful organic arched color-block wall mural combining earthy terracotta, desert sand, and olive green hues, creating a joyful modern master bedroom focal wall.",
+      "highlights": [
+        "Bespoke hand-painted curved color zones tailored to client bedroom height",
+        "Ultra-flat premium acrylic emulsion with zero light glare or reflection",
+        "Odorless low-chemical formulation safe for immediate bedroom occupancy",
+        "Washable surface coating maintaining vibrant pigment saturation permanently"
+      ],
+      "tagline": "Terracotta & Sage • Hand-Painted Curved Zones • Capsule Company"
+    },
+    {
+      "code": "PTW-16",
+      "name": "CLASSIC RED BRICK MASONRY WALL",
+      "category": "RUSTIC BRICK & MASONRY",
+      "image": "assets/paint-texture/ptw-16.jpg",
+      "desc": "Traditional exposed red clay brick wall bathed in bright natural sunlight, bringing timeless architectural authenticity and warm bohemian character to open living spaces.",
+      "highlights": [
+        "Traditional kiln-baked red clay brick slips with rich natural iron oxide tones",
+        "Recessed raked mortar joints accentuating individual brick dimensions",
+        "Dust-free protective silicone impregnator preserving raw masonry texture",
+        "Complements timber floorboards, leather seating, and lush indoor greenery"
+      ],
+      "tagline": "Kiln-Baked Clay • Raked Mortar Joints • Capsule Company"
+    },
+    {
+      "code": "PTW-17",
+      "name": "MONSTERA WOOD CARVED ACOUSTIC ACCENT",
+      "category": "WOODEN SLATS & ARCHITECTURAL FLUTES",
+      "image": "assets/paint-texture/ptw-17.jpg",
+      "desc": "CNC-routed circular Monstera leaf botanical artwork mounted on vertical fluted acoustic timber backing, creating an organic biophilic art wall.",
+      "highlights": [
+        "Precision CNC-carved solid hardwood circular relief medallion",
+        "Fluted timber background providing acoustic dampening and visual rhythm",
+        "Natural teak oil finish nourishing wood fibers and enriching grain contrast",
+        "Biophilic architectural design proven to enhance wellness and tranquility"
+      ],
+      "tagline": "Monstera CNC Carving • Fluted Acoustic Timber • Capsule Company"
+    },
+    {
+      "code": "PTW-18",
+      "name": "SCULPTURAL FLOATING WAVE PANELS",
+      "category": "SCULPTURAL 3D & BAS-RELIEF",
+      "image": "assets/paint-texture/ptw-18.jpg",
+      "desc": "Layered overlapping curvilinear wave panels finished in sand-textured plaster, backlit with golden halo ambient lighting that turns the entire wall into an architectural sculpture.",
+      "highlights": [
+        "Multi-layered cantilevered curved plaster forms casting soft undulating shadows",
+        "Integrated warm LED halo channels creating a luminous floating wall illusion",
+        "Tactile fine-sand textured mineral plaster surface finish",
+        "Concealed French cleat mounting enabling clean fastener-free appearance"
+      ],
+      "tagline": "Curvilinear Wave Layers • Golden Halo Lighting • Capsule Company"
+    },
+    {
+      "code": "PTW-19",
+      "name": "TROWELED SILVER METALLIC STUCCO",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-19.jpg",
+      "desc": "Contemporary concrete stucco wall finished with delicate silver metallic wax troweling, reflecting ambient daylight with quiet architectural sophistication.",
+      "highlights": [
+        "Fine micro-cement plaster base hand-troweled for subtle directional texture",
+        "Polished metallic silver and titanium wax sealer creating pearlescent shimmer",
+        "High surface hardness resisting scratches and impact abrasions",
+        "Seamless corner-to-corner application eliminating unsightly panel joints"
+      ],
+      "tagline": "Silver Metallic Wax • Directional Troweled Cement • Capsule Company"
+    },
+    {
+      "code": "PTW-20",
+      "name": "SEPIA BOTANICAL MURAL WALLPAPER",
+      "category": "CONTEMPORARY COLOR-BLOCK & MURALS",
+      "image": "assets/paint-texture/ptw-20.jpg",
+      "desc": "Atmospheric sepia-toned botanical palm frond wall mural with woven canvas texture, paired with natural cane and teak credenzas for serene tropical minimalism.",
+      "highlights": [
+        "Heavyweight 350 GSM textured vinyl wallcovering on non-woven fabric backing",
+        "Vintage monochrome sepia botanical illustration with soft atmospheric depth",
+        "Scratch-resistant washable surface suitable for dining and living areas",
+        "Precision butt-jointed installation ensuring undetectable vertical seams"
+      ],
+      "tagline": "Sepia Botanical Mural • 350 GSM Textured Vinyl • Capsule Company"
+    },
+    {
+      "code": "PTW-21",
+      "name": "DOUBLE-HEIGHT URBAN CONCRETE & BRICK",
+      "category": "RUSTIC BRICK & MASONRY",
+      "image": "assets/paint-texture/ptw-21.jpg",
+      "desc": "Dramatic double-height industrial loft wall featuring exposed brickwork, raw board-formed concrete pillars, and minimalist architectural steelwork.",
+      "highlights": [
+        "Authentic combination of rugged brick masonry and board-formed concrete texture",
+        "Engineered for grand high-ceiling penthouse and duplex living spaces",
+        "Clear matte anti-efflorescence sealant protecting masonry integrity permanently",
+        "Industrial aesthetic harmonizing with exposed steel beams and dark leather"
+      ],
+      "tagline": "Board-Formed Concrete • Exposed Brick Loft • Capsule Company"
+    },
+    {
+      "code": "PTW-22",
+      "name": "CRYSTALLINE GOLD FEATHER RELIEF",
+      "category": "SCULPTURAL 3D & BAS-RELIEF",
+      "image": "assets/paint-texture/ptw-22.jpg",
+      "desc": "Luxurious high-relief sculpted plumage wall panels infused with crystalline shimmer and warm amber backlighting, creating an opulent focal wall in master salons.",
+      "highlights": [
+        "Intricately layered feather plumes with crystalline quartz powder infusion",
+        "Concealed warm backlighting illuminating translucent sculpted edges",
+        "Hand-gilded champagne gold leaf accents on selected prominent quill stems",
+        "Reinforced stone composite core ensuring lifelong dimensional durability"
+      ],
+      "tagline": "Quartz Crystal Infusion • Champagne Gold Leaf • Capsule Company"
+    },
+    {
+      "code": "PTW-23",
+      "name": "MINIMALIST GREIGE GEOMETRIC BLOCK",
+      "category": "CONTEMPORARY COLOR-BLOCK & MURALS",
+      "image": "assets/paint-texture/ptw-23.jpg",
+      "desc": "Architectural two-tone greige color block wall illuminated by up-and-down sconces, creating refined light zones and understated contemporary luxury.",
+      "highlights": [
+        "Custom blended warm grey-beige mineral pigment formulation",
+        "Dual-directional architectural wall sconces creating dramatic light cones",
+        "Zero-sheen dead flat finish eliminating unwanted lamp glare completely",
+        "Durable scuff-resistant paint technology maintaining pristine perfection"
+      ],
+      "tagline": "Architectural Greige • Up-Down Light Cones • Capsule Company"
+    },
+    {
+      "code": "PTW-24",
+      "name": "PATAGONIA ONYX BACKLIT MARBLE SLAB",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-24.jpg",
+      "desc": "Translucent Patagonia quartzite and onyx slab feature wall with diffused rear LED illumination, framed by dark espresso fluted timber paneling.",
+      "highlights": [
+        "Genuine 20mm bookmatched translucent Patagonia quartzite stone slab",
+        "Integrated LED matrix panel with high CRI 95+ uniform diffused illumination",
+        "Fluted dark oak side pilasters providing sophisticated architectural contrast",
+        "Smart dimming controller allowing seamless ambient mood transitions"
+      ],
+      "tagline": "Patagonia Quartzite • Backlit LED Matrix • Capsule Company"
+    },
+    {
+      "code": "PTW-25",
+      "name": "BOOKMATCHED CALACATTA GOLD WALL",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-25.jpg",
+      "desc": "Mirrored bookmatched Italian Calacatta gold marble vitrified slabs spanning floor to ceiling in a grand double-height luxury villa living room.",
+      "highlights": [
+        "Symmetrical butterfly bookmatch layout aligning natural golden veins flawlessly",
+        "Continuous large-format slabs minimizing joint visibility across tall walls",
+        "High-gloss polished diamond finish reflecting chandeliers and natural daylight",
+        "Stain-proof non-porous vitrified composition requiring zero annual sealing"
+      ],
+      "tagline": "Butterfly Bookmatch • Calacatta Gold Veining • Capsule Company"
+    },
+    {
+      "code": "PTW-26",
+      "name": "BACKLIT QUARTZ ENTERTAINMENT WALL",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-26.jpg",
+      "desc": "Illuminated golden quartz rock crystal feature wall framing an integrated media TV panel, turning home entertainment into a five-star sensory experience.",
+      "highlights": [
+        "Translucent natural golden quartz crystal slab with organic fissures",
+        "Rear edge-lit LED diffuser panel delivering glowing stone warmth",
+        "Concealed cable raceways and recessed media console mounting system",
+        "Flanked by vertical acoustic slatted columns for balanced audio clarity"
+      ],
+      "tagline": "Glowing Quartz Crystal • Integrated Media Wall • Capsule Company"
+    },
+    {
+      "code": "PTW-27",
+      "name": "WATERCOLOR BOTANICAL WALL MURAL",
+      "category": "CONTEMPORARY COLOR-BLOCK & MURALS",
+      "image": "assets/paint-texture/ptw-27.jpg",
+      "desc": "Soft ethereal watercolor floral wall mural in gentle taupe and cream tones, creating a tranquil, dreamlike backdrop in contemporary master seating suites.",
+      "highlights": [
+        "High-resolution fine art digital print replicating delicate watercolor brushwork",
+        "Linen-textured matte vinyl substrate with tactile woven surface feel",
+        "Tear-proof and moisture-resistant composition ideal for air-conditioned suites",
+        "Custom scaled to fit wall dimensions without awkward floral cropping"
+      ],
+      "tagline": "Watercolor Brushwork • Linen-Textured Vinyl • Capsule Company"
+    },
+    {
+      "code": "PTW-28",
+      "name": "CIRCULAR DISPLAY SLAT WALL (WARM AMBER)",
+      "category": "WOODEN SLATS & ARCHITECTURAL FLUTES",
+      "image": "assets/paint-texture/ptw-28.jpg",
+      "desc": "Vertical oak slats flanked by circular niche recesses and illuminated floating display shelves, combining geometric wall art with functional plant displays.",
+      "highlights": [
+        "Twin circular geometric backplate panels with brushed bronze trim",
+        "Integrated vertical warm LED accent strips grazing acoustic flutes",
+        "Concealed floating cantilevered display shelves for ceramic planters",
+        "High-density MDF core wrapped in natural European oak veneer"
+      ],
+      "tagline": "Circular Niche Accents • Fluted Timber LED • Capsule Company"
+    },
+    {
+      "code": "PTW-29",
+      "name": "ILLUMINATED BOTANICAL SLAT ARCHIVE",
+      "category": "WOODEN SLATS & ARCHITECTURAL FLUTES",
+      "image": "assets/paint-texture/ptw-29.jpg",
+      "desc": "Architectural fluted wood and circular display system engineered for curated gallery displays, bringing warm ambient luxury to residential entrance galleries.",
+      "highlights": [
+        "Precision slatted acoustic wooden screen with integrated ambient cove lighting",
+        "Curved circular accent panels providing architectural counterpoint to vertical slats",
+        "Commercial-grade scratch-resistant polyurethane finish protecting display tiers",
+        "Quick modular wall bracket system allowing secure seismic-safe wall anchorage"
+      ],
+      "tagline": "Curved Display Counterpoint • Studio Archive Edition • Capsule Company"
+    },
+    {
+      "code": "PTW-30",
+      "name": "SCULPTED FLORAL STUCCO WALL",
+      "category": "ORNAMENTAL STENCIL & EMBOSSED",
+      "image": "assets/paint-texture/ptw-30.jpg",
+      "desc": "Delicate floral botanical silhouettes carved into pure white plaster, offering subtle dimensional texture that harmonizes with Scandinavian and coastal furnishings.",
+      "highlights": [
+        "Hand-troweled low-relief botanical vine pattern in mineral white stucco",
+        "Monochrome white-on-white texture providing tactile interest without color clash",
+        "Breathable slaked lime formulation resisting moisture and cracking",
+        "Soft daylight diffusion across textured surfaces enhancing peaceful ambiance"
+      ],
+      "tagline": "White-on-White Relief • Mineral White Stucco • Capsule Company"
+    },
+    {
+      "code": "PTW-31",
+      "name": "METALLIC GOLD SPECKLED STUCCO",
+      "category": "MINERAL STUCCO & STONE TEXTURES",
+      "image": "assets/paint-texture/ptw-31.jpg",
+      "desc": "Granular coarse plaster infused with reflective bronze and gold flakes, grazing under ceiling spotlights to create a shimmering royal hallway colonnade.",
+      "highlights": [
+        "Graded coarse stone aggregates infused with genuine metallic mica flakes",
+        "Dramatic light-catching properties under angled halogen and LED spotlights",
+        "High surface durability resisting abrasion in busy entrance corridors",
+        "Sealed with clear protective matte glaze preventing glitter shedding"
+      ],
+      "tagline": "Gold Mica Flecks • Coarse Stone Aggregate • Capsule Company"
+    },
+    {
+      "code": "PTW-32",
+      "name": "TROPICAL BIRD OF PARADISE MURAL",
+      "category": "CONTEMPORARY COLOR-BLOCK & MURALS",
+      "image": "assets/paint-texture/ptw-32.jpg",
+      "desc": "Vibrant hand-painted watercolor tropical mural depicting exotic bird of paradise flowers and lush banana foliage, infusing fresh coastal vitality into master suites.",
+      "highlights": [
+        "Artisanal watercolor illustration with luminous translucent color washes",
+        "High-tensile non-woven canvas wallcovering resistant to stretching",
+        "Eco-friendly water-based pigments certified free from toxic heavy metals",
+        "Moisture-resistant surface suitable for master vanity and bedroom zones"
+      ],
+      "tagline": "Bird of Paradise • Water-Based Translucent Pigments • Capsule Company"
+    },
+    {
+      "code": "PTW-33",
+      "name": "PASTEL BOTANICAL SILK BEDROOM WALL",
+      "category": "CONTEMPORARY COLOR-BLOCK & MURALS",
+      "image": "assets/paint-texture/ptw-33.jpg",
+      "desc": "Gentle champagne and blush leaf silhouettes rendered in a soft silk texture mural, creating an exceptionally soothing sanctuary behind upholstered master bedframes.",
+      "highlights": [
+        "Soft-sheen faux silk textured vinyl wallcovering on acoustic backing",
+        "Muted pastel neutral palette fostering calm restorative sleep environments",
+        "Seamless matching across large bedroom headboard accent walls",
+        "Easy wipe-clean surface resistant to headboard friction and dust"
+      ],
+      "tagline": "Pastel Leaf Silhouettes • Faux Silk Texture • Capsule Company"
+    }
+  ]
+}

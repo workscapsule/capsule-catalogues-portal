@@ -21,6 +21,7 @@ import { GalleryPage } from './pages/GalleryPage';
 import { WhyCapsulePage } from './pages/WhyCapsulePage';
 import { FAQPage } from './pages/FAQPage';
 import { ContactPage } from './pages/ContactPage';
+import { WallPanelsCataloguePage } from './pages/WallPanelsCataloguePage';
 
 export const App: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<ProjectItem | null>(null);
@@ -62,7 +63,7 @@ export const App: React.FC = () => {
         {/* 2. Tactile Film Grain Texture Overlay */}
         <NoiseOverlay />
 
-        {/* 3. Sticky Glassmorphism Header with 9 Nav Links */}
+        {/* 3. Sticky Glassmorphism Header */}
         <Header onOpenConsultation={() => handleOpenConsultation('Free Consultation')} />
 
         {/* Main Content Area Routing */}
@@ -111,6 +112,7 @@ export const App: React.FC = () => {
               path="/contact"
               element={<ContactPage onOpenConsultation={handleOpenConsultation} />}
             />
+            <Route path="/wall-panels-catalogue" element={<WallPanelsCataloguePage />} />
             {/* Fallback to Home */}
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>

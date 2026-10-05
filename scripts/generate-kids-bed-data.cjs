@@ -1,0 +1,704 @@
+const fs = require('fs');
+
+const models = [
+  {
+    number: 1,
+    modelName: 'TRIO',
+    modelCode: 'KB-S1-TRIO',
+    variant: 'Triple Bunk & Study Suite',
+    pageNumber: 'P/01',
+    description: 'An architectural sibling bedroom suite featuring a stacked twin bunk bed paired with a dedicated study station, slat wall acoustic paneling, and warm illuminated display cubbies.',
+    highlights: [
+      'Multi-tier double bunk system with solid safety ladder',
+      'Dual adjacent study workstation with ergonomic desk space',
+      'Integrated vertical wooden slat backdrop with soft ambient lighting',
+      'Full-height wall storage unit with illuminated book display shelves',
+      'Neutral warm grey and natural oak laminate finish'
+    ],
+    tagline: 'Multi-Tier • Functional • Architectural',
+    image: '/assets/catalogues/kids-bed/kids-bed-01.jpg'
+  },
+  {
+    number: 2,
+    modelName: 'CELESTIA',
+    modelCode: 'KB-S2-CELESTIA',
+    variant: 'Twin Celestial Cloud Suite',
+    pageNumber: 'P/02',
+    description: 'A serene shared bedroom featuring twin upholstered beds with fluted crown headboards, backlit cloud wall art, suspended pendant lighting, and soft night sky detailing.',
+    highlights: [
+      'Matching twin beds in slate blue channel-tufted upholstery',
+      'Backlit cloud silhouette wall panelling with star motifs',
+      'Flanked vertical architectural moulding with warm wall sconces',
+      'Shared central nightstand with brass-accented drawer hardware',
+      'Integrated underbed storage for seasonal bedding and toys'
+    ],
+    tagline: 'Serene • Whimsical • Harmonious',
+    image: '/assets/catalogues/kids-bed/kids-bed-02.jpg'
+  },
+  {
+    number: 3,
+    modelName: 'LOFTEN',
+    modelCode: 'KB-S3-LOFTEN',
+    variant: 'Scandinavian Loft & Study Station',
+    pageNumber: 'P/03',
+    description: 'A light natural birch loft bed configuration maximizing room footprint with an elevated sleep deck, under-loft study nook, and deep integrated staircase storage.',
+    highlights: [
+      'Elevated loft sleeping deck with sturdy solid pine safety guardrails',
+      'Wide step staircase with pull-out concealed toy and linen drawers',
+      'Lower corner lounge and study area with integrated shelving',
+      'Clean Scandinavian minimalist woodwork in natural birch',
+      'Optimal compact layout design tailored for urban bedrooms'
+    ],
+    tagline: 'Nordic • Space-Saving • Smart',
+    image: '/assets/catalogues/kids-bed/kids-bed-03.jpg'
+  },
+  {
+    number: 4,
+    modelName: 'HERITAGE',
+    modelCode: 'KB-S4-HERITAGE',
+    variant: 'Solid Walnut Storage Bunk',
+    pageNumber: 'P/04',
+    description: 'A stately wooden bunk bed crafted in rich walnut laminate with curved safety steps, soft vertical upholstered headboard panels, and illuminated niche shelving.',
+    highlights: [
+      'Two-tier double sleeping deck in premium walnut finish',
+      'Curved integrated staircase with deep soft-close drawer steps',
+      'Quilted cream channel headboard with warm LED perimeter glow',
+      'Lower trundle drawer bank maximizing bedroom storage capacity',
+      'Rounded architectural edges engineered for child safety'
+    ],
+    tagline: 'Stately • Robust • Timeless',
+    image: '/assets/catalogues/kids-bed/kids-bed-04.jpg'
+  },
+  {
+    number: 5,
+    modelName: 'SCALLOP',
+    modelCode: 'KB-S5-SCALLOP',
+    variant: 'Channel-Tufted Fluted Bed',
+    pageNumber: 'P/05',
+    description: 'A chic contemporary bed featuring an arched scalloped headboard in off-white textured upholstery, black lacquer side accents, and brushed brass tapered legs.',
+    highlights: [
+      'Arch-scalloped white fabric headboard with vertical channel tufting',
+      'Surround upholstered bed frame with low-profile safety height',
+      'Brushed brass tapered stiletto legs with floor protective glides',
+      'Complementing twin retro nightstands with fluted detailing',
+      'Plush stain-resistant performance bouclé fabric upholstery'
+    ],
+    tagline: 'Chic • Contemporary • Plush',
+    image: '/assets/catalogues/kids-bed/kids-bed-05.jpg'
+  },
+  {
+    number: 6,
+    modelName: 'AURORA',
+    modelCode: 'KB-S6-AURORA',
+    variant: 'Backlit Shell Storage Bed',
+    pageNumber: 'P/06',
+    description: 'A glamorous pastel blush bed designed with a dramatic clamshell tufted headboard, concealed LED neon ambient outline, and pull-out storage drawers.',
+    highlights: [
+      'Sculptural seashell fluted headboard in premium velvet upholstery',
+      'Integrated multi-color LED contour ribbon creating a warm night glow',
+      'Dual deep underbed storage drawers on smooth roller runners',
+      'Child-safe rounded corner platform base with soft upholstery',
+      'Ergonomic padded backrest ideal for bedtime reading'
+    ],
+    tagline: 'Luminous • Glamorous • Dreamy',
+    image: '/assets/catalogues/kids-bed/kids-bed-06.jpg'
+  },
+  {
+    number: 7,
+    modelName: 'COSMOS',
+    modelCode: 'KB-S7-COSMOS',
+    variant: 'Space-Themed Arch Niche Bed',
+    pageNumber: 'P/07',
+    description: 'An imaginative space exploration themed bed framed within an illuminated arched alcove with 3D celestial planets, rockets, and soft glowing cloud lighting.',
+    highlights: [
+      'Curved powder-blue upholstered headboard with soft padded edge',
+      'Recessed architectural wall niche with warm 3000K LED halo lighting',
+      'Custom 3D rocket and Saturn planet relief artwork elements',
+      'Flanking seamless floor-to-ceiling wardrobe in pure white',
+      'Low platform frame allowing easy and safe independent access'
+    ],
+    tagline: 'Cosmic • Imaginative • Playful',
+    image: '/assets/catalogues/kids-bed/kids-bed-07.jpg'
+  },
+  {
+    number: 8,
+    modelName: 'LUNAR',
+    modelCode: 'KB-S8-LUNAR',
+    variant: 'Symmetrical Twin Moon Suite',
+    pageNumber: 'P/08',
+    description: 'A refined twin bedroom arrangement featuring deep navy fluted headboards, fluted wall wainscoting, and illuminated circular moon artwork.',
+    highlights: [
+      'Dual single beds with arched vertical fluted headboards in royal blue',
+      'Wall-mounted full moon backlit acoustic art panels',
+      'Full-height architectural fluted timber panel backdrop',
+      'Contemporary brass ring chandelier delivering ambient diffusion',
+      'Custom bed frames with anti-slip mattress retainers'
+    ],
+    tagline: 'Regal • Symmetrical • Refined',
+    image: '/assets/catalogues/kids-bed/kids-bed-08.jpg'
+  },
+  {
+    number: 9,
+    modelName: 'SYMMETRY',
+    modelCode: 'KB-S9-SYMMETRY',
+    variant: 'Built-In Wardrobe Twin Suite',
+    pageNumber: 'P/09',
+    description: 'A seamless built-in twin bedroom with full-wall cabinetry, central wardrobe dividing niche, illuminated open display bookshelves, and matching sage green beds.',
+    highlights: [
+      'Twin upholstered single beds framed symmetrically within cabinetry',
+      'Floor-to-ceiling modular wardrobe unit with ribbon lighting',
+      'Open alcove shelving with warm LED downlights for books and toys',
+      'Matte sage green and warm cashmere laminate color harmony',
+      'Integrated underbed storage baskets for seamless room tidiness'
+    ],
+    tagline: 'Seamless • Organised • Symmetrical',
+    image: '/assets/catalogues/kids-bed/kids-bed-09.jpg'
+  },
+  {
+    number: 10,
+    modelName: 'TEDDY',
+    modelCode: 'KB-S10-TEDDY',
+    variant: 'Curved Bouclé Theme Bed',
+    pageNumber: 'P/10',
+    description: 'A cozy nursery and junior bed with an organic curved caramel headboard, fluted acoustic feature wall, bubble globe chandelier, and whimsical bear wall illustration.',
+    highlights: [
+      'Curved multi-tier headboard upholstered in plush caramel velvet',
+      'Full-height cream fluted acoustic wall with illuminated perimeter',
+      'Hand-illustrated teddy bear feature wall art mural',
+      'Playful spherical globe cluster pendant light fixture',
+      'Low padded platform perimeter ensuring total bedtime safety'
+    ],
+    tagline: 'Cozy • Warm • Enchanting',
+    image: '/assets/catalogues/kids-bed/kids-bed-10.jpg'
+  },
+  {
+    number: 11,
+    modelName: 'WOODLAND',
+    modelCode: 'KB-S11-WOODLAND',
+    variant: 'Forest Silhouette Accent Bed',
+    pageNumber: 'P/11',
+    description: 'A nature-inspired children’s bed featuring an emerald green scalloped headboard set against woodland animal wallpaper and a fluted timber arch panel.',
+    highlights: [
+      'Scalloped headboard in rich forest green tactile fabric',
+      'Arch-framed slatted timber feature panel with hidden LED glow',
+      'Charming woodland animal scenic mural backdrop',
+      'Dual-drawer white bedside pedestal with brass knobs',
+      'Solid hardwood internal frame with reinforced centre rail'
+    ],
+    tagline: 'Earthy • Serene • Organic',
+    image: '/assets/catalogues/kids-bed/kids-bed-11.jpg'
+  },
+  {
+    number: 12,
+    modelName: 'PRINCESSA',
+    modelCode: 'KB-S12-PRINCESSA',
+    variant: 'Royal Castle Slide Bed',
+    pageNumber: 'P/12',
+    description: 'A fairytale castle-themed play bed complete with crown scalloped headboard, surrounding soft safety bolster bumpers, and an integrated gentle play slide.',
+    highlights: [
+      'Crown-topped tufted headboard in blush pink and ivory velvet',
+      'Enclosed perimeter safety bumpers preventing midnight roll-offs',
+      'Integrated smooth melamine play slide with safety landing area',
+      'Access staircase with deep storage steps for stuffed toys',
+      'Sturdy child-friendly construction with rounded soft corners'
+    ],
+    tagline: 'Fairytale • Interactive • Joyful',
+    image: '/assets/catalogues/kids-bed/kids-bed-12.jpg'
+  },
+  {
+    number: 13,
+    modelName: 'SAFARI',
+    modelCode: 'KB-S13-SAFARI',
+    variant: 'Jungle Explorer Twin Suite',
+    pageNumber: 'P/13',
+    description: 'A vibrant shared safari bedroom with twin arched upholstered headboards, illustrated jungle creature wall mural, and custom matching animal print bedding.',
+    highlights: [
+      'Twin mustard and cream upholstered beds with padded borders',
+      'Delightful safari elephant and giraffe nursery wallpaper mural',
+      'Shared central bedside table with easy-pull drawers',
+      'Warm ambient wall sconces shaped like gentle balloons',
+      'Hypoallergenic washable fabric headboard coverings'
+    ],
+    tagline: 'Vibrant • Cheerful • Explorer',
+    image: '/assets/catalogues/kids-bed/kids-bed-13.jpg'
+  },
+  {
+    number: 14,
+    modelName: 'CABIN',
+    modelCode: 'KB-S14-CABIN',
+    variant: 'Play-&-Study Loft Cabin Bed',
+    pageNumber: 'P/14',
+    description: 'A custom architectural loft bedroom featuring an elevated playhouse cabin bed with lower study desk, expansive wardrobe storage, and window seating.',
+    highlights: [
+      'Upper level loft sleeping cabin with enclosed timber viewing window',
+      'Built-in ergonomic study desk with task lighting and book display',
+      'Integrated high-capacity wardrobe and cubby storage tower',
+      'Pastel sky-blue and natural maple wood architectural palette',
+      'Space-efficient zoning dividing sleeping, studying, and playing'
+    ],
+    tagline: 'Multi-Zone • Creative • Inspiring',
+    image: '/assets/catalogues/kids-bed/kids-bed-14.jpg'
+  },
+  {
+    number: 15,
+    modelName: 'SUMMIT',
+    modelCode: 'KB-S15-SUMMIT',
+    variant: 'Architectural Storage Bunk Bed',
+    pageNumber: 'P/15',
+    description: 'A modern two-tone bunk bed with integrated storage staircase, flush underbed pull-out drawers, and clean architectural safety railing.',
+    highlights: [
+      'Twin over full-width sleeping levels with reinforced steel brackets',
+      'Wide safety staircase with integrated deep pull-out drawers',
+      'Flush lower underbed roll-out trundle storage chest',
+      'Muted stone grey and natural white laminate finish',
+      'Full-perimeter upper safety barrier with smooth polished edges'
+    ],
+    tagline: 'Sturdy • Architectural • Practical',
+    image: '/assets/catalogues/kids-bed/kids-bed-15.jpg'
+  },
+  {
+    number: 16,
+    modelName: 'VERDANT',
+    modelCode: 'KB-S16-VERDANT',
+    variant: 'Vertical Fluted Nursery Bed',
+    pageNumber: 'P/16',
+    description: 'A clean and calm junior bed with an oversized tall vertical fluted headboard in sage green velvet, soft side safety wing panels, and minimalist modular side dresser.',
+    highlights: [
+      'Tall fluted headboard providing excellent acoustic and thermal insulation',
+      'Protective upholstered side guardrail ideal for toddlers transitioning to big bed',
+      'Durable stain-resistant sage velvet with premium piped edge finish',
+      'Low height platform base for easy climbing and child independence',
+      'Sleek two-drawer bedside credenza in natural cashmere lacquer'
+    ],
+    tagline: 'Tactile • Calm • Protective',
+    image: '/assets/catalogues/kids-bed/kids-bed-16.jpg'
+  },
+  {
+    number: 17,
+    modelName: 'NOCTURNE',
+    modelCode: 'KB-S17-NOCTURNE',
+    variant: 'Moon & Mountain Silhouette Bed',
+    pageNumber: 'P/17',
+    description: 'An enchanting bedroom featuring a layered mountain silhouette headboard, hot air balloon wall art, and an illuminated celestial moon ceiling cove.',
+    highlights: [
+      'Multi-tone mountain silhouette padded wall headboard installation',
+      'Circular LED crescent moon ceiling cove with starlight spots',
+      'Hot air balloon 3D nursery mural with hidden ambient ribbon glow',
+      'Soft upholstered bed base with rounded protective corner edges',
+      'Integrated floating nightstands with built-in wireless charging'
+    ],
+    tagline: 'Dreamy • Illumined • Celestial',
+    image: '/assets/catalogues/kids-bed/kids-bed-17.jpg'
+  },
+  {
+    number: 18,
+    modelName: 'BAMBI',
+    modelCode: 'KB-S18-BAMBI',
+    variant: 'Whimsical Fawn Character Bed',
+    pageNumber: 'P/18',
+    description: 'A delightful fawn-themed bed with 3D deer antlers and ears on the headboard, fluted timber paneling, whimsical cloud light fixture, and twin ottoman poufs.',
+    highlights: [
+      'Custom deer character headboard with plush ears and timber antlers',
+      'Twin tactile tufted footboard ottoman benches for play seating',
+      'Classic French panel wall mouldings in warm biscuit tone',
+      'Sculptural floating cloud ceiling pendant light fixture',
+      'Low-emission water-based lacquer finish throughout'
+    ],
+    tagline: 'Whimsical • Character • Playful',
+    image: '/assets/catalogues/kids-bed/kids-bed-18.jpg'
+  },
+  {
+    number: 19,
+    modelName: 'CORAL',
+    modelCode: 'KB-S19-CORAL',
+    variant: 'Backlit Corner Daybed',
+    pageNumber: 'P/19',
+    description: 'A cozy corner daybed featuring warm coral-pink channel-tufted dual backrests, perimeter star decals, and integrated warm night-light halo glow.',
+    highlights: [
+      'Dual-wall corner padded backrests with vertical channel stitching',
+      'Continuous warm ambient backlighting casting a soothing bedtime glow',
+      'Corner-aligned footprint freeing central floor space for playtime',
+      'Plush velvet upholstery offering soft impact protection',
+      'Reinforced slat mattress platform rated for active junior use'
+    ],
+    tagline: 'Comforting • Corner • Radiant',
+    image: '/assets/catalogues/kids-bed/kids-bed-19.jpg'
+  },
+  {
+    number: 20,
+    modelName: 'ROSETTE',
+    modelCode: 'KB-S20-ROSETTE',
+    variant: 'Ambient Glow Scallop Bed',
+    pageNumber: 'P/20',
+    description: 'A sophisticated dusty rose bed featuring an arched scalloped headboard with warm concealed halo lighting, classic wooden nightstands, and matching end bench.',
+    highlights: [
+      'Symmetrically scalloped headboard in dusty rose velvet',
+      'Hidden 2700K perimeter LED strip creating a soft bedtime aura',
+      'Matching upholstered foot-of-bed bench with turned timber legs',
+      'Intricate mandala ceiling medallion with classic symmetry',
+      'Premium high-density foam padding ensuring lasting plumpness'
+    ],
+    tagline: 'Graceful • Ambient • Timeless',
+    image: '/assets/catalogues/kids-bed/kids-bed-20.jpg'
+  },
+  {
+    number: 21,
+    modelName: 'ORBIT',
+    modelCode: 'KB-S21-ORBIT',
+    variant: 'Star-Cove Celestial Bed',
+    pageNumber: 'P/21',
+    description: 'A celestial children’s bedroom with a curved arch cloud bed, integrated window reading bench, and an illuminated concentric moon and star ceiling installation.',
+    highlights: [
+      'Sage green arched padded bed with cloud-like tufted headboard',
+      'Bespoke celestial ceiling cove with glowing moon and star motifs',
+      'Built-in window daybed and storage drawers overlooking daylight',
+      'Flanked display shelving unit with backlit display cubbies',
+      'Child-safe anti-microbial fabric with easy-clean properties'
+    ],
+    tagline: 'Galactic • Stellar • Inspiring',
+    image: '/assets/catalogues/kids-bed/kids-bed-21.jpg'
+  },
+  {
+    number: 22,
+    modelName: 'TIARA',
+    modelCode: 'KB-S22-TIARA',
+    variant: 'Princess Shell Tiara Bed',
+    pageNumber: 'P/22',
+    description: 'An opulent royal princess bed with a crowned seashell headboard, curved wall niche with warm ambient wash, and elegant golden stiletto legs.',
+    highlights: [
+      'Regal shell-shaped headboard crowned with a gilded tiara crest',
+      'Arched alcove feature wall in pastel mauve with perimeter light',
+      'Gleaming electroplated gold metal legs with durable scratch coat',
+      'Dual floating wall-mounted nightstands keeping floor space clear',
+      'Premium micro-velvet upholstery soft to the touch'
+    ],
+    tagline: 'Regal • Opulent • Fairytale',
+    image: '/assets/catalogues/kids-bed/kids-bed-22.jpg'
+  },
+  {
+    number: 23,
+    modelName: 'CROWN',
+    modelCode: 'KB-S23-CROWN',
+    variant: 'Crown-Crested Luxury Bed',
+    pageNumber: 'P/23',
+    description: 'A majestic children’s bed in imperial purple velvet featuring a sculpted crown finial, diamond-quilted footboard, and sleek modern fluted wall panelling.',
+    highlights: [
+      'Sculpted high-back headboard with metallic gold crown finial',
+      'Diamond lattice padded footboard delivering luxury texture',
+      'Vertical charcoal fluted feature wall with accent picture light',
+      'Deep padded platform frame ensuring safe bump-free bedtime',
+      'Matching contemporary bedside cabinet with soft-close drawer'
+    ],
+    tagline: 'Majestic • Imperial • Statement',
+    image: '/assets/catalogues/kids-bed/kids-bed-23.jpg'
+  },
+  {
+    number: 24,
+    modelName: 'ALPS',
+    modelCode: 'KB-S24-ALPS',
+    variant: 'Mountain Peaks Twin Suite',
+    pageNumber: 'P/24',
+    description: 'A charming alpine-themed shared bedroom with twin mountain peak headboards, warm backlight glow, central shared toy dresser, and cloud pendant lamp.',
+    highlights: [
+      'Twin mountain silhouette headboards with illuminated snow caps',
+      'Central three-drawer chest acting as shared bedside divider',
+      'Floating cloud silhouette ceiling fixture with diffuse warm glow',
+      'Natural green and warm white alpine color palette',
+      'Engineered solid birch slatted base for optimal posture support'
+    ],
+    tagline: 'Alpine • Adventure • Coordinated',
+    image: '/assets/catalogues/kids-bed/kids-bed-24.jpg'
+  },
+  {
+    number: 25,
+    modelName: 'NEXUS',
+    modelCode: 'KB-S25-NEXUS',
+    variant: 'Multi-Level Illuminated Bunk',
+    pageNumber: 'P/25',
+    description: 'A contemporary two-tier bunk bed system featuring built-in display niches with warm LED backlighting, central storage stairs, and dual bed platforms.',
+    highlights: [
+      'Offset two-tier sleeping bunks with integrated headboard shelving',
+      'Built-in illuminated display niches for night lamps and books',
+      'Center staircase with deep drawer storage on telescopic runners',
+      'Rich warm walnut grain finish contrasted with crisp white panels',
+      'Reinforced structural cross-beams ensuring lifelong rigidity'
+    ],
+    tagline: 'Modern • Multi-Level • Integrated',
+    image: '/assets/catalogues/kids-bed/kids-bed-25.jpg'
+  },
+  {
+    number: 26,
+    modelName: 'BUNNY',
+    modelCode: 'KB-S26-BUNNY',
+    variant: 'Plush Bunny Ear Theme Bed',
+    pageNumber: 'P/26',
+    description: 'An adorable whimsical rabbit-themed bed featuring oversized plush bunny ears, textured grey fabric upholstery, matching paw footstool, and cloud light canopy.',
+    highlights: [
+      'Signature oversized bunny ear headboard in ultra-soft dove grey fleece',
+      'Sculpted rabbit paw foot-of-bed accent bench with plush padding',
+      'Fluted feature wall panels with soft pastel horizontal divide',
+      'Floating cloud cluster chandelier creating a dreamy canopy effect',
+      'Removable washable ear slipcovers for effortless hygiene'
+    ],
+    tagline: 'Adorable • Plush • Whimsical',
+    image: '/assets/catalogues/kids-bed/kids-bed-26.jpg'
+  },
+  {
+    number: 27,
+    modelName: 'MARINA',
+    modelCode: 'KB-S27-MARINA',
+    variant: 'Seashell Tufted Velvet Bed',
+    pageNumber: 'P/27',
+    description: 'A glamorous seashell-shaped bed in vibrant rose velvet with fan-folded channel tufting, round brass side tables, and hanging geometric ring lights.',
+    highlights: [
+      'Grand seashell fan headboard with deep plush vertical quilting',
+      'Luxurious bubblegum rose velvet with high rub-count durability',
+      'Suspended brass hoop pendant lamps adding playful sophistication',
+      'Sleek metal frame with rounded corners preventing bumps',
+      'Generous clearance underneath suitable for storage boxes'
+    ],
+    tagline: 'Vibrant • Glamorous • Sculptural',
+    image: '/assets/catalogues/kids-bed/kids-bed-27.jpg'
+  },
+  {
+    number: 28,
+    modelName: 'AZURE',
+    modelCode: 'KB-S28-AZURE',
+    variant: 'High-Back Wall Panel Bed',
+    pageNumber: 'P/28',
+    description: 'A modern space-efficient single bed featuring floor-to-ceiling sky blue vertical fluted wall panels, sliding glass wardrobe, and hot air balloon wallpaper.',
+    highlights: [
+      'Floor-to-ceiling custom upholstered wall paneling in sky blue',
+      'Corner-aligned bed layout maximizing open bedroom floor area',
+      'Adjacent smoked glass sliding wardrobe with interior illumination',
+      'Charming vintage hot air balloon nursery wall border art',
+      'Solid wood platform bed frame with breathable mattress slats'
+    ],
+    tagline: 'Airy • Tailored • Minimalist',
+    image: '/assets/catalogues/kids-bed/kids-bed-28.jpg'
+  },
+  {
+    number: 29,
+    modelName: 'HOPPER',
+    modelCode: 'KB-S29-HOPPER',
+    variant: 'Minimalist Rabbit Niche Bed',
+    pageNumber: 'P/29',
+    description: 'A serene bedroom featuring an arched bunny-ear headboard recessed into an architectural fluted wall niche with warm halo ceiling lighting.',
+    highlights: [
+      'Playful bunny ear headboard in cream boucle with soft internal foam',
+      'Arched alcove framed by fluted acoustic timber wall panelling',
+      'Concentric halo ceiling cove providing soothing indirect illumination',
+      'Clean white and natural oat color palette fostering calm rest',
+      'Dual round nightstands with concealed storage drawers'
+    ],
+    tagline: 'Serene • Minimal • Nordic',
+    image: '/assets/catalogues/kids-bed/kids-bed-29.jpg'
+  },
+  {
+    number: 30,
+    modelName: 'MARIPOSA',
+    modelCode: 'KB-S30-MARIPOSA',
+    variant: 'Butterfly Wing Sculpted Bed',
+    pageNumber: 'P/30',
+    description: 'A breathtaking statement bed featuring sculpted butterfly wing headboard wings with golden edge trim, set against a chic dark moody accent wall.',
+    highlights: [
+      'Sculptural butterfly wing dual headboard in pastel lilac velvet',
+      'Brushed champagne gold perimeter edging defining the wing contour',
+      'Modern dark charcoal fluted feature wall creating high-contrast luxury',
+      'Low platform frame with concealed internal mattress support',
+      'Matching two-tone lilac and gold bedside pedestal'
+    ],
+    tagline: 'Sculptural • Statement • Elegant',
+    image: '/assets/catalogues/kids-bed/kids-bed-30.jpg'
+  },
+  {
+    number: 31,
+    modelName: 'FRIENDS',
+    modelCode: 'KB-S31-FRIENDS',
+    variant: 'Woodland Friends Twin Suite',
+    pageNumber: 'P/31',
+    description: 'A charming twin bedroom with curved upholstered headboards in soft taupe velvet, shared nightstand, and an expansive cartoon animal mural wall.',
+    highlights: [
+      'Twin curved headboard beds with soft padded perimeter edges',
+      'Whimsical cartoon woodland animal illustrated wallpaper mural',
+      'Center nightstand with dual USB charging points for tablet lamps',
+      'Warm wood grain wardrobe integration with sleek handle trims',
+      'Multi-spoke modern ring chandelier providing uniform light distribution'
+    ],
+    tagline: 'Friendly • Cheerful • Balanced',
+    image: '/assets/catalogues/kids-bed/kids-bed-31.jpg'
+  },
+  {
+    number: 32,
+    modelName: 'TIMBER',
+    modelCode: 'KB-S32-TIMBER',
+    variant: 'Dual Solid Wood Loft Workstation',
+    pageNumber: 'P/32',
+    description: 'A solid pine twin loft bed architecture with dual elevated sleeping decks, under-bed dedicated study desks, and central wooden staircase.',
+    highlights: [
+      'Dual symmetric solid pine loft beds with full-surround guardrails',
+      'Twin dedicated study desks beneath each bed with task lighting',
+      'Central staircase with anti-slip grooves providing safe access',
+      'Natural eco-friendly clear lacquer preserving authentic pine grain',
+      'Maximizes floor utility in compact twin children’s rooms'
+    ],
+    tagline: 'Solid Pine • Dual Study • Space-Smart',
+    image: '/assets/catalogues/kids-bed/kids-bed-32.jpg'
+  },
+  {
+    number: 33,
+    modelName: 'TRIOLOGY',
+    modelCode: 'KB-S33-TRIOLOGY',
+    variant: 'Sibling Trio Wall Suite',
+    pageNumber: 'P/33',
+    description: 'A grand triple sibling bed configuration featuring three side-by-side upholstered beds, shared backlit photo display ledge, and corner library shelving.',
+    highlights: [
+      'Three aligned twin single beds with coordinated blue and cream linens',
+      'Full-width backlit horizontal photo and art ledge spanning the wall',
+      'Open corner floor-to-ceiling bookshelf and reading nook chair',
+      'Soft cove perimeter illumination creating a relaxing bedtime haven',
+      'Individual reading lights and storage drawers for each child'
+    ],
+    tagline: 'Tri-Bed • Sibling • Harmonious',
+    image: '/assets/catalogues/kids-bed/kids-bed-33.jpg'
+  },
+  {
+    number: 34,
+    modelName: 'DINO',
+    modelCode: 'KB-S34-DINO',
+    variant: 'Adventure Aviation Twin Bed',
+    pageNumber: 'P/34',
+    description: 'An exciting shared room featuring twin grey channel-tufted beds, backlit airplane dinosaur artwork, and panoramic daylight window view.',
+    highlights: [
+      'Twin upholstered beds in durable heather grey woven fabric',
+      'Backlit 3D airplane and dinosaur relief wall art with green LED outline',
+      'Continuous headboard wall padding with integrated ambient glow',
+      'Airy window positioning maximizing natural daytime light',
+      'High-resilience mattress support suitable for growing children'
+    ],
+    tagline: 'Adventurous • Playful • Dynamic',
+    image: '/assets/catalogues/kids-bed/kids-bed-34.jpg'
+  },
+  {
+    number: 35,
+    modelName: 'PASTEL',
+    modelCode: 'KB-S35-PASTEL',
+    variant: 'Two-Tone Pastel Sibling Suite',
+    pageNumber: 'P/35',
+    description: 'A shared brother-and-sister bedroom featuring complementary mint-blue and blush-pink arched fluted headboards with a shared central vanity mirror.',
+    highlights: [
+      'Coordinating twin arched headboards in custom pastel contrast tones',
+      'Shared central curved nightstand with arched illuminated mirror',
+      'Classic picture-frame wall mouldings with warm recessed ceiling spots',
+      'Low platform bed profile designed for safety and ease of use',
+      'Plush velvet fabric treated with stain and liquid repellent'
+    ],
+    tagline: 'Dual Tone • Elegant • Complementary',
+    image: '/assets/catalogues/kids-bed/kids-bed-35.jpg'
+  },
+  {
+    number: 36,
+    modelName: 'BOUCLE',
+    modelCode: 'KB-S36-BOUCLE',
+    variant: 'Low-Profile Bouclé Daybed',
+    pageNumber: 'P/36',
+    description: 'An organic low-profile bed in soft textured cream bouclé with curved headboard wings, panoramic forest nursery wallpaper, and sage green wainscoting.',
+    highlights: [
+      'Ultra-soft cream bouclé upholstery with padded rounded corners',
+      'Low floor-aligned platform preventing accidental roll injuries',
+      'Half-wall sage green vertical batten paneling with display shelf',
+      'Expansive forest animal watercolor scenic wallpaper mural',
+      'Deep tufted mattress surround creating a cozy nest feeling'
+    ],
+    tagline: 'Organic • Tactile • Nature-Inspired',
+    image: '/assets/catalogues/kids-bed/kids-bed-36.jpg'
+  },
+  {
+    number: 37,
+    modelName: 'EMERALD',
+    modelCode: 'KB-S37-EMERALD',
+    variant: 'Sunburst Velvet Statement Bed',
+    pageNumber: 'P/37',
+    description: 'A dramatic luxury statement bed with a grand circular fan-shaped headboard in deep emerald velvet, brass bedside lamps, and padded base frame.',
+    highlights: [
+      'Monumental sunburst radial headboard in rich emerald green velvet',
+      'Flawlessly executed channel quilting radiating from center core',
+      'Dual classic white bedside cabinets with warm reading lamps',
+      'Solid hardwood internal frame with lifetime structural integrity',
+      'Bespoke luxury statement centerpiece for junior bedroom master suites'
+    ],
+    tagline: 'Sunburst • Regal • Statement',
+    image: '/assets/catalogues/kids-bed/kids-bed-37.jpg'
+  },
+  {
+    number: 38,
+    modelName: 'WAVE',
+    modelCode: 'KB-S38-WAVE',
+    variant: 'Arched Wave Ribbon Bed',
+    pageNumber: 'P/38',
+    description: 'A chic modern bed featuring an arched cream headboard with camel ribbon trim, warm curved ambient wall lighting, and minimalist display niches.',
+    highlights: [
+      'Arched headboard with wavy top border and camel accent piping',
+      'Curved architectural wall alcove with continuous warm LED glow',
+      'Modern cylindrical bedside tables with smooth white lacquer finish',
+      'Child-safe rounded corner platform base with concealed legs',
+      'Soft tactile fabric with easy spot-cleaning properties'
+    ],
+    tagline: 'Graceful • Modern • Minimal',
+    image: '/assets/catalogues/kids-bed/kids-bed-38.jpg'
+  },
+  {
+    number: 39,
+    modelName: 'HAVEN',
+    modelCode: 'KB-S39-HAVEN',
+    variant: 'Built-In Lattice Loft Suite',
+    pageNumber: 'P/39',
+    description: 'A custom Scandinavian loft bedroom featuring an upper bunk with natural rope lattice safety wall, wave-cut lower bunk facade, and full wardrobe cabinetry.',
+    highlights: [
+      'Upper loft bunk with breathable architectural rope safety screening',
+      'Wave-cut lower bunk safety rail in soft teal with interior lighting',
+      'Built-in staircase with deep drawer storage on ball-bearing slides',
+      'Full-height pastel mint wardrobe integrated seamlessly with bed frame',
+      'Terrazzo feature wallpaper creating a playful modern aesthetic'
+    ],
+    tagline: 'Architectural • Safe • Space-Efficient',
+    image: '/assets/catalogues/kids-bed/kids-bed-39.jpg'
+  },
+  {
+    number: 40,
+    modelName: 'SERENE',
+    modelCode: 'KB-S40-SERENE',
+    variant: 'Scalloped Corner Trundle Bed',
+    pageNumber: 'P/40',
+    description: 'A soft pastel mint daybed with wave-scalloped upholstered perimeter guardrails, vertical striped wall panelling, and framed gallery art.',
+    highlights: [
+      'Wave-scalloped padded corner perimeter offering 360-degree softness',
+      'Pastel mint velvet with high-density foam cushioning',
+      'Vertical striped acoustic timber paneling in subtle warm cream',
+      'Low height design enabling toddlers to safely climb in and out',
+      'Concealed roll-out trundle bed option for sleepover guests'
+    ],
+    tagline: 'Scalloped • Gentle • Cozy',
+    image: '/assets/catalogues/kids-bed/kids-bed-40.jpg'
+  }
+];
+
+const tsContent = `// Autogenerated Kids Bed Luxury Catalogue Data (40 Models)
+// Strictly mapped: Image -> Name -> Variant -> Description -> Highlights -> Code
+export interface KidsBedModel {
+  number: number;
+  modelName: string;
+  modelCode: string;
+  variant: string;
+  pageNumber: string;
+  description: string;
+  highlights: string[];
+  tagline: string;
+  image: string;
+}
+
+export const kidsBedLuxuryData: KidsBedModel[] = ${JSON.stringify(models, null, 2)};
+`;
+
+fs.writeFileSync('src/data/kidsBedLuxuryData.ts', tsContent);
+console.log('Successfully written src/data/kidsBedLuxuryData.ts with all 40 models!');

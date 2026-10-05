@@ -130,3 +130,98 @@
     scroll-behavior: auto !important;
   }
 }
+
+/* ===================================================
+   CAPSULE COMPANY A4 CATALOGUE SYSTEM
+   =================================================== */
+.catalogue-page {
+  width: 100%;
+  max-width: 820px;
+  min-height: 1100px;
+  aspect-ratio: 1 / 1.4142;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .catalogue-page {
+    aspect-ratio: auto;
+    min-height: auto;
+  }
+}
+
+@media print {
+  @page {
+    size: 210mm 297mm;
+    margin: 0;
+  }
+
+  html, body {
+    background: #FFFFFF !important;
+    color: #000000 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 210mm !important;
+    min-height: 100% !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* Hide app navigation and overlays */
+  header, footer, .no-print, #preloader, [role="dialog"], .chat-widget {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+    display: block !important;
+  }
+
+  .catalogue-print-container {
+    width: 210mm !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    gap: 0 !important;
+    display: block !important;
+  }
+
+  [id^="kitchen-page-"],
+  [id^="temple-page-"],
+  #temple-cover,
+  #temple-intro,
+  #temple-contact,
+  .catalogue-item-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  .catalogue-page {
+    width: 210mm !important;
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
+    max-width: 210mm !important;
+    page-break-before: auto !important;
+    page-break-after: always !important;
+    break-after: page !important;
+    page-break-inside: avoid !important;
+    break-inside: avoid !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  /* Don't force page break after final page */
+  .catalogue-print-container > div:last-child .catalogue-page,
+  [id="kitchen-page-33"] .catalogue-page,
+  #temple-contact .catalogue-page,
+  .catalogue-page:last-child {
+    page-break-after: auto !important;
+    break-after: auto !important;
+  }
+}

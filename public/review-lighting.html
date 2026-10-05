@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Capsule Company - Architectural Lighting & Fixtures Review</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #12100E;
+      --card-bg: #1C1815;
+      --copper: #B86D43;
+      --copper-bright: #CE7F53;
+      --border: rgba(184, 109, 67, 0.25);
+      --text: #F7F3ED;
+      --text-muted: #A89B91;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      padding: 2rem 1.5rem 4rem;
+    }
+    .header {
+      max-width: 1400px;
+      margin: 0 auto 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 1.5rem;
+    }
+    .brand-wrap {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .brand-logo {
+      width: 48px;
+      height: 48px;
+      border-radius: 8px;
+      background: #FFFFFF;
+      padding: 5px;
+    }
+    .brand-logo img { width: 100%; height: 100%; object-fit: contain; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+    .sub {
+      color: var(--copper);
+      font-size: 0.75rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      background: var(--copper);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.82rem;
+      border-radius: 6px;
+      transition: background 0.2s;
+    }
+    .btn:hover { background: var(--copper-bright); }
+    .btn-secondary {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+    }
+    .filter-bar {
+      max-width: 1400px;
+      margin: 0 auto 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+    .filter-pill {
+      background: #1C1815;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 0.5rem 1.1rem;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-pill:hover, .filter-pill.active {
+      background: var(--copper);
+      color: #FFFFFF;
+      border-color: var(--copper);
+    }
+    .grid {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0,0,0,0.4);
+      border-color: var(--copper-bright);
+    }
+    .img-wrap {
+      width: 100%;
+      height: 280px;
+      background: #000;
+      position: relative;
+      overflow: hidden;
+    }
+    .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.3s;
+    }
+    .card:hover .img-wrap img {
+      transform: scale(1.03);
+    }
+    .card-badge {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(18, 16, 14, 0.85);
+      border: 1px solid var(--border);
+      backdrop-filter: blur(4px);
+      color: var(--copper-bright);
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 0.3rem 0.65rem;
+      border-radius: 4px;
+    }
+    .card-body {
+      padding: 1.25rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .cat-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.7rem;
+      color: var(--copper-bright);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 0.35rem;
+    }
+    .model-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+      color: #FFFFFF;
+    }
+    .model-desc {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 0.85rem;
+      flex: 1;
+    }
+    .bullets {
+      list-style: none;
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding-top: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+    .bullets li {
+      font-size: 0.75rem;
+      color: #D4CBC4;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+    }
+    .bullets li::before {
+      content: '◆';
+      color: var(--copper);
+      font-size: 0.55rem;
+      flex-shrink: 0;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="brand-wrap">
+      <div class="brand-logo">
+        <img src="logo.png" alt="Capsule Company">
+      </div>
+      <div>
+        <div class="sub">Architectural Lighting & Fixtures • 48 Curated Designs</div>
+        <h1>Lighting Collection Review</h1>
+      </div>
+    </div>
+    <div class="actions">
+      <a href="capsule-catalogue-index.html" class="btn btn-secondary">
+        ← Catalogue Portal
+      </a>
+      <a href="Capsule_Company_Lighting_Design_Catalogue.pdf" class="btn" target="_blank">
+        📄 Download 50-Page PDF
+      </a>
+    </div>
+  </header>
+
+  <div class="filter-bar">
+    <button class="filter-pill active" onclick="filterCat('all', this)">All Fixtures (48)</button>
+    <button class="filter-pill" onclick="filterCat('ARCHITECTURAL PROFILE LIGHTS', this)">Profile Lights</button>
+    <button class="filter-pill" onclick="filterCat('STATEMENT CHANDELIERS & PENDANTS', this)">Chandeliers & Pendants</button>
+    <button class="filter-pill" onclick="filterCat('OUTDOOR & LANDSCAPE LIGHTING', this)">Outdoor Lighting</button>
+  </div>
+
+  <div class="grid" id="grid">
+    <!-- Populated by JavaScript -->
+  </div>
+
+  <script>
+    let allItems = [];
+
+    async function loadData() {
+      try {
+        const res = await fetch('assets/lighting-fixtures/lighting-fixtures-data.json');
+        const data = await res.json();
+        allItems = data.orderedItems;
+        render(allItems);
+      } catch (e) {
+        console.error('Error loading fixtures data:', e);
+      }
+    }
+
+    function render(items) {
+      const grid = document.getElementById('grid');
+      grid.innerHTML = items.map((item, idx) => `
+        <div class="card" data-category="${item.category}">
+          <div class="img-wrap">
+            <img src="assets/lighting-fixtures/${item.fileName}" alt="${item.title}" loading="lazy">
+            <div class="card-badge">${item.refId}</div>
+          </div>
+          <div class="card-body">
+            <div class="cat-tag">${item.category}</div>
+            <h3 class="model-title">${item.title}</h3>
+            <p class="model-desc">${item.desc}</p>
+            <ul class="bullets">
+              ${item.bullets.map(b => `<li>${b}</li>`).join('')}
+            </ul>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function filterCat(cat, el) {
+      document.querySelectorAll('.filter-pill').forEach(p => p.classList.remove('active'));
+      el.classList.add('active');
+      if (cat === 'all') {
+        render(allItems);
+      } else {
+        const filtered = allItems.filter(i => i.category.includes(cat) || cat.includes(i.category));
+        render(filtered);
+      }
+    }
+
+    loadData();
+  </script>
+
+</body>
+</html>

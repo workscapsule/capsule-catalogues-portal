@@ -1,0 +1,2241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Wall Panel Design Catalogue 2026 – Capsule Company</title>
+  <link rel="icon" type="image/png" href="/logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-warm: #F7F3ED;
+      --bg-surface: #FFFFFF;
+      --bg-cream: #EFE8DE;
+      --bg-card: #FFFFFF;
+      --text-dark: #12100E;
+      --text-primary: #2B241F;
+      --text-secondary: #6B5E54;
+      --text-light: #9C8E84;
+      --copper: #B86D43;
+      --copper-bright: #CE7F53;
+      --copper-light: #DFC0B0;
+      --copper-border: rgba(184, 109, 67, 0.22);
+      --copper-glow: rgba(184, 109, 67, 0.16);
+      --border-subtle: #E6DFD5;
+      --radius-xl: 18px;
+      --radius-lg: 12px;
+      --radius-md: 8px;
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background-color: var(--bg-warm);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Top Sticky Brand Navigation Bar */
+    .top-nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(247, 243, 237, 0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.85rem clamp(1rem, 3vw, 2.5rem);
+    }
+    .nav-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: inherit;
+    }
+    .brand-logo-frame {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3px;
+    }
+    .brand-logo-frame img { width: 100%; height: 100%; object-fit: contain; }
+    .brand-text-col { display: flex; flex-direction: column; }
+    .brand-title {
+      font-size: 0.98rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+    .brand-subtitle {
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      color: var(--copper);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .nav-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-dark);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s ease;
+      cursor: pointer;
+    }
+    .nav-btn:hover {
+      border-color: var(--copper);
+      color: var(--copper);
+      transform: translateY(-1px);
+    }
+    .nav-btn.primary {
+      background: var(--text-dark);
+      color: #FFFFFF;
+      border-color: var(--text-dark);
+    }
+    .nav-btn.primary:hover {
+      background: var(--copper);
+      border-color: var(--copper);
+      color: #FFFFFF;
+    }
+
+    /* 1. EDITORIAL COVER SECTION */
+    .catalogue-cover {
+      max-width: 1400px;
+      margin: 2rem auto 3rem;
+      padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1.25rem, 4vw, 3rem);
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      box-shadow: 0 10px 40px rgba(43, 36, 31, 0.04);
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .cover-ornament {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--copper-bright), #FFFFFF, var(--copper));
+      padding: 2.5px;
+      box-shadow: 0 10px 25px var(--copper-glow);
+    }
+    .cover-ornament-inner {
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .cover-ornament-inner img { width: 85%; height: 85%; object-fit: contain; }
+    .cover-eyebrow {
+      font-size: 0.76rem;
+      font-weight: 700;
+      letter-spacing: 0.26em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+    .cover-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2.6rem, 6vw, 4.5rem);
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.12;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.85rem;
+      text-transform: uppercase;
+    }
+    .cover-title span.gold-italics {
+      color: var(--copper);
+      font-style: italic;
+      font-weight: 400;
+      text-transform: none;
+      font-family: var(--font-serif);
+    }
+    .copper-rule {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      max-width: 320px;
+      margin: 1.5rem auto;
+    }
+    .copper-rule::before, .copper-rule::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--copper-light), transparent);
+    }
+    .copper-diamond {
+      width: 7px;
+      height: 7px;
+      background: var(--copper);
+      transform: rotate(45deg);
+    }
+    .cover-specs-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 1.75rem;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--text-secondary);
+      letter-spacing: 0.05em;
+    }
+    .cover-spec-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--bg-warm);
+      padding: 0.45rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border-subtle);
+    }
+
+    /* 2. SECTION JUMP BAR & CONTROLS */
+    .controls-wrapper {
+      position: sticky;
+      top: 65px;
+      z-index: 90;
+      background: rgba(247, 243, 237, 0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      padding: 0.75rem clamp(1rem, 3vw, 2.5rem);
+      margin-bottom: 2.5rem;
+    }
+    .controls-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .controls-inner::-webkit-scrollbar { display: none; }
+    .section-pills {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+      flex-wrap: nowrap;
+    }
+    .section-pill {
+      font-size: 0.76rem;
+      font-weight: 600;
+      padding: 0.4rem 0.85rem;
+      border-radius: 9999px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      text-decoration: none;
+      white-space: nowrap;
+      transition: all 0.2s ease;
+    }
+    .section-pill:hover, .section-pill.active {
+      background: var(--copper);
+      color: #FFFFFF;
+      border-color: var(--copper);
+    }
+
+    /* 3. MAIN CATALOGUE SECTIONS */
+    .catalogue-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 clamp(1rem, 3vw, 2.5rem) 5rem;
+    }
+
+    .catalogue-section {
+      margin-bottom: 4.5rem;
+      scroll-margin-top: 130px;
+    }
+
+    .section-header-banner {
+      background: #FFFFFF;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.5rem clamp(1.25rem, 3vw, 2.25rem);
+      margin-bottom: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      border-left: 4px solid var(--copper);
+      box-shadow: 0 4px 18px rgba(0,0,0,0.02);
+    }
+    @media (min-width: 768px) {
+      .section-header-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    .section-header-left {
+      max-width: 800px;
+    }
+    .section-code-tag {
+      font-size: 0.72rem;
+      font-weight: 800;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--copper);
+      display: inline-block;
+      margin-bottom: 0.25rem;
+    }
+    .section-title {
+      font-family: var(--font-serif);
+      font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+      font-weight: 600;
+      color: var(--text-dark);
+      letter-spacing: -0.01em;
+      margin-bottom: 0.35rem;
+    }
+    .section-desc {
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      line-height: 1.55;
+    }
+    .section-count-badge {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      background: var(--bg-warm);
+      padding: 0.4rem 0.9rem;
+      border-radius: 9999px;
+      border: 1px solid var(--border-subtle);
+      white-space: nowrap;
+      align-self: flex-start;
+    }
+
+    /* 4. DESIGN ITEMS GRID (5 COLUMNS / BALANCED) */
+    .items-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+    }
+    @media (min-width: 580px) {
+      .items-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (min-width: 960px) {
+      .items-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    @media (min-width: 1260px) {
+      .items-grid { grid-template-columns: repeat(5, 1fr); }
+    }
+
+    .design-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.02);
+    }
+    .design-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 32px rgba(184, 109, 67, 0.12);
+      border-color: var(--copper-border);
+    }
+
+    .card-image-wrap {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      background: #ECE5DC;
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .card-image-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .design-card:hover .card-image-wrap img {
+      transform: scale(1.05);
+    }
+
+    /* Floating Model Badge */
+    .model-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+      background: rgba(18, 16, 14, 0.88);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      font-size: 0.68rem;
+      font-family: var(--font-sans);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      padding: 3px 8px;
+      border-radius: 6px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .zoom-hint-badge {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      z-index: 10;
+      background: rgba(255, 255, 255, 0.92);
+      backdrop-filter: blur(6px);
+      color: var(--text-dark);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: scale(0.85);
+      transition: all 0.25s ease;
+    }
+    .design-card:hover .zoom-hint-badge {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    .card-content {
+      padding: 1.15rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      background: #FFFFFF;
+    }
+    .card-finish-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 0.3rem;
+    }
+    .card-title {
+      font-family: var(--font-serif);
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.25;
+      margin-bottom: 0.45rem;
+    }
+    .card-app {
+      font-size: 0.78rem;
+      color: var(--text-secondary);
+      line-height: 1.45;
+      margin-bottom: 0.85rem;
+      flex: 1;
+    }
+    .card-specs-row {
+      font-size: 0.72rem;
+      color: var(--text-light);
+      border-top: 1px dashed var(--border-subtle);
+      padding-top: 0.65rem;
+      margin-bottom: 0.85rem;
+      line-height: 1.35;
+    }
+
+    /* Pinterest Source Link Button */
+    .pinterest-source-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.45rem;
+      background: var(--bg-warm);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-dark);
+      text-decoration: none;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 0.5rem 0.85rem;
+      border-radius: 6px;
+      transition: all 0.2s ease;
+    }
+    .pinterest-source-btn:hover {
+      background: #E60023;
+      color: #FFFFFF;
+      border-color: #E60023;
+      box-shadow: 0 4px 12px rgba(230, 0, 35, 0.2);
+    }
+    .pinterest-icon {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    /* 5. LIGHTBOX MODAL */
+    .lightbox-modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(18, 16, 14, 0.94);
+      backdrop-filter: blur(14px);
+      z-index: 1000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+    }
+    .lightbox-modal.open {
+      display: flex;
+      opacity: 1;
+    }
+    .lightbox-dialog {
+      background: #FFFFFF;
+      border-radius: var(--radius-lg);
+      max-width: 1000px;
+      width: 100%;
+      max-height: 90vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+    }
+    @media (min-width: 860px) {
+      .lightbox-dialog {
+        flex-direction: row;
+      }
+    }
+    .lightbox-img-wrap {
+      background: #111;
+      flex: 1.3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+    }
+    .lightbox-img-wrap img {
+      max-width: 100%;
+      max-height: 80vh;
+      object-fit: contain;
+    }
+    .lightbox-details {
+      flex: 1;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      background: #FFFFFF;
+      overflow-y: auto;
+    }
+    .lightbox-close-btn {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      z-index: 10;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.6);
+      color: #FFFFFF;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: background 0.2s;
+    }
+    .lightbox-close-btn:hover { background: #000; }
+
+    /* Footer */
+    footer {
+      background: #151210;
+      color: #D6CBC1;
+      padding: 4rem clamp(1rem, 3vw, 2.5rem) 2.5rem;
+      border-top: 1px solid rgba(184, 109, 67, 0.2);
+    }
+    .footer-inner {
+      max-width: 1400px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    /* Print Styles */
+    @media print {
+      .top-nav, .controls-wrapper, .pinterest-source-btn, .zoom-hint-badge { display: none !important; }
+      body { background: #FFFFFF; color: #000000; }
+      .catalogue-cover { break-after: page; box-shadow: none; border: none; margin: 0; padding: 4cm 2cm; }
+      .catalogue-section { break-after: page; }
+      .items-grid { grid-template-columns: repeat(5, 1fr) !important; gap: 8px !important; }
+      .design-card { box-shadow: none !important; border: 1px solid #CCC !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Header -->
+  <header class="top-nav">
+    <div class="nav-inner">
+      <a href="/capsule-catalogue-index.html" class="brand-lockup">
+        <div class="brand-logo-frame">
+          <img src="/logo.png" alt="Capsule Company Monogram">
+        </div>
+        <div class="brand-text-col">
+          <span class="brand-title">CAPSULE COMPANY</span>
+          <span class="brand-subtitle">SURFACE ARCHIVES 2026</span>
+        </div>
+      </a>
+
+      <div class="nav-actions">
+        <a href="/capsule-catalogue-index.html" class="nav-btn">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="m15 18-6-6 6-6"/></svg>
+          <span>All Catalogues</span>
+        </a>
+        <button onclick="window.print()" class="nav-btn primary">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect width="12" height="8" x="6" y="14"/></svg>
+          <span>Print / Save PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Cover Page Section -->
+  <header class="catalogue-cover">
+    <div class="cover-ornament">
+      <div class="cover-ornament-inner">
+        <img src="/logo.png" alt="Capsule Company Official Monogram">
+      </div>
+    </div>
+
+    <span class="cover-eyebrow">CAPSULE COMPANY • DESIGN LOOKBOOK</span>
+    
+    <h1 class="cover-title">
+      WALL PANEL DESIGN <br>
+      <span class="gold-italics">Collection 2026</span>
+    </h1>
+
+    <div class="copper-rule">
+      <span class="copper-diamond"></span>
+    </div>
+
+    <p style="max-width: 780px; margin: 0 auto; color: var(--text-secondary); font-size: 1.05rem; line-height: 1.65;">
+      A curated reference anthology of architectural wall surface treatments for bespoke residences and luxury apartments. Encompassing 12 distinct material families and exactly 60 visual design references sourced exclusively from Pinterest.
+    </p>
+
+    <div class="cover-specs-row">
+      <span class="cover-spec-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--copper)" stroke-width="2.5"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
+        12 Wall-Panel Categories
+      </span>
+      <span class="cover-spec-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--copper)" stroke-width="2.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+        60 Curated Visual Designs
+      </span>
+      <span class="cover-spec-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--copper)" stroke-width="2.5"><circle cx="12" cy="12" r="10"/><path d="m9 12 2 2 4-4"/></svg>
+        Clean Interiors (No People, No Logos)
+      </span>
+      <span class="cover-spec-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--copper)" stroke-width="2.5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+        Preserved Pinterest Reference Links
+      </span>
+    </div>
+  </header>
+
+  <!-- Quick Category Navigator Bar -->
+  <div class="controls-wrapper">
+    <div class="controls-inner">
+      <div class="section-pills">
+        
+          <a href="#01-fluted-wall-panels" class="section-pill active">
+            01. FLUTED WALL PANELS
+          </a>
+        
+          <a href="#02-wooden-wall-panels" class="section-pill ">
+            02. WOODEN WALL PANELS
+          </a>
+        
+          <a href="#03-wpc-wall-panels" class="section-pill ">
+            03. WPC WALL PANELS
+          </a>
+        
+          <a href="#04-3d-wall-panels" class="section-pill ">
+            04. 3D WALL PANELS
+          </a>
+        
+          <a href="#05-cnc-cut-wall-panels" class="section-pill ">
+            05. CNC CUT WALL PANELS
+          </a>
+        
+          <a href="#06-geometric-wall-panels" class="section-pill ">
+            06. GEOMETRIC WALL PANELS
+          </a>
+        
+          <a href="#07-marble-finish-wall-panels" class="section-pill ">
+            07. MARBLE FINISH WALL PANELS
+          </a>
+        
+          <a href="#08-stone-finish-wall-panels" class="section-pill ">
+            08. STONE FINISH WALL PANELS
+          </a>
+        
+          <a href="#09-paint-texture-walls" class="section-pill ">
+            09. PAINT TEXTURE WALLS
+          </a>
+        
+          <a href="#10-pu-wall-panels" class="section-pill ">
+            10. PU WALL PANELS
+          </a>
+        
+          <a href="#11-louvers-wall-panels" class="section-pill ">
+            11. LOUVERS WALL PANELS
+          </a>
+        
+          <a href="#12-decorative-wall-panels" class="section-pill ">
+            12. DECORATIVE WALL PANELS
+          </a>
+        
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Catalogue Presentation -->
+  <main class="catalogue-container">
+    
+      <section class="catalogue-section" id="01-fluted-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 01</span>
+            <h2 class="section-title">FLUTED WALL PANELS</h2>
+            <p class="section-desc">Vertical fluted, grooved acoustic slats, and scalloped wall surfaces in natural timber, painted composites, and dual-tone architectural arches for living rooms, TV walls, and master suites.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-FL-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/01-fluted-wall-panels/wp-fl-01_3.png', 'WP-FL-01', 'Dark Walnut Fluted Feature Wall', 'Natural Walnut Veneer on Acoustic Felt', 'Living Room Feature Backdrop & Media Wall', 'Solid vertical fluting, 18mm relief depth, matte PU seal', 'https://www.pinterest.com/pin/597008494399769412/')">
+                <span class="model-badge">WP-FL-01</span>
+                <img src="assets/wall-panels/01-fluted-wall-panels/wp-fl-01_3.png" alt="Dark Walnut Fluted Feature Wall - FLUTED WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Natural Walnut Veneer on Acoustic Felt</span>
+                <h3 class="card-title">Dark Walnut Fluted Feature Wall</h3>
+                <p class="card-app">Living Room Feature Backdrop & Media Wall</p>
+                <div class="card-specs-row">Solid vertical fluting, 18mm relief depth, matte PU seal</div>
+                <a href="https://www.pinterest.com/pin/597008494399769412/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-FL-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/01-fluted-wall-panels/wp-fl-02_8.jpg', 'WP-FL-02', 'Multi-Tone Arched Timber Flutes', 'Dual-Tone Teak & White Oak Composites', 'Double-Height Foyer & Dining Accent Wall', 'Concentric arched silhouette, precision-milled radius flutes', 'https://www.pinterest.com/pin/10696117861309965/')">
+                <span class="model-badge">WP-FL-02</span>
+                <img src="assets/wall-panels/01-fluted-wall-panels/wp-fl-02_8.jpg" alt="Multi-Tone Arched Timber Flutes - FLUTED WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Dual-Tone Teak & White Oak Composites</span>
+                <h3 class="card-title">Multi-Tone Arched Timber Flutes</h3>
+                <p class="card-app">Double-Height Foyer & Dining Accent Wall</p>
+                <div class="card-specs-row">Concentric arched silhouette, precision-milled radius flutes</div>
+                <a href="https://www.pinterest.com/pin/10696117861309965/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-FL-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/01-fluted-wall-panels/wp-fl-03_16.png', 'WP-FL-03', 'Nordic Off-White Fluted TV Wall', 'Matte Warm Cream Polyurethane Coat', 'Contemporary Residential TV Entertainment Unit', 'Vertical ribbed slats with integrated warm cove channel', 'https://www.pinterest.com/pin/7177680653273521/')">
+                <span class="model-badge">WP-FL-03</span>
+                <img src="assets/wall-panels/01-fluted-wall-panels/wp-fl-03_16.png" alt="Nordic Off-White Fluted TV Wall - FLUTED WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Matte Warm Cream Polyurethane Coat</span>
+                <h3 class="card-title">Nordic Off-White Fluted TV Wall</h3>
+                <p class="card-app">Contemporary Residential TV Entertainment Unit</p>
+                <div class="card-specs-row">Vertical ribbed slats with integrated warm cove channel</div>
+                <a href="https://www.pinterest.com/pin/7177680653273521/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-FL-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/01-fluted-wall-panels/wp-fl-04_19.jpg', 'WP-FL-04', 'Sand Taupe Fluted Wainscot', 'Fine-Textured Taupe with Brass Reveal', 'Master Bedroom Bedhead Backdrop & Lounge Wainscoting', 'Micro-ribbed lower wainscot, brushed gold dividing trim', 'https://www.pinterest.com/pin/2251868558746494/')">
+                <span class="model-badge">WP-FL-04</span>
+                <img src="assets/wall-panels/01-fluted-wall-panels/wp-fl-04_19.jpg" alt="Sand Taupe Fluted Wainscot - FLUTED WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Fine-Textured Taupe with Brass Reveal</span>
+                <h3 class="card-title">Sand Taupe Fluted Wainscot</h3>
+                <p class="card-app">Master Bedroom Bedhead Backdrop & Lounge Wainscoting</p>
+                <div class="card-specs-row">Micro-ribbed lower wainscot, brushed gold dividing trim</div>
+                <a href="https://www.pinterest.com/pin/2251868558746494/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-FL-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/01-fluted-wall-panels/wp-fl-05_21.jpg', 'WP-FL-05', 'Floor-to-Ceiling Warm Amber Flutes', 'Honey Oak Fluted Panels with Sconce Mounts', 'Luxury Drawing Room & Formal Living Lounge', 'Full-height modular fluted panels with ambient back-grazing', 'https://www.pinterest.com/pin/21392166974872961/')">
+                <span class="model-badge">WP-FL-05</span>
+                <img src="assets/wall-panels/01-fluted-wall-panels/wp-fl-05_21.jpg" alt="Floor-to-Ceiling Warm Amber Flutes - FLUTED WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Honey Oak Fluted Panels with Sconce Mounts</span>
+                <h3 class="card-title">Floor-to-Ceiling Warm Amber Flutes</h3>
+                <p class="card-app">Luxury Drawing Room & Formal Living Lounge</p>
+                <div class="card-specs-row">Full-height modular fluted panels with ambient back-grazing</div>
+                <a href="https://www.pinterest.com/pin/21392166974872961/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="02-wooden-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 02</span>
+            <h2 class="section-title">WOODEN WALL PANELS</h2>
+            <p class="section-desc">Exquisite natural wood veneer treatments including quarter-cut teak, horizontal American walnut, geometric block compositions, and herringbone patterns with integrated floating credenzas.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-WD-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/02-wooden-wall-panels/wp-wd-01_3.jpg', 'WP-WD-01', 'Full-Height Teak Veneer Panelling', 'Natural Teak Wood Veneer with Dark Reveal Gaps', 'Executive Living Room & Penthouse Salon Wall', 'Quarter-cut bookmatched teak veneer panels, 6mm shadow reveals', 'https://www.pinterest.com/pin/4151824653611565/')">
+                <span class="model-badge">WP-WD-01</span>
+                <img src="assets/wall-panels/02-wooden-wall-panels/wp-wd-01_3.jpg" alt="Full-Height Teak Veneer Panelling - WOODEN WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Natural Teak Wood Veneer with Dark Reveal Gaps</span>
+                <h3 class="card-title">Full-Height Teak Veneer Panelling</h3>
+                <p class="card-app">Executive Living Room & Penthouse Salon Wall</p>
+                <div class="card-specs-row">Quarter-cut bookmatched teak veneer panels, 6mm shadow reveals</div>
+                <a href="https://www.pinterest.com/pin/4151824653611565/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-WD-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/02-wooden-wall-panels/wp-wd-02_5.jpg', 'WP-WD-02', 'Architectural Wood Display Wall', 'Warm Oak with Integrated Open Niches', 'Living Lounge Entertainment & Artifact Display', 'Recessed illuminated open cubbies with low-profile credenza', 'https://www.pinterest.com/pin/1131177631463969506/')">
+                <span class="model-badge">WP-WD-02</span>
+                <img src="assets/wall-panels/02-wooden-wall-panels/wp-wd-02_5.jpg" alt="Architectural Wood Display Wall - WOODEN WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Warm Oak with Integrated Open Niches</span>
+                <h3 class="card-title">Architectural Wood Display Wall</h3>
+                <p class="card-app">Living Lounge Entertainment & Artifact Display</p>
+                <div class="card-specs-row">Recessed illuminated open cubbies with low-profile credenza</div>
+                <a href="https://www.pinterest.com/pin/1131177631463969506/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-WD-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/02-wooden-wall-panels/wp-wd-03_11.jpg', 'WP-WD-03', 'Horizontal Grain Walnut Media Wall', 'Crown Cut American Walnut Veneer', 'Living Room TV Unit & Media Credenza Backdrop', 'Continuous horizontal wood grain matching with floating ledge', 'https://www.pinterest.com/pin/592927107237601258/')">
+                <span class="model-badge">WP-WD-03</span>
+                <img src="assets/wall-panels/02-wooden-wall-panels/wp-wd-03_11.jpg" alt="Horizontal Grain Walnut Media Wall - WOODEN WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Crown Cut American Walnut Veneer</span>
+                <h3 class="card-title">Horizontal Grain Walnut Media Wall</h3>
+                <p class="card-app">Living Room TV Unit & Media Credenza Backdrop</p>
+                <div class="card-specs-row">Continuous horizontal wood grain matching with floating ledge</div>
+                <a href="https://www.pinterest.com/pin/592927107237601258/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-WD-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/02-wooden-wall-panels/wp-wd-04_12.jpg', 'WP-WD-04', 'Interlocking Geometric Oak Block Panelling', 'Multi-Directional Natural Oak Blocks', 'Entrance Foyer Accent & Dining Feature Wall', 'Alternating grain direction tiles, seamless tongue-and-groove', 'https://www.pinterest.com/pin/9288742978122361/')">
+                <span class="model-badge">WP-WD-04</span>
+                <img src="assets/wall-panels/02-wooden-wall-panels/wp-wd-04_12.jpg" alt="Interlocking Geometric Oak Block Panelling - WOODEN WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Multi-Directional Natural Oak Blocks</span>
+                <h3 class="card-title">Interlocking Geometric Oak Block Panelling</h3>
+                <p class="card-app">Entrance Foyer Accent & Dining Feature Wall</p>
+                <div class="card-specs-row">Alternating grain direction tiles, seamless tongue-and-groove</div>
+                <a href="https://www.pinterest.com/pin/9288742978122361/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-WD-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/02-wooden-wall-panels/wp-wd-05_14.jpg', 'WP-WD-05', 'Dark Walnut Chevron Wood Panelling', 'Mocha Walnut Parquet Veneer on Acoustic Core', 'Formal Drawing Room & Study Feature Wall', 'Precision 45-degree chevron parquet panels, matte satin coat', 'https://www.pinterest.com/pin/18295942232336254/')">
+                <span class="model-badge">WP-WD-05</span>
+                <img src="assets/wall-panels/02-wooden-wall-panels/wp-wd-05_14.jpg" alt="Dark Walnut Chevron Wood Panelling - WOODEN WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Mocha Walnut Parquet Veneer on Acoustic Core</span>
+                <h3 class="card-title">Dark Walnut Chevron Wood Panelling</h3>
+                <p class="card-app">Formal Drawing Room & Study Feature Wall</p>
+                <div class="card-specs-row">Precision 45-degree chevron parquet panels, matte satin coat</div>
+                <a href="https://www.pinterest.com/pin/18295942232336254/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="03-wpc-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 03</span>
+            <h2 class="section-title">WPC WALL PANELS</h2>
+            <p class="section-desc">High-durability Wood-Plastic Composite (WPC) wall panelling engineered for anti-termite, moisture-resistant, and maintenance-free interior applications with natural timber aesthetics.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-WP-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/03-wpc-wall-panels/wp-wp-01_3.jpg', 'WP-WP-01', 'Warm Oak Fluted WPC Composite', 'Extruded Wood Polymer Composite in Natural Oak', 'Living Room Sofa Backdrop & Corridor Panelling', 'Termite-proof, moisture-resistant hollow core WPC planks', 'https://www.pinterest.com/pin/376261743890982647/')">
+                <span class="model-badge">WP-WP-01</span>
+                <img src="assets/wall-panels/03-wpc-wall-panels/wp-wp-01_3.jpg" alt="Warm Oak Fluted WPC Composite - WPC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Extruded Wood Polymer Composite in Natural Oak</span>
+                <h3 class="card-title">Warm Oak Fluted WPC Composite</h3>
+                <p class="card-app">Living Room Sofa Backdrop & Corridor Panelling</p>
+                <div class="card-specs-row">Termite-proof, moisture-resistant hollow core WPC planks</div>
+                <a href="https://www.pinterest.com/pin/376261743890982647/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-WP-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/03-wpc-wall-panels/wp-wp-02_14.png', 'WP-WP-02', 'Back-Illuminated Natural WPC Slats', 'Golden Teak WPC with Warm Halo LED Channel', 'Reading Nook Feature & Bedroom Corner Accent', 'Interlocking tongue-and-groove slats, rear LED channel recess', 'https://www.pinterest.com/pin/4503668373685006/')">
+                <span class="model-badge">WP-WP-02</span>
+                <img src="assets/wall-panels/03-wpc-wall-panels/wp-wp-02_14.png" alt="Back-Illuminated Natural WPC Slats - WPC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Golden Teak WPC with Warm Halo LED Channel</span>
+                <h3 class="card-title">Back-Illuminated Natural WPC Slats</h3>
+                <p class="card-app">Reading Nook Feature & Bedroom Corner Accent</p>
+                <div class="card-specs-row">Interlocking tongue-and-groove slats, rear LED channel recess</div>
+                <a href="https://www.pinterest.com/pin/4503668373685006/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-WP-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/03-wpc-wall-panels/wp-wp-03_16.jpg', 'WP-WP-03', 'Dual Fluted WPC & Marble TV Unit', 'Charcoal Grey WPC Flutes with White Marble Core', 'Modern Apartment Living Room Entertainment Wall', 'Flanking vertical WPC panels with central Italian stone slab', 'https://www.pinterest.com/pin/907827237409019815/')">
+                <span class="model-badge">WP-WP-03</span>
+                <img src="assets/wall-panels/03-wpc-wall-panels/wp-wp-03_16.jpg" alt="Dual Fluted WPC & Marble TV Unit - WPC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Charcoal Grey WPC Flutes with White Marble Core</span>
+                <h3 class="card-title">Dual Fluted WPC & Marble TV Unit</h3>
+                <p class="card-app">Modern Apartment Living Room Entertainment Wall</p>
+                <div class="card-specs-row">Flanking vertical WPC panels with central Italian stone slab</div>
+                <a href="https://www.pinterest.com/pin/907827237409019815/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-WP-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/03-wpc-wall-panels/wp-wp-04_18.jpg', 'WP-WP-04', 'Nordic Bamboo-Composite Ribbed TV Wall', 'Bleached Bamboo Finish WPC Profile', 'Minimalist Apartment Media Wall & Low Credenza', 'Warm rear cove lighting, lightweight eco-composite material', 'https://www.pinterest.com/pin/914862421778131/')">
+                <span class="model-badge">WP-WP-04</span>
+                <img src="assets/wall-panels/03-wpc-wall-panels/wp-wp-04_18.jpg" alt="Nordic Bamboo-Composite Ribbed TV Wall - WPC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Bleached Bamboo Finish WPC Profile</span>
+                <h3 class="card-title">Nordic Bamboo-Composite Ribbed TV Wall</h3>
+                <p class="card-app">Minimalist Apartment Media Wall & Low Credenza</p>
+                <div class="card-specs-row">Warm rear cove lighting, lightweight eco-composite material</div>
+                <a href="https://www.pinterest.com/pin/914862421778131/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-WP-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/03-wpc-wall-panels/wp-wp-05_20.jpg', 'WP-WP-05', 'Parametric Wave-Cut WPC Feature Wall', 'Dual-Tone Charcoal & Natural Teak WPC Composite', 'Luxury Lounge Feature Wall & Commercial Reception', 'CNC-profiled undulating parametric wave silhouette', 'https://www.pinterest.com/pin/844493676565889/')">
+                <span class="model-badge">WP-WP-05</span>
+                <img src="assets/wall-panels/03-wpc-wall-panels/wp-wp-05_20.jpg" alt="Parametric Wave-Cut WPC Feature Wall - WPC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Dual-Tone Charcoal & Natural Teak WPC Composite</span>
+                <h3 class="card-title">Parametric Wave-Cut WPC Feature Wall</h3>
+                <p class="card-app">Luxury Lounge Feature Wall & Commercial Reception</p>
+                <div class="card-specs-row">CNC-profiled undulating parametric wave silhouette</div>
+                <a href="https://www.pinterest.com/pin/844493676565889/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="04-3d-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 04</span>
+            <h2 class="section-title">3D WALL PANELS</h2>
+            <p class="section-desc">Three-dimensional sculptural surface treatments including gypsum relief waves, faceted origami pyramids, charcoal geometric contours, and modular architectural blocks that transform under grazing light.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-3D-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/04-3d-wall-panels/wp-3d-01_1.jpg', 'WP-3D-01', 'Undulating Ribbed 3D Relief Wall', 'Reinforced Gypsum Plaster in Warm Sandstone Tone', 'Living Room Main TV Wall & Media Credenza', 'Continuous vertical fluid wave contours, 35mm relief depth', 'https://www.pinterest.com/pin/612208143141767182/')">
+                <span class="model-badge">WP-3D-01</span>
+                <img src="assets/wall-panels/04-3d-wall-panels/wp-3d-01_1.jpg" alt="Undulating Ribbed 3D Relief Wall - 3D WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Reinforced Gypsum Plaster in Warm Sandstone Tone</span>
+                <h3 class="card-title">Undulating Ribbed 3D Relief Wall</h3>
+                <p class="card-app">Living Room Main TV Wall & Media Credenza</p>
+                <div class="card-specs-row">Continuous vertical fluid wave contours, 35mm relief depth</div>
+                <a href="https://www.pinterest.com/pin/612208143141767182/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-3D-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/04-3d-wall-panels/wp-3d-02_6.jpg', 'WP-3D-02', 'Sculpted Charcoal Geometric Wave Wall', 'Matte Anthracite Polyurethane on High-Density Fiberboard', 'Modern Minimalist Living Lounge Backdrop', 'Faceted sculptural angular contours with shadow play', 'https://www.pinterest.com/pin/1097330265489039735/')">
+                <span class="model-badge">WP-3D-02</span>
+                <img src="assets/wall-panels/04-3d-wall-panels/wp-3d-02_6.jpg" alt="Sculpted Charcoal Geometric Wave Wall - 3D WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Matte Anthracite Polyurethane on High-Density Fiberboard</span>
+                <h3 class="card-title">Sculpted Charcoal Geometric Wave Wall</h3>
+                <p class="card-app">Modern Minimalist Living Lounge Backdrop</p>
+                <div class="card-specs-row">Faceted sculptural angular contours with shadow play</div>
+                <a href="https://www.pinterest.com/pin/1097330265489039735/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-3D-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/04-3d-wall-panels/wp-3d-03_7.jpg', 'WP-3D-03', 'Organic Dune Wave 3D Relief Panels', 'Cast Architectural Plaster with Warm Integrated Cove', 'Master Bedroom Backdrop & Luxury Foyer Wall', 'Organic desert-dune sweeping curves, concealed warm LED', 'https://www.pinterest.com/pin/845339792604779300/')">
+                <span class="model-badge">WP-3D-03</span>
+                <img src="assets/wall-panels/04-3d-wall-panels/wp-3d-03_7.jpg" alt="Organic Dune Wave 3D Relief Panels - 3D WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Cast Architectural Plaster with Warm Integrated Cove</span>
+                <h3 class="card-title">Organic Dune Wave 3D Relief Panels</h3>
+                <p class="card-app">Master Bedroom Backdrop & Luxury Foyer Wall</p>
+                <div class="card-specs-row">Organic desert-dune sweeping curves, concealed warm LED</div>
+                <a href="https://www.pinterest.com/pin/845339792604779300/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-3D-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/04-3d-wall-panels/wp-3d-04_19.jpg', 'WP-3D-04', 'Staggered Architectural 3D Relief Blocks', 'Sand-Textured Polymer Blocks with Integrated Sconces', 'Double-Height Dining Foyer & Accent Partition', 'Projecting rectangular block relief with recessed micro-sconces', 'https://www.pinterest.com/pin/4785143352581658/')">
+                <span class="model-badge">WP-3D-04</span>
+                <img src="assets/wall-panels/04-3d-wall-panels/wp-3d-04_19.jpg" alt="Staggered Architectural 3D Relief Blocks - 3D WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Sand-Textured Polymer Blocks with Integrated Sconces</span>
+                <h3 class="card-title">Staggered Architectural 3D Relief Blocks</h3>
+                <p class="card-app">Double-Height Dining Foyer & Accent Partition</p>
+                <div class="card-specs-row">Projecting rectangular block relief with recessed micro-sconces</div>
+                <a href="https://www.pinterest.com/pin/4785143352581658/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-3D-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/04-3d-wall-panels/wp-3d-05_25.png', 'WP-3D-05', 'Faceted Origami Diamond 3D Pyramids', 'Seamless Matte White Gypsum Composite Tile System', 'Contemporary Living Room Sofa Feature Wall', 'Tessellated geometric diamond pyramids, acoustic dampening', 'https://www.pinterest.com/pin/743234744805457857/')">
+                <span class="model-badge">WP-3D-05</span>
+                <img src="assets/wall-panels/04-3d-wall-panels/wp-3d-05_25.png" alt="Faceted Origami Diamond 3D Pyramids - 3D WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Seamless Matte White Gypsum Composite Tile System</span>
+                <h3 class="card-title">Faceted Origami Diamond 3D Pyramids</h3>
+                <p class="card-app">Contemporary Living Room Sofa Feature Wall</p>
+                <div class="card-specs-row">Tessellated geometric diamond pyramids, acoustic dampening</div>
+                <a href="https://www.pinterest.com/pin/743234744805457857/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="05-cnc-cut-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 05</span>
+            <h2 class="section-title">CNC CUT WALL PANELS</h2>
+            <p class="section-desc">Intricate CNC and laser-cut panel treatments featuring traditional Indian jali screens, botanical filigree, sacred mandala relief medallions, and backlit tree motifs for prayer foyers and living spaces.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-CNC-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-01_1.jpg', 'WP-CNC-01', 'Moroccan Fretwork Backlit CNC Screen Wall', 'Laser-Cut High-Density MDF with Warm Gold Acrylic Diffuser', 'Formal Living Room & Dining Partition Feature', 'Geometric Moorish fretwork, edge-lit warm 3000K LED panel', 'https://www.pinterest.com/pin/1146588386417406429/')">
+                <span class="model-badge">WP-CNC-01</span>
+                <img src="assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-01_1.jpg" alt="Moroccan Fretwork Backlit CNC Screen Wall - CNC CUT WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Laser-Cut High-Density MDF with Warm Gold Acrylic Diffuser</span>
+                <h3 class="card-title">Moroccan Fretwork Backlit CNC Screen Wall</h3>
+                <p class="card-app">Formal Living Room & Dining Partition Feature</p>
+                <div class="card-specs-row">Geometric Moorish fretwork, edge-lit warm 3000K LED panel</div>
+                <a href="https://www.pinterest.com/pin/1146588386417406429/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-CNC-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-02_3.png', 'WP-CNC-02', 'Botanical Leaf Filigree Backlit Screen', 'Walnut Finish CNC Screen with Backlit Opal Diffuser', 'Foyer Entrance & Stairwell Accent Wall', 'Organic tropical foliage pattern, recessed acoustic backing', 'https://www.pinterest.com/pin/312437292924804747/')">
+                <span class="model-badge">WP-CNC-02</span>
+                <img src="assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-02_3.png" alt="Botanical Leaf Filigree Backlit Screen - CNC CUT WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Walnut Finish CNC Screen with Backlit Opal Diffuser</span>
+                <h3 class="card-title">Botanical Leaf Filigree Backlit Screen</h3>
+                <p class="card-app">Foyer Entrance & Stairwell Accent Wall</p>
+                <div class="card-specs-row">Organic tropical foliage pattern, recessed acoustic backing</div>
+                <a href="https://www.pinterest.com/pin/312437292924804747/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-CNC-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-03_5.png', 'WP-CNC-03', 'CNC Engraved Mandala Medallion Relief', 'Precision 3-Axis CNC Carved Sandstone-Finish Panel', 'Indian Home Pooja Foyer & Traditional Drawing Room', 'Concentric floral mandala relief, 25mm carving depth', 'https://www.pinterest.com/pin/4151824653705673/')">
+                <span class="model-badge">WP-CNC-03</span>
+                <img src="assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-03_5.png" alt="CNC Engraved Mandala Medallion Relief - CNC CUT WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Precision 3-Axis CNC Carved Sandstone-Finish Panel</span>
+                <h3 class="card-title">CNC Engraved Mandala Medallion Relief</h3>
+                <p class="card-app">Indian Home Pooja Foyer & Traditional Drawing Room</p>
+                <div class="card-specs-row">Concentric floral mandala relief, 25mm carving depth</div>
+                <a href="https://www.pinterest.com/pin/4151824653705673/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-CNC-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-04_8.jpg', 'WP-CNC-04', 'Indian Arched CNC Jali TV Wall Unit', 'Warm Ivory Matte Lacquer on Moisture-Resistant MDF', 'Residential TV Entertainment & Media Credenza', 'Fretwork arched frame borders flanking central media panel', 'https://www.pinterest.com/pin/41799102787123747/')">
+                <span class="model-badge">WP-CNC-04</span>
+                <img src="assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-04_8.jpg" alt="Indian Arched CNC Jali TV Wall Unit - CNC CUT WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Warm Ivory Matte Lacquer on Moisture-Resistant MDF</span>
+                <h3 class="card-title">Indian Arched CNC Jali TV Wall Unit</h3>
+                <p class="card-app">Residential TV Entertainment & Media Credenza</p>
+                <div class="card-specs-row">Fretwork arched frame borders flanking central media panel</div>
+                <a href="https://www.pinterest.com/pin/41799102787123747/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-CNC-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-05_24.png', 'WP-CNC-05', 'CNC Laser-Cut Tree of Life Backlit Feature', 'Natural Teak Veneer on CNC Laser-Cut Core with Warm Glow', 'Master Suite Feature Wall & Living Room Foyer', 'Twin backlit Tree of Life panels flanked by acoustic louvers', 'https://www.pinterest.com/pin/1107815208388133601/')">
+                <span class="model-badge">WP-CNC-05</span>
+                <img src="assets/wall-panels/05-cnc-cut-wall-panels/wp-cnc-05_24.png" alt="CNC Laser-Cut Tree of Life Backlit Feature - CNC CUT WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Natural Teak Veneer on CNC Laser-Cut Core with Warm Glow</span>
+                <h3 class="card-title">CNC Laser-Cut Tree of Life Backlit Feature</h3>
+                <p class="card-app">Master Suite Feature Wall & Living Room Foyer</p>
+                <div class="card-specs-row">Twin backlit Tree of Life panels flanked by acoustic louvers</div>
+                <a href="https://www.pinterest.com/pin/1107815208388133601/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="06-geometric-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 06</span>
+            <h2 class="section-title">GEOMETRIC WALL PANELS</h2>
+            <p class="section-desc">Dynamic geometric wall compositions featuring angled acoustic slats with integrated light channels, matte charcoal angular relief grids, rounded neoclassical grid modules, and brass-studded intersections.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-GM-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/06-geometric-wall-panels/wp-gm-01_1.jpg', 'WP-GM-01', 'Angled Geometric Slats with LED Channels', 'Natural Ash Wood Slats with Concealed Aluminum LED Profiles', 'Contemporary Living Room TV & Media Wall', 'Diagonal multi-directional slat orientations with warm LED', 'https://www.pinterest.com/pin/15199717492674700/')">
+                <span class="model-badge">WP-GM-01</span>
+                <img src="assets/wall-panels/06-geometric-wall-panels/wp-gm-01_1.jpg" alt="Angled Geometric Slats with LED Channels - GEOMETRIC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Natural Ash Wood Slats with Concealed Aluminum LED Profiles</span>
+                <h3 class="card-title">Angled Geometric Slats with LED Channels</h3>
+                <p class="card-app">Contemporary Living Room TV & Media Wall</p>
+                <div class="card-specs-row">Diagonal multi-directional slat orientations with warm LED</div>
+                <a href="https://www.pinterest.com/pin/15199717492674700/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-GM-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/06-geometric-wall-panels/wp-gm-02_2.webp', 'WP-GM-02', 'Charcoal Matte Angular Geometric Grid Wall', 'Matte Anthracite PU on Precision Chamfered Panelling', 'Modern Penthouse Salon & Media Feature Wall', 'Asymmetrical intersecting grid battens, shadow groove joints', 'https://www.pinterest.com/pin/337418197105504537/')">
+                <span class="model-badge">WP-GM-02</span>
+                <img src="assets/wall-panels/06-geometric-wall-panels/wp-gm-02_2.webp" alt="Charcoal Matte Angular Geometric Grid Wall - GEOMETRIC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Matte Anthracite PU on Precision Chamfered Panelling</span>
+                <h3 class="card-title">Charcoal Matte Angular Geometric Grid Wall</h3>
+                <p class="card-app">Modern Penthouse Salon & Media Feature Wall</p>
+                <div class="card-specs-row">Asymmetrical intersecting grid battens, shadow groove joints</div>
+                <a href="https://www.pinterest.com/pin/337418197105504537/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-GM-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/06-geometric-wall-panels/wp-gm-03_8.jpg', 'WP-GM-03', 'Neoclassical Arched Geometric Grid Panels', 'Warm Sandstone Texture Composite Moulding Grid', 'Living Room Sofa Backdrop & Dining Accent Wall', 'Elongated capsule arches within rectangular geometric grid', 'https://www.pinterest.com/pin/2814818513187935/')">
+                <span class="model-badge">WP-GM-03</span>
+                <img src="assets/wall-panels/06-geometric-wall-panels/wp-gm-03_8.jpg" alt="Neoclassical Arched Geometric Grid Panels - GEOMETRIC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Warm Sandstone Texture Composite Moulding Grid</span>
+                <h3 class="card-title">Neoclassical Arched Geometric Grid Panels</h3>
+                <p class="card-app">Living Room Sofa Backdrop & Dining Accent Wall</p>
+                <div class="card-specs-row">Elongated capsule arches within rectangular geometric grid</div>
+                <a href="https://www.pinterest.com/pin/2814818513187935/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-GM-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/06-geometric-wall-panels/wp-gm-04_13.jpg', 'WP-GM-04', 'Faceted Triangular Backlit Geometric Wall', 'Ivory Matte Architectural Boards with Halo Perimeter Glow', 'Modern Foyer & Bedhead Accent Wall', 'Geometric faceted triangulations with indirect LED lighting', 'https://www.pinterest.com/pin/809662839280539190/')">
+                <span class="model-badge">WP-GM-04</span>
+                <img src="assets/wall-panels/06-geometric-wall-panels/wp-gm-04_13.jpg" alt="Faceted Triangular Backlit Geometric Wall - GEOMETRIC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Ivory Matte Architectural Boards with Halo Perimeter Glow</span>
+                <h3 class="card-title">Faceted Triangular Backlit Geometric Wall</h3>
+                <p class="card-app">Modern Foyer & Bedhead Accent Wall</p>
+                <div class="card-specs-row">Geometric faceted triangulations with indirect LED lighting</div>
+                <a href="https://www.pinterest.com/pin/809662839280539190/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-GM-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/06-geometric-wall-panels/wp-gm-05_14.jpg', 'WP-GM-05', 'Grid Panelling with Brass Intersection Studs', 'Warm Beige Velvet-Touch Panels with Solid Brass Accents', 'Luxury Bedroom Feature Wall & Boutique Hotel Suite', 'Padded geometric wall panels with custom machined brass pins', 'https://www.pinterest.com/pin/703756189188112/')">
+                <span class="model-badge">WP-GM-05</span>
+                <img src="assets/wall-panels/06-geometric-wall-panels/wp-gm-05_14.jpg" alt="Grid Panelling with Brass Intersection Studs - GEOMETRIC WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Warm Beige Velvet-Touch Panels with Solid Brass Accents</span>
+                <h3 class="card-title">Grid Panelling with Brass Intersection Studs</h3>
+                <p class="card-app">Luxury Bedroom Feature Wall & Boutique Hotel Suite</p>
+                <div class="card-specs-row">Padded geometric wall panels with custom machined brass pins</div>
+                <a href="https://www.pinterest.com/pin/703756189188112/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="07-marble-finish-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 07</span>
+            <h2 class="section-title">MARBLE FINISH WALL PANELS</h2>
+            <p class="section-desc">Large-format bookmatched porcelain and sintered stone marble wall panels featuring Calacatta Gold, Statuario, and Carrara veining complemented by brass inlay profiles and fluted walnut pilasters.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-MB-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/07-marble-finish-wall-panels/wp-mb-01_1.png', 'WP-MB-01', 'Bookmatched Marble Panel with Walnut Fluting', 'High-Gloss Calacatta Marble Slab with Walnut Slat Flanks', 'Living Room TV Feature Wall & Entertainment Console', 'Continuous vein-matched porcelain slab, natural walnut accents', 'https://www.pinterest.com/pin/1112600282976201740/')">
+                <span class="model-badge">WP-MB-01</span>
+                <img src="assets/wall-panels/07-marble-finish-wall-panels/wp-mb-01_1.png" alt="Bookmatched Marble Panel with Walnut Fluting - MARBLE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">High-Gloss Calacatta Marble Slab with Walnut Slat Flanks</span>
+                <h3 class="card-title">Bookmatched Marble Panel with Walnut Fluting</h3>
+                <p class="card-app">Living Room TV Feature Wall & Entertainment Console</p>
+                <div class="card-specs-row">Continuous vein-matched porcelain slab, natural walnut accents</div>
+                <a href="https://www.pinterest.com/pin/1112600282976201740/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-MB-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/07-marble-finish-wall-panels/wp-mb-02_4.png', 'WP-MB-02', 'Statuario Marble Slab with Brass Inlays', 'Polished Statuario White Marble with Brushed Brass Profiles', 'Luxury Apartment Drawing Room & Dining Wall', 'Precision waterjet cut slabs, 3mm brass T-inlay trims', 'https://www.pinterest.com/pin/1062286630879163619/')">
+                <span class="model-badge">WP-MB-02</span>
+                <img src="assets/wall-panels/07-marble-finish-wall-panels/wp-mb-02_4.png" alt="Statuario Marble Slab with Brass Inlays - MARBLE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Polished Statuario White Marble with Brushed Brass Profiles</span>
+                <h3 class="card-title">Statuario Marble Slab with Brass Inlays</h3>
+                <p class="card-app">Luxury Apartment Drawing Room & Dining Wall</p>
+                <div class="card-specs-row">Precision waterjet cut slabs, 3mm brass T-inlay trims</div>
+                <a href="https://www.pinterest.com/pin/1062286630879163619/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-MB-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/07-marble-finish-wall-panels/wp-mb-03_8.png', 'WP-MB-03', 'Monolithic Calacatta Light Grey Marble TV Wall', 'Satin Silk Finish Sintered Stone Slab', 'Contemporary Living Room Media Wall & Floating Credenza', 'Seamless large-format sintered porcelain, heat and scratch proof', 'https://www.pinterest.com/pin/612067405653976704/')">
+                <span class="model-badge">WP-MB-03</span>
+                <img src="assets/wall-panels/07-marble-finish-wall-panels/wp-mb-03_8.png" alt="Monolithic Calacatta Light Grey Marble TV Wall - MARBLE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Satin Silk Finish Sintered Stone Slab</span>
+                <h3 class="card-title">Monolithic Calacatta Light Grey Marble TV Wall</h3>
+                <p class="card-app">Contemporary Living Room Media Wall & Floating Credenza</p>
+                <div class="card-specs-row">Seamless large-format sintered porcelain, heat and scratch proof</div>
+                <a href="https://www.pinterest.com/pin/612067405653976704/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-MB-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/07-marble-finish-wall-panels/wp-mb-04_14.jpg', 'WP-MB-04', 'Floating Backlit Carrara Marble Panel', 'Translucent Backlit Porcelain Slab with Floating Mounts', 'Living Lounge Entertainment Center & Soundbar Niche', 'Perimeter LED glow, floating sub-frame mount with acoustic base', 'https://www.pinterest.com/pin/64246732182877653/')">
+                <span class="model-badge">WP-MB-04</span>
+                <img src="assets/wall-panels/07-marble-finish-wall-panels/wp-mb-04_14.jpg" alt="Floating Backlit Carrara Marble Panel - MARBLE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Translucent Backlit Porcelain Slab with Floating Mounts</span>
+                <h3 class="card-title">Floating Backlit Carrara Marble Panel</h3>
+                <p class="card-app">Living Lounge Entertainment Center & Soundbar Niche</p>
+                <div class="card-specs-row">Perimeter LED glow, floating sub-frame mount with acoustic base</div>
+                <a href="https://www.pinterest.com/pin/64246732182877653/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-MB-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/07-marble-finish-wall-panels/wp-mb-05_21.jpg', 'WP-MB-05', 'Calacatta Gold Framed Marble Panel with Sconces', 'Gold-Veined Italian Marble Slab with Fluted Pilaster Frames', 'Grand Foyer & Master Drawing Room Accent Wall', 'Brass-profile frame enclosure, symmetrical designer sconces', 'https://www.pinterest.com/pin/70931762877866029/')">
+                <span class="model-badge">WP-MB-05</span>
+                <img src="assets/wall-panels/07-marble-finish-wall-panels/wp-mb-05_21.jpg" alt="Calacatta Gold Framed Marble Panel with Sconces - MARBLE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Gold-Veined Italian Marble Slab with Fluted Pilaster Frames</span>
+                <h3 class="card-title">Calacatta Gold Framed Marble Panel with Sconces</h3>
+                <p class="card-app">Grand Foyer & Master Drawing Room Accent Wall</p>
+                <div class="card-specs-row">Brass-profile frame enclosure, symmetrical designer sconces</div>
+                <a href="https://www.pinterest.com/pin/70931762877866029/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="08-stone-finish-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 08</span>
+            <h2 class="section-title">STONE FINISH WALL PANELS</h2>
+            <p class="section-desc">Rugged and tactile natural stone treatments including cleft rock-face feature walls, porous Italian travertine slabs, linear stacked stone ledger panels, and dark split-face basalt rock accented by warm louvers.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-ST-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/08-stone-finish-wall-panels/wp-st-01_2.jpg', 'WP-ST-01', 'Craggy Rock-Face Stone Wall with Shelving', 'Natural Cleft Sandstone Boulder Veneer', 'Living Room TV Feature Wall with Open Timber Shelves', 'Hand-chiseled rough stone face, integrated oak display shelving', 'https://www.pinterest.com/pin/3237030979271103/')">
+                <span class="model-badge">WP-ST-01</span>
+                <img src="assets/wall-panels/08-stone-finish-wall-panels/wp-st-01_2.jpg" alt="Craggy Rock-Face Stone Wall with Shelving - STONE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Natural Cleft Sandstone Boulder Veneer</span>
+                <h3 class="card-title">Craggy Rock-Face Stone Wall with Shelving</h3>
+                <p class="card-app">Living Room TV Feature Wall with Open Timber Shelves</p>
+                <div class="card-specs-row">Hand-chiseled rough stone face, integrated oak display shelving</div>
+                <a href="https://www.pinterest.com/pin/3237030979271103/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-ST-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/08-stone-finish-wall-panels/wp-st-02_5.jpg', 'WP-ST-02', 'Textured Travertine Stone Block Cladding', 'Honed & Pitted Roman Travertine Stone Panels', 'Residential Sunroom, Reading Lounge & Foyer Wall', 'Staggered rectangular travertine masonry blocks, natural voids', 'https://www.pinterest.com/pin/70437491067944/')">
+                <span class="model-badge">WP-ST-02</span>
+                <img src="assets/wall-panels/08-stone-finish-wall-panels/wp-st-02_5.jpg" alt="Textured Travertine Stone Block Cladding - STONE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Honed & Pitted Roman Travertine Stone Panels</span>
+                <h3 class="card-title">Textured Travertine Stone Block Cladding</h3>
+                <p class="card-app">Residential Sunroom, Reading Lounge & Foyer Wall</p>
+                <div class="card-specs-row">Staggered rectangular travertine masonry blocks, natural voids</div>
+                <a href="https://www.pinterest.com/pin/70437491067944/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-ST-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/08-stone-finish-wall-panels/wp-st-03_7.jpg', 'WP-ST-03', 'Linear Stacked Stone Ledge Wall Panelling', 'Natural Grey Quartzite Split-Face Stone Ledgers', 'Drawing Room Accent Wall with Warm Downlights', 'Interlocking Z-stone ledger panels with grazing spot illumination', 'https://www.pinterest.com/pin/54184001763922709/')">
+                <span class="model-badge">WP-ST-03</span>
+                <img src="assets/wall-panels/08-stone-finish-wall-panels/wp-st-03_7.jpg" alt="Linear Stacked Stone Ledge Wall Panelling - STONE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Natural Grey Quartzite Split-Face Stone Ledgers</span>
+                <h3 class="card-title">Linear Stacked Stone Ledge Wall Panelling</h3>
+                <p class="card-app">Drawing Room Accent Wall with Warm Downlights</p>
+                <div class="card-specs-row">Interlocking Z-stone ledger panels with grazing spot illumination</div>
+                <a href="https://www.pinterest.com/pin/54184001763922709/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-ST-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/08-stone-finish-wall-panels/wp-st-04_9.jpg', 'WP-ST-04', 'Split-Face Dark Basalt Rock with Wood Louvers', 'Charcoal Split-Face Basalt Rock & Vertical Teak Slats', 'Ultra-Luxury Villa Lounge & Penthouse Living Salon', 'Alternating bays of rugged volcanic stone and warm wood slats', 'https://www.pinterest.com/pin/140806233913068/')">
+                <span class="model-badge">WP-ST-04</span>
+                <img src="assets/wall-panels/08-stone-finish-wall-panels/wp-st-04_9.jpg" alt="Split-Face Dark Basalt Rock with Wood Louvers - STONE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Charcoal Split-Face Basalt Rock & Vertical Teak Slats</span>
+                <h3 class="card-title">Split-Face Dark Basalt Rock with Wood Louvers</h3>
+                <p class="card-app">Ultra-Luxury Villa Lounge & Penthouse Living Salon</p>
+                <div class="card-specs-row">Alternating bays of rugged volcanic stone and warm wood slats</div>
+                <a href="https://www.pinterest.com/pin/140806233913068/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-ST-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/08-stone-finish-wall-panels/wp-st-05_16.png', 'WP-ST-05', 'Dry-Stacked Limestone Ledger Stone TV Wall', 'Cream Limestone Veneer Framed in Natural White Oak', 'Modern Apartment TV Entertainment Console Wall', 'Dry-stacked interlocking ledger stone, warm cove downlighting', 'https://www.pinterest.com/pin/563018699759515/')">
+                <span class="model-badge">WP-ST-05</span>
+                <img src="assets/wall-panels/08-stone-finish-wall-panels/wp-st-05_16.png" alt="Dry-Stacked Limestone Ledger Stone TV Wall - STONE FINISH WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Cream Limestone Veneer Framed in Natural White Oak</span>
+                <h3 class="card-title">Dry-Stacked Limestone Ledger Stone TV Wall</h3>
+                <p class="card-app">Modern Apartment TV Entertainment Console Wall</p>
+                <div class="card-specs-row">Dry-stacked interlocking ledger stone, warm cove downlighting</div>
+                <a href="https://www.pinterest.com/pin/563018699759515/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="09-paint-texture-walls">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 09</span>
+            <h2 class="section-title">PAINT TEXTURE WALLS</h2>
+            <p class="section-desc">Handcrafted artisan wall finishes featuring breathable lime-wash, mineral microcements, cloud-effect stucco, earthy clay plasters, and Tuscan terracotta finishes applied with stainless steel trowels.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-PT-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/09-paint-texture-walls/wp-pt-01_1.png', 'WP-PT-01', 'Ivory Lime-Wash Hand-Troweled Bedroom Wall', 'Natural Slaked Lime & Fine Marble Dust Wash', 'Master Bedroom Bedhead Backdrop & Luxury Suite', 'Multi-layered cross-hatch troweling, velvety matte finish', 'https://www.pinterest.com/pin/3377768469310750/')">
+                <span class="model-badge">WP-PT-01</span>
+                <img src="assets/wall-panels/09-paint-texture-walls/wp-pt-01_1.png" alt="Ivory Lime-Wash Hand-Troweled Bedroom Wall - PAINT TEXTURE WALLS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Natural Slaked Lime & Fine Marble Dust Wash</span>
+                <h3 class="card-title">Ivory Lime-Wash Hand-Troweled Bedroom Wall</h3>
+                <p class="card-app">Master Bedroom Bedhead Backdrop & Luxury Suite</p>
+                <div class="card-specs-row">Multi-layered cross-hatch troweling, velvety matte finish</div>
+                <a href="https://www.pinterest.com/pin/3377768469310750/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-PT-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/09-paint-texture-walls/wp-pt-02_2.jpg', 'WP-PT-02', 'Sage Green Cloud Lime-Wash Accent Wall', 'Pigmented Mineral Lime Plaster in Organic Olive Sage', 'Contemporary Bedroom & Relaxed Living Lounge', 'Soft cloud mottling, breathable non-toxic zero-VOC coating', 'https://www.pinterest.com/pin/75505731280960275/')">
+                <span class="model-badge">WP-PT-02</span>
+                <img src="assets/wall-panels/09-paint-texture-walls/wp-pt-02_2.jpg" alt="Sage Green Cloud Lime-Wash Accent Wall - PAINT TEXTURE WALLS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Pigmented Mineral Lime Plaster in Organic Olive Sage</span>
+                <h3 class="card-title">Sage Green Cloud Lime-Wash Accent Wall</h3>
+                <p class="card-app">Contemporary Bedroom & Relaxed Living Lounge</p>
+                <div class="card-specs-row">Soft cloud mottling, breathable non-toxic zero-VOC coating</div>
+                <a href="https://www.pinterest.com/pin/75505731280960275/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-PT-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/09-paint-texture-walls/wp-pt-03_5.webp', 'WP-PT-03', 'Terracotta Rust Artisanal Stucco Feature Wall', 'Warm Siena Terracotta Textured Wall Plaster', 'Boho Luxury Bedroom & Mediterranean Living Room', 'Coarse sand-textured stucco with warm pendant lighting', 'https://www.pinterest.com/pin/1759287349529893/')">
+                <span class="model-badge">WP-PT-03</span>
+                <img src="assets/wall-panels/09-paint-texture-walls/wp-pt-03_5.webp" alt="Terracotta Rust Artisanal Stucco Feature Wall - PAINT TEXTURE WALLS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Warm Siena Terracotta Textured Wall Plaster</span>
+                <h3 class="card-title">Terracotta Rust Artisanal Stucco Feature Wall</h3>
+                <p class="card-app">Boho Luxury Bedroom & Mediterranean Living Room</p>
+                <div class="card-specs-row">Coarse sand-textured stucco with warm pendant lighting</div>
+                <a href="https://www.pinterest.com/pin/1759287349529893/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-PT-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/09-paint-texture-walls/wp-pt-04_8.webp', 'WP-PT-04', 'Cool Grey Concrete Stucco Cementitious Wall', 'Industrial Microcement Wall Coating in Raw Concrete', 'Modern Loft Living Room & Minimalist Bedroom Wall', 'Seamless continuous trowel-burnished cementitious stucco', 'https://www.pinterest.com/pin/111886371987778596/')">
+                <span class="model-badge">WP-PT-04</span>
+                <img src="assets/wall-panels/09-paint-texture-walls/wp-pt-04_8.webp" alt="Cool Grey Concrete Stucco Cementitious Wall - PAINT TEXTURE WALLS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Industrial Microcement Wall Coating in Raw Concrete</span>
+                <h3 class="card-title">Cool Grey Concrete Stucco Cementitious Wall</h3>
+                <p class="card-app">Modern Loft Living Room & Minimalist Bedroom Wall</p>
+                <div class="card-specs-row">Seamless continuous trowel-burnished cementitious stucco</div>
+                <a href="https://www.pinterest.com/pin/111886371987778596/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-PT-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/09-paint-texture-walls/wp-pt-05_14.png', 'WP-PT-05', 'Earthy Clay Plaster with Illuminated Circular Niche', 'Warm Clay & Straw Natural Earth Plaster', 'Wabi-Sabi Foyer Entrance & Meditation Corner Wall', 'Recessed circular backlit alcove with raw organic texture', 'https://www.pinterest.com/pin/1900024840273137/')">
+                <span class="model-badge">WP-PT-05</span>
+                <img src="assets/wall-panels/09-paint-texture-walls/wp-pt-05_14.png" alt="Earthy Clay Plaster with Illuminated Circular Niche - PAINT TEXTURE WALLS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Warm Clay & Straw Natural Earth Plaster</span>
+                <h3 class="card-title">Earthy Clay Plaster with Illuminated Circular Niche</h3>
+                <p class="card-app">Wabi-Sabi Foyer Entrance & Meditation Corner Wall</p>
+                <div class="card-specs-row">Recessed circular backlit alcove with raw organic texture</div>
+                <a href="https://www.pinterest.com/pin/1900024840273137/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="10-pu-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 10</span>
+            <h2 class="section-title">PU WALL PANELS</h2>
+            <p class="section-desc">Lightweight, pre-primed high-density polyurethane (PU) wall mouldings and architectural trims creating timeless French boiserie, neoclassical wall frames, and contemporary wainscoting panels.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-PU-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/10-pu-wall-panels/wp-pu-01_1.jpg', 'WP-PU-01', 'Contemporary Arched PU Moulding Wall Panels', 'High-Density PU Architectural Moulding in Warm Cream', 'Modern Living Room Accent Wall with Track Spotlights', 'Concentric capsule arch profiles with rectangular upper frames', 'https://www.pinterest.com/pin/13440498883954203/')">
+                <span class="model-badge">WP-PU-01</span>
+                <img src="assets/wall-panels/10-pu-wall-panels/wp-pu-01_1.jpg" alt="Contemporary Arched PU Moulding Wall Panels - PU WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">High-Density PU Architectural Moulding in Warm Cream</span>
+                <h3 class="card-title">Contemporary Arched PU Moulding Wall Panels</h3>
+                <p class="card-app">Modern Living Room Accent Wall with Track Spotlights</p>
+                <div class="card-specs-row">Concentric capsule arch profiles with rectangular upper frames</div>
+                <a href="https://www.pinterest.com/pin/13440498883954203/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-PU-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/10-pu-wall-panels/wp-pu-02_3.jpg', 'WP-PU-02', 'French Parisian-Style PU Boiserie in Greige', 'Pre-Primed High-Density Polyurethane with Matte Lacquer', 'Formal Living Room & Dining Salon Feature Wall', 'Classic double-box wall framing with vertical candle sconces', 'https://www.pinterest.com/pin/10485011673969168/')">
+                <span class="model-badge">WP-PU-02</span>
+                <img src="assets/wall-panels/10-pu-wall-panels/wp-pu-02_3.jpg" alt="French Parisian-Style PU Boiserie in Greige - PU WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Pre-Primed High-Density Polyurethane with Matte Lacquer</span>
+                <h3 class="card-title">French Parisian-Style PU Boiserie in Greige</h3>
+                <p class="card-app">Formal Living Room & Dining Salon Feature Wall</p>
+                <div class="card-specs-row">Classic double-box wall framing with vertical candle sconces</div>
+                <a href="https://www.pinterest.com/pin/10485011673969168/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-PU-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/10-pu-wall-panels/wp-pu-03_5.jpg', 'WP-PU-03', 'Grand Classical Ornate Carved PU Wall Moulding', 'Carved High-Density PU Pilasters & Moulding Frames', 'Neoclassical Villa Foyer & Grand Drawing Room', 'Acanthus leaf corner carvings, dentil cornices, and chair rails', 'https://www.pinterest.com/pin/5418462047926324/')">
+                <span class="model-badge">WP-PU-03</span>
+                <img src="assets/wall-panels/10-pu-wall-panels/wp-pu-03_5.jpg" alt="Grand Classical Ornate Carved PU Wall Moulding - PU WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Carved High-Density PU Pilasters & Moulding Frames</span>
+                <h3 class="card-title">Grand Classical Ornate Carved PU Wall Moulding</h3>
+                <p class="card-app">Neoclassical Villa Foyer & Grand Drawing Room</p>
+                <div class="card-specs-row">Acanthus leaf corner carvings, dentil cornices, and chair rails</div>
+                <a href="https://www.pinterest.com/pin/5418462047926324/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-PU-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/10-pu-wall-panels/wp-pu-04_9.jpg', 'WP-PU-04', 'Neoclassical Dusty Taupe PU Moulding Panels', 'Ultra-Matte Dusty Lilac Taupe Polyurethane Coat', 'Luxury Master Bedroom & Drawing Room Feature Wall', 'Ornate relief corner cartouches with symmetrical brass sconces', 'https://www.pinterest.com/pin/70437490988382/')">
+                <span class="model-badge">WP-PU-04</span>
+                <img src="assets/wall-panels/10-pu-wall-panels/wp-pu-04_9.jpg" alt="Neoclassical Dusty Taupe PU Moulding Panels - PU WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Ultra-Matte Dusty Lilac Taupe Polyurethane Coat</span>
+                <h3 class="card-title">Neoclassical Dusty Taupe PU Moulding Panels</h3>
+                <p class="card-app">Luxury Master Bedroom & Drawing Room Feature Wall</p>
+                <div class="card-specs-row">Ornate relief corner cartouches with symmetrical brass sconces</div>
+                <a href="https://www.pinterest.com/pin/70437490988382/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-PU-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/10-pu-wall-panels/wp-pu-05_16.jpg', 'WP-PU-05', 'Modern Double-Framed PU Moulding Living Wall', 'Crisp White HD Polymer Moulding on Warm Greige Wall', 'Contemporary Indian Apartment Living Room Wall', 'Double-box geometric moulding layout behind sectional sofa', 'https://www.pinterest.com/pin/2462974793836141/')">
+                <span class="model-badge">WP-PU-05</span>
+                <img src="assets/wall-panels/10-pu-wall-panels/wp-pu-05_16.jpg" alt="Modern Double-Framed PU Moulding Living Wall - PU WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Crisp White HD Polymer Moulding on Warm Greige Wall</span>
+                <h3 class="card-title">Modern Double-Framed PU Moulding Living Wall</h3>
+                <p class="card-app">Contemporary Indian Apartment Living Room Wall</p>
+                <div class="card-specs-row">Double-box geometric moulding layout behind sectional sofa</div>
+                <a href="https://www.pinterest.com/pin/2462974793836141/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="11-louvers-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 11</span>
+            <h2 class="section-title">LOUVERS WALL PANELS</h2>
+            <p class="section-desc">Architectural vertical and horizontal wood louver panelling designed for acoustic dampening, space partitioning, media wall framing, and subtle light play across residential interiors.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-LV-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/11-louvers-wall-panels/wp-lv-01_2.jpg', 'WP-LV-01', 'Natural Oak Vertical Timber Louver Partition', 'Solid White Oak Fins on Concealed Ceiling Track', 'Living & Dining Room Spatial Divider with Planter', '40x20mm vertical oak louvers with integrated planter trough', 'https://www.pinterest.com/pin/4574037118935022/')">
+                <span class="model-badge">WP-LV-01</span>
+                <img src="assets/wall-panels/11-louvers-wall-panels/wp-lv-01_2.jpg" alt="Natural Oak Vertical Timber Louver Partition - LOUVERS WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Solid White Oak Fins on Concealed Ceiling Track</span>
+                <h3 class="card-title">Natural Oak Vertical Timber Louver Partition</h3>
+                <p class="card-app">Living & Dining Room Spatial Divider with Planter</p>
+                <div class="card-specs-row">40x20mm vertical oak louvers with integrated planter trough</div>
+                <a href="https://www.pinterest.com/pin/4574037118935022/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-LV-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/11-louvers-wall-panels/wp-lv-02_4.jpg', 'WP-LV-02', 'Sculptural Diagonal-Cut Louvers with Cove Light', 'Warm Oak Louvers with Bevelled Illuminated Bases', 'Foyer Entrance Screen & Corridor Feature Wall', 'Staggered diagonal base terminations with warm LED cove', 'https://www.pinterest.com/pin/11470174047772984/')">
+                <span class="model-badge">WP-LV-02</span>
+                <img src="assets/wall-panels/11-louvers-wall-panels/wp-lv-02_4.jpg" alt="Sculptural Diagonal-Cut Louvers with Cove Light - LOUVERS WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Warm Oak Louvers with Bevelled Illuminated Bases</span>
+                <h3 class="card-title">Sculptural Diagonal-Cut Louvers with Cove Light</h3>
+                <p class="card-app">Foyer Entrance Screen & Corridor Feature Wall</p>
+                <div class="card-specs-row">Staggered diagonal base terminations with warm LED cove</div>
+                <a href="https://www.pinterest.com/pin/11470174047772984/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-LV-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/11-louvers-wall-panels/wp-lv-03_8.jpg', 'WP-LV-03', 'Geometric Staggered Offset Slat Louver Screen', 'Quarter-Cut Teak Louvers with Alternating Voids', 'Living Room Feature Partition & Study Divider', 'Staggered rhythmic horizontal and vertical slat intervals', 'https://www.pinterest.com/pin/3448137209543620/')">
+                <span class="model-badge">WP-LV-03</span>
+                <img src="assets/wall-panels/11-louvers-wall-panels/wp-lv-03_8.jpg" alt="Geometric Staggered Offset Slat Louver Screen - LOUVERS WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Quarter-Cut Teak Louvers with Alternating Voids</span>
+                <h3 class="card-title">Geometric Staggered Offset Slat Louver Screen</h3>
+                <p class="card-app">Living Room Feature Partition & Study Divider</p>
+                <div class="card-specs-row">Staggered rhythmic horizontal and vertical slat intervals</div>
+                <a href="https://www.pinterest.com/pin/3448137209543620/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-LV-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/11-louvers-wall-panels/wp-lv-04_17.png', 'WP-LV-04', 'Vertical Louvers with Integrated Display Niches', 'Honey Teak Louvers with Floating Display Cubbies', 'Dining Foyer Screen & Artifact Display Partition', 'Floor-to-ceiling timber slats with cantilevered shadow boxes', 'https://www.pinterest.com/pin/2533343539329403/')">
+                <span class="model-badge">WP-LV-04</span>
+                <img src="assets/wall-panels/11-louvers-wall-panels/wp-lv-04_17.png" alt="Vertical Louvers with Integrated Display Niches - LOUVERS WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Honey Teak Louvers with Floating Display Cubbies</span>
+                <h3 class="card-title">Vertical Louvers with Integrated Display Niches</h3>
+                <p class="card-app">Dining Foyer Screen & Artifact Display Partition</p>
+                <div class="card-specs-row">Floor-to-ceiling timber slats with cantilevered shadow boxes</div>
+                <a href="https://www.pinterest.com/pin/2533343539329403/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-LV-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/11-louvers-wall-panels/wp-lv-05_22.jpg', 'WP-LV-05', 'Living Room TV Unit with Integrated Louver Screen', 'Teak Louver Backdrop Flanking Floating Media Credenza', 'Modern Apartment Living Room TV & Media Center', 'Full-height vertical louvers integrated with entertainment unit', 'https://www.pinterest.com/pin/8725793026039350/')">
+                <span class="model-badge">WP-LV-05</span>
+                <img src="assets/wall-panels/11-louvers-wall-panels/wp-lv-05_22.jpg" alt="Living Room TV Unit with Integrated Louver Screen - LOUVERS WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Teak Louver Backdrop Flanking Floating Media Credenza</span>
+                <h3 class="card-title">Living Room TV Unit with Integrated Louver Screen</h3>
+                <p class="card-app">Modern Apartment Living Room TV & Media Center</p>
+                <div class="card-specs-row">Full-height vertical louvers integrated with entertainment unit</div>
+                <a href="https://www.pinterest.com/pin/8725793026039350/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+      <section class="catalogue-section" id="12-decorative-wall-panels">
+        <!-- Section Header Editorial Banner -->
+        <div class="section-header-banner">
+          <div class="section-header-left">
+            <span class="section-code-tag">SECTION 12</span>
+            <h2 class="section-title">DECORATIVE WALL PANELS</h2>
+            <p class="section-desc">Bespoke mixed-material feature wall panels incorporating brushed champagne fluting, gold-inlaid grids, fluid backlit wave sculptures, interactive illuminated blocks, and circular halo art medallions.</p>
+          </div>
+          <span class="section-count-badge">5 Curated Designs</span>
+        </div>
+
+        <!-- 5 Curated Items Grid -->
+        <div class="items-grid">
+          
+            <article class="design-card" data-ref="WP-DC-01">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/12-decorative-wall-panels/wp-dc-01_1.jpg', 'WP-DC-01', 'Champagne Fluted Panels with Brass Inlay Profiles', 'Champagne Lacquered Flutes with Brushed Brass Inlays', 'Luxury Living Room Media Backdrop & Floating Console', 'Asymmetrical brass profile inlays with vertical fluted panels', 'https://www.pinterest.com/pin/59039445112486510/')">
+                <span class="model-badge">WP-DC-01</span>
+                <img src="assets/wall-panels/12-decorative-wall-panels/wp-dc-01_1.jpg" alt="Champagne Fluted Panels with Brass Inlay Profiles - DECORATIVE WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Champagne Lacquered Flutes with Brushed Brass Inlays</span>
+                <h3 class="card-title">Champagne Fluted Panels with Brass Inlay Profiles</h3>
+                <p class="card-app">Luxury Living Room Media Backdrop & Floating Console</p>
+                <div class="card-specs-row">Asymmetrical brass profile inlays with vertical fluted panels</div>
+                <a href="https://www.pinterest.com/pin/59039445112486510/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-DC-02">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/12-decorative-wall-panels/wp-dc-02_2.jpg', 'WP-DC-02', 'Matte Black Grid Panelling with Gold Corner Studs', 'Matte Jet Black Board Panelling with Machined Brass Studs', 'Executive Home Theater, Den & Drawing Room Salon', 'Geometric square panel grid with custom brushed gold pyramid studs', 'https://www.pinterest.com/pin/2955556004026704/')">
+                <span class="model-badge">WP-DC-02</span>
+                <img src="assets/wall-panels/12-decorative-wall-panels/wp-dc-02_2.jpg" alt="Matte Black Grid Panelling with Gold Corner Studs - DECORATIVE WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Matte Jet Black Board Panelling with Machined Brass Studs</span>
+                <h3 class="card-title">Matte Black Grid Panelling with Gold Corner Studs</h3>
+                <p class="card-app">Executive Home Theater, Den & Drawing Room Salon</p>
+                <div class="card-specs-row">Geometric square panel grid with custom brushed gold pyramid studs</div>
+                <a href="https://www.pinterest.com/pin/2955556004026704/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-DC-03">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/12-decorative-wall-panels/wp-dc-03_3.png', 'WP-DC-03', 'Grand Fluid Crystal Wave Backlit Feature Wall', 'Backlit Translucent Quartz Wave with Fluted Pilasters', 'Penthouse Main Living Room & Grand Reception Salon', 'Curved illuminated crystal wave motif flanked by fluted columns', 'https://www.pinterest.com/pin/45387908741716097/')">
+                <span class="model-badge">WP-DC-03</span>
+                <img src="assets/wall-panels/12-decorative-wall-panels/wp-dc-03_3.png" alt="Grand Fluid Crystal Wave Backlit Feature Wall - DECORATIVE WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Backlit Translucent Quartz Wave with Fluted Pilasters</span>
+                <h3 class="card-title">Grand Fluid Crystal Wave Backlit Feature Wall</h3>
+                <p class="card-app">Penthouse Main Living Room & Grand Reception Salon</p>
+                <div class="card-specs-row">Curved illuminated crystal wave motif flanked by fluted columns</div>
+                <a href="https://www.pinterest.com/pin/45387908741716097/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-DC-04">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/12-decorative-wall-panels/wp-dc-04_7.jpg', 'WP-DC-04', 'Modular Illuminated 3D Light Block Atrium Wall', 'Sandstone Acoustic Relief Blocks with Recessed LEDs', 'Double-Height Living Atrium & Commercial Lobby', 'Staggered rectangular light blocks casting upward and downward glow', 'https://www.pinterest.com/pin/12244230232172382/')">
+                <span class="model-badge">WP-DC-04</span>
+                <img src="assets/wall-panels/12-decorative-wall-panels/wp-dc-04_7.jpg" alt="Modular Illuminated 3D Light Block Atrium Wall - DECORATIVE WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Sandstone Acoustic Relief Blocks with Recessed LEDs</span>
+                <h3 class="card-title">Modular Illuminated 3D Light Block Atrium Wall</h3>
+                <p class="card-app">Double-Height Living Atrium & Commercial Lobby</p>
+                <div class="card-specs-row">Staggered rectangular light blocks casting upward and downward glow</div>
+                <a href="https://www.pinterest.com/pin/12244230232172382/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+            <article class="design-card" data-ref="WP-DC-05">
+              <div class="card-image-wrap" onclick="openLightbox('assets/wall-panels/12-decorative-wall-panels/wp-dc-05_9.jpg', 'WP-DC-05', 'Circular Halo Backlit Art Disc on Fluted Console', 'Brushed Brass Halo Ring with Fluted Wood Feature Wall', 'Entrance Foyer Gallery Wall & Formal Credenza Niche', 'Warm perimeter halo LED ring with handcrafted botanical brass sculpture', 'https://www.pinterest.com/pin/106327241198537515/')">
+                <span class="model-badge">WP-DC-05</span>
+                <img src="assets/wall-panels/12-decorative-wall-panels/wp-dc-05_9.jpg" alt="Circular Halo Backlit Art Disc on Fluted Console - DECORATIVE WALL PANELS" loading="lazy">
+                <div class="zoom-hint-badge" title="Enlarge View">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/><path d="M11 8v6"/><path d="M8 11h6"/></svg>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-finish-tag">Brushed Brass Halo Ring with Fluted Wood Feature Wall</span>
+                <h3 class="card-title">Circular Halo Backlit Art Disc on Fluted Console</h3>
+                <p class="card-app">Entrance Foyer Gallery Wall & Formal Credenza Niche</p>
+                <div class="card-specs-row">Warm perimeter halo LED ring with handcrafted botanical brass sculpture</div>
+                <a href="https://www.pinterest.com/pin/106327241198537515/" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" title="View original Pinterest inspiration pin">
+                  <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+                  <span>Pinterest Reference</span>
+                </a>
+              </div>
+            </article>
+            
+        </div>
+      </section>
+    
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" onclick="closeLightbox(event)">
+    <div class="lightbox-dialog" onclick="event.stopPropagation()">
+      <button class="lightbox-close-btn" onclick="closeLightbox(event)">✕</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightboxImg" src="" alt="Enlarged Wall Panel Design">
+      </div>
+      <div class="lightbox-details">
+        <span id="lightboxRef" style="font-size: 0.72rem; font-weight: 800; letter-spacing: 0.2em; color: var(--copper); margin-bottom: 0.5rem; text-transform: uppercase;"></span>
+        <h2 id="lightboxTitle" style="font-family: var(--font-serif); font-size: 1.6rem; color: var(--text-dark); margin-bottom: 0.75rem; line-height: 1.25;"></h2>
+        <div style="margin-bottom: 1.25rem;">
+          <strong style="font-size: 0.76rem; text-transform: uppercase; color: var(--text-light); letter-spacing: 0.1em; display: block; margin-bottom: 4px;">Material & Finish:</strong>
+          <p id="lightboxFinish" style="font-size: 0.92rem; color: var(--text-primary);"></p>
+        </div>
+        <div style="margin-bottom: 1.25rem;">
+          <strong style="font-size: 0.76rem; text-transform: uppercase; color: var(--text-light); letter-spacing: 0.1em; display: block; margin-bottom: 4px;">Recommended Application:</strong>
+          <p id="lightboxApp" style="font-size: 0.92rem; color: var(--text-secondary);"></p>
+        </div>
+        <div style="margin-bottom: 1.5rem;">
+          <strong style="font-size: 0.76rem; text-transform: uppercase; color: var(--text-light); letter-spacing: 0.1em; display: block; margin-bottom: 4px;">Architectural Specs:</strong>
+          <p id="lightboxSpecs" style="font-size: 0.85rem; color: var(--text-secondary); background: var(--bg-warm); padding: 0.75rem; border-radius: 6px; border: 1px solid var(--border-subtle);"></p>
+        </div>
+        <div style="margin-top: auto; display: flex; gap: 0.75rem;">
+          <a id="lightboxPinLink" href="#" target="_blank" rel="noopener noreferrer" class="pinterest-source-btn" style="flex: 1; padding: 0.75rem;">
+            <svg class="pinterest-icon" viewBox="0 0 24 24"><path d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345-.09.375-.291 1.199-.332 1.365-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"/></svg>
+            <span>Open Original Pinterest Pin</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div style="font-family: var(--font-serif); font-size: 1.4rem; color: #FFFFFF; margin-bottom: 0.5rem;">CAPSULE COMPANY</div>
+      <p style="font-size: 0.85rem; color: #9C8E84; max-width: 600px; margin: 0 auto 1.5rem;">
+        Bespoke Architectural Archives • Wall Panel Design Lookbook 2026. Exactly 60 photographic references across 12 signature categories.
+      </p>
+      <div style="font-size: 0.78rem; color: #6B5E54;">
+        © 2026 Capsule Company. All visual reference rights belong to their respective Pinterest creators & original project architects.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function openLightbox(imgSrc, ref, title, finish, app, specs, pinUrl) {
+      document.getElementById('lightboxImg').src = imgSrc;
+      document.getElementById('lightboxRef').innerText = 'REF: ' + ref;
+      document.getElementById('lightboxTitle').innerText = title;
+      document.getElementById('lightboxFinish').innerText = finish;
+      document.getElementById('lightboxApp').innerText = app;
+      document.getElementById('lightboxSpecs').innerText = specs;
+      document.getElementById('lightboxPinLink').href = pinUrl;
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox(e) {
+      const modal = document.getElementById('lightboxModal');
+      modal.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    // Update active pill on scroll
+    window.addEventListener('scroll', () => {
+      const sections = document.querySelectorAll('.catalogue-section');
+      const pills = document.querySelectorAll('.section-pill');
+      let currentId = '';
+      sections.forEach(sec => {
+        const top = sec.offsetTop - 160;
+        if (window.scrollY >= top) currentId = sec.id;
+      });
+      pills.forEach(p => {
+        if (p.getAttribute('href') === '#' + currentId) {
+          p.classList.add('active');
+        } else {
+          p.classList.remove('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

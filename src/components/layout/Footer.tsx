@@ -22,6 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
     { label: 'Why Capsule', to: '/why-capsule' },
     { label: 'FAQ', to: '/faq' },
     { label: 'Contact', to: '/contact' },
+    { label: 'Design Catalogues', to: '/capsule-catalogue-index.html', isExternal: true },
   ];
 
   const serviceLinks = [
@@ -133,12 +134,22 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             <ul className="space-y-2.5 text-sm text-gray-300">
               {navLinks.map((item) => (
                 <li key={item.label}>
-                  <Link
-                    to={item.to}
-                    className="hover:text-brand-copper transition-colors"
-                  >
-                    {item.label}
-                  </Link>
+                  {(item as any).isExternal ? (
+                    <a
+                      href={item.to}
+                      className="hover:text-brand-copper transition-colors inline-flex items-center gap-1.5"
+                    >
+                      <span>{item.label}</span>
+                      <span className="text-[10px] text-brand-copper font-bold px-1.5 py-0.2 rounded bg-brand-copper/10 border border-brand-copper/30">16 PDFs</span>
+                    </a>
+                  ) : (
+                    <Link
+                      to={item.to}
+                      className="hover:text-brand-copper transition-colors"
+                    >
+                      {item.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

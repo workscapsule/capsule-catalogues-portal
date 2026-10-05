@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Review Kitchen Images</title>
+  <style>
+    body { font-family: sans-serif; background: #121212; color: #fff; padding: 20px; }
+    h1 { color: #C59A6F; }
+    h2 { border-bottom: 2px solid #C59A6F; padding-bottom: 8px; margin-top: 40px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; margin-top: 16px; }
+    .card { background: #1e1e1e; border-radius: 8px; overflow: hidden; border: 1px solid #333; }
+    .card img { width: 100%; height: 260px; object-fit: cover; display: block; }
+    .card-info { padding: 12px; }
+    .card-title { font-weight: bold; font-size: 14px; color: #C59A6F; }
+    .card-size { font-size: 12px; color: #888; margin-top: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Modular Kitchen Image Verification - 40 Designs Selection</h1>
+  <div id="content"></div>
+
+  <script>
+    const categories = ['l-shape', 'parallel', 'island', 'straight'];
+    const container = document.getElementById('content');
+
+    const counts = {
+      'l-shape': 24,
+      'parallel': 18,
+      'island': 16,
+      'straight': 18
+    };
+
+    categories.forEach(cat => {
+      const section = document.createElement('section');
+      section.innerHTML = `<h2>Category: ${cat.toUpperCase()} (${counts[cat]} downloaded)</h2>`;
+      const grid = document.createElement('div');
+      grid.className = 'grid';
+
+      for (let i = 1; i <= counts[cat]; i++) {
+        const num = String(i).padStart(2, '0');
+        const filename = `${cat}-${num}.jpg`;
+        const src = `/assets/catalogues/kitchen/${cat}/${filename}`;
+        
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.innerHTML = `
+          <img src="${src}" alt="${filename}" loading="lazy" />
+          <div class="card-info">
+            <div class="card-title">${filename}</div>
+            <div class="card-size">#${i} of ${cat}</div>
+          </div>
+        `;
+        grid.appendChild(card);
+      }
+      section.appendChild(grid);
+      container.appendChild(section);
+    });
+  </script>
+</body>
+</html>
