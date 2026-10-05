@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Capsule Company – Digital Design Catalogues</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Capsule Company Official Warm Aesthetic */
+      --bg-warm: #F7F3ED;
+      --bg-surface: #FFFFFF;
+      --bg-cream: #EFE8DE;
+      --bg-panel: rgba(247, 243, 237, 0.88);
+
+      --text-dark: #12100E;
+      --text-primary: #2B241F;
+      --text-secondary: #6B5E54;
+      --text-light: #9C8E84;
+
+      --copper: #B86D43;
+      --copper-bright: #CE7F53;
+      --copper-light: #DFC0B0;
+      --copper-dim: rgba(184, 109, 67, 0.12);
+      --copper-border: rgba(184, 109, 67, 0.22);
+      --copper-glow: rgba(184, 109, 67, 0.18);
+
+      --border-subtle: #E5DDD3;
+      --radius-xl: 20px;
+      --radius-lg: 14px;
+      --radius-md: 10px;
+
+      --font-serif: 'Playfair Display', Georgia, serif;
+      --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-warm);
+      color: var(--text-primary);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    /* Ambient Warm Architectural Vignette */
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: min(100vw, 1300px);
+      height: 600px;
+      background: radial-gradient(circle, rgba(184, 109, 67, 0.08) 0%, rgba(247, 243, 237, 0) 70%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* 1. Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 90;
+      background: rgba(247, 243, 237, 0.94);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .header-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0.9rem clamp(1rem, 3vw, 2.5rem);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .logo-frame {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      background: #FFFFFF;
+      border: 1px solid var(--copper-border);
+      padding: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .brand-link:hover .logo-frame {
+      transform: scale(1.04);
+    }
+
+    .logo-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-name {
+      font-size: 1.08rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: var(--text-dark);
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .brand-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.24em;
+      color: var(--copper);
+      font-weight: 700;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .header-contact-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-dark);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+
+    .header-contact-btn:hover {
+      border-color: var(--copper);
+      color: var(--copper);
+      transform: translateY(-1px);
+    }
+
+    /* 2. Hero Section: Editorial Elegance */
+    .hero {
+      position: relative;
+      z-index: 1;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: clamp(3rem, 6vw, 5rem) clamp(1.25rem, 3vw, 2rem) clamp(2rem, 4vw, 3rem);
+      text-align: center;
+    }
+
+    .hero-emblem {
+      width: 86px;
+      height: 86px;
+      margin: 0 auto 1.5rem;
+      border-radius: 50%;
+      padding: 3px;
+      background: linear-gradient(135deg, var(--copper-bright), #FFFFFF, var(--copper));
+      box-shadow: 0 12px 30px var(--copper-glow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.4s ease;
+    }
+
+    .hero-emblem:hover {
+      transform: scale(1.04);
+    }
+
+    .hero-emblem-inner {
+      width: 100%;
+      height: 100%;
+      background: #FFFFFF;
+      border-radius: 50%;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-emblem-inner img {
+      width: 90%;
+      height: 90%;
+      object-fit: contain;
+    }
+
+    .hero-pretitle {
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 0.85rem;
+      display: block;
+    }
+
+    .hero h1 {
+      font-family: var(--font-serif);
+      font-size: clamp(2.4rem, 5.5vw, 4rem);
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.18;
+      letter-spacing: -0.01em;
+      margin-bottom: 0.85rem;
+    }
+
+    .hero h1 span.italic-accent {
+      color: var(--copper);
+      font-style: italic;
+      font-weight: 400;
+    }
+
+    /* Architectural Copper Rule */
+    .copper-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      max-width: 240px;
+      margin: 1.25rem auto 1.5rem;
+    }
+
+    .copper-divider::before,
+    .copper-divider::after {
+      content: '';
+      height: 1px;
+      flex: 1;
+      background: var(--copper-border);
+    }
+
+    .copper-diamond {
+      width: 6px;
+      height: 6px;
+      background: var(--copper);
+      transform: rotate(45deg);
+      border-radius: 1px;
+    }
+
+    .hero-desc {
+      color: var(--text-secondary);
+      font-size: clamp(0.98rem, 1.4vw, 1.1rem);
+      line-height: 1.75;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    /* 3. Filter Navigation & Search Bar */
+    .controls-bar {
+      position: relative;
+      z-index: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 clamp(1rem, 3vw, 2.5rem) 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 900px) {
+      .controls-bar {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .filter-pills-row {
+      display: flex;
+      gap: 0.5rem;
+      overflow-x: auto;
+      padding-bottom: 0.35rem;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+
+    .filter-pills-row::-webkit-scrollbar {
+      display: none;
+    }
+
+    .filter-pill {
+      padding: 0.55rem 1.15rem;
+      border-radius: 9999px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+    }
+
+    .filter-pill:hover {
+      border-color: var(--copper);
+      color: var(--copper);
+    }
+
+    .filter-pill.active {
+      background: var(--text-dark);
+      color: #FFFFFF;
+      border-color: var(--text-dark);
+      box-shadow: 0 4px 12px rgba(18, 16, 14, 0.15);
+    }
+
+    .search-box-wrap {
+      position: relative;
+      width: 100%;
+      min-width: 260px;
+    }
+
+    @media (min-width: 900px) {
+      .search-box-wrap {
+        width: 320px;
+      }
+    }
+
+    .search-box-wrap svg {
+      position: absolute;
+      left: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--copper);
+      pointer-events: none;
+    }
+
+    .search-box-wrap input {
+      width: 100%;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 9999px;
+      padding: 0.65rem 1rem 0.65rem 2.6rem;
+      color: var(--text-dark);
+      font-family: var(--font-sans);
+      font-size: 0.88rem;
+      outline: none;
+      transition: all 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+    }
+
+    .search-box-wrap input:focus {
+      border-color: var(--copper);
+      box-shadow: 0 0 0 3px var(--copper-dim);
+    }
+
+    /* 4. The Editorial Catalogue Lookbook Grid */
+    main.lookbook-container {
+      position: relative;
+      z-index: 1;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 clamp(1rem, 3vw, 2.5rem) 5.5rem;
+      width: 100%;
+      flex: 1;
+    }
+
+    .lookbook-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: clamp(1.5rem, 3vw, 2.25rem);
+    }
+
+    @media (min-width: 600px) {
+      .lookbook-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .lookbook-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (min-width: 1280px) {
+      .lookbook-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    /* Architectural Catalogue Card */
+    .catalogue-item {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+      transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+                  box-shadow 0.35s ease,
+                  border-color 0.35s ease;
+      cursor: pointer;
+    }
+
+    .catalogue-item:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 36px rgba(18, 16, 14, 0.08), 0 0 20px var(--copper-glow);
+      border-color: var(--copper-border);
+    }
+
+    /* Photographic Canvas */
+    .item-image-canvas {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      overflow: hidden;
+      background: var(--bg-cream);
+    }
+
+    .item-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .catalogue-item:hover .item-image {
+      transform: scale(1.06);
+    }
+
+    .item-image-gradient {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0.04) 0%, rgba(18, 16, 14, 0.45) 100%);
+      pointer-events: none;
+    }
+
+    .item-page-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: rgba(255, 255, 255, 0.94);
+      backdrop-filter: blur(8px);
+      color: var(--text-dark);
+      padding: 0.28rem 0.7rem;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      border: 1px solid rgba(184, 109, 67, 0.2);
+    }
+
+    .item-number-badge {
+      position: absolute;
+      bottom: 1rem;
+      left: 1rem;
+      background: rgba(18, 16, 14, 0.82);
+      backdrop-filter: blur(8px);
+      color: #FFFFFF;
+      padding: 0.25rem 0.65rem;
+      border-radius: 9999px;
+      font-size: 0.68rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* Content Area */
+    .item-content {
+      padding: 1.5rem 1.5rem 1.35rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .item-tag {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 0.35rem;
+      display: block;
+    }
+
+    .item-title {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      line-height: 1.25;
+      margin-bottom: 0.5rem;
+    }
+
+    .item-caption {
+      color: var(--text-secondary);
+      font-size: 0.88rem;
+      line-height: 1.55;
+      margin-bottom: 1.25rem;
+      flex: 1;
+    }
+
+    .item-specs {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.74rem;
+      color: var(--text-light);
+      padding: 0.5rem 0.75rem;
+      background: var(--bg-warm);
+      border-radius: var(--radius-md);
+      margin-bottom: 1.25rem;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .item-specs .dot {
+      color: var(--copper-light);
+    }
+
+    /* Clean Action Button */
+    .item-btn {
+      width: 100%;
+      background: var(--bg-warm);
+      color: var(--text-dark);
+      border: 1px solid var(--border-subtle);
+      font-weight: 700;
+      font-size: 0.86rem;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-md);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      transition: all 0.25s ease;
+      letter-spacing: 0.02em;
+    }
+
+    .catalogue-item:hover .item-btn {
+      background: var(--copper);
+      color: #FFFFFF;
+      border-color: var(--copper);
+      box-shadow: 0 4px 14px var(--copper-glow);
+    }
+
+    .item-btn svg {
+      transition: transform 0.25s ease;
+    }
+
+    .catalogue-item:hover .item-btn svg {
+      transform: translateX(3px);
+    }
+
+    /* 5. Clean, Minimalist Contact Section */
+    .contact-section {
+      background: var(--bg-surface);
+      border-top: 1px solid var(--border-subtle);
+      padding: clamp(3.5rem, 6vw, 5.5rem) clamp(1rem, 3vw, 2.5rem);
+      position: relative;
+      z-index: 1;
+    }
+
+    .contact-container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .contact-head-box {
+      text-align: center;
+      max-width: 650px;
+      margin: 0 auto 3rem;
+    }
+
+    .contact-head-sub {
+      font-size: 0.74rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--copper);
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+
+    .contact-head-title {
+      font-family: var(--font-serif);
+      font-size: clamp(2rem, 3.5vw, 2.8rem);
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-head-text {
+      color: var(--text-secondary);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    .contact-cards-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (min-width: 600px) {
+      .contact-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (min-width: 1024px) {
+      .contact-cards-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+
+    .contact-card-item {
+      background: var(--bg-warm);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s ease;
+    }
+
+    .contact-card-item:hover {
+      transform: translateY(-4px);
+      border-color: var(--copper);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-icon-round {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: #FFFFFF;
+      border: 1px solid var(--copper-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--copper);
+      transition: all 0.25s ease;
+    }
+
+    .contact-card-item:hover .card-icon-round {
+      background: var(--copper);
+      color: #FFFFFF;
+    }
+
+    .card-label-small {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--text-light);
+      margin-bottom: 0.25rem;
+    }
+
+    .card-val-text {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      word-break: break-word;
+      line-height: 1.4;
+    }
+
+    .card-action-cue {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--copper);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      margin-top: auto;
+    }
+
+    /* Address Box */
+    .studio-address-banner {
+      background: var(--bg-warm);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-xl);
+      padding: clamp(1.5rem, 3vw, 2.25rem);
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    @media (min-width: 860px) {
+      .studio-address-banner {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .address-left-block {
+      display: flex;
+      align-items: flex-start;
+      gap: 1.15rem;
+    }
+
+    .address-icon-wrap {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: #FFFFFF;
+      border: 1px solid var(--copper-border);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--copper);
+      flex-shrink: 0;
+    }
+
+    .address-left-block h3 {
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      margin-bottom: 0.3rem;
+    }
+
+    .address-left-block p {
+      color: var(--text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      max-width: 680px;
+    }
+
+    .maps-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--text-dark);
+      color: #FFFFFF;
+      padding: 0.75rem 1.4rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      font-size: 0.86rem;
+      text-decoration: none;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      align-self: flex-start;
+    }
+
+    @media (min-width: 860px) {
+      .maps-link-btn {
+        align-self: center;
+      }
+    }
+
+    .maps-link-btn:hover {
+      background: var(--copper);
+      box-shadow: 0 4px 14px var(--copper-glow);
+    }
+
+    /* 6. Footer */
+    footer {
+      background: #151210;
+      color: #D6CBC1;
+      padding: 3.5rem clamp(1rem, 3vw, 2.5rem) 2rem;
+      border-top: 1px solid rgba(184, 109, 67, 0.2);
+    }
+
+    .footer-content {
+      max-width: 1280px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+    }
+
+    .footer-top-row {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .footer-top-row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .footer-brand-lockup {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer-logo-small {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: #FFFFFF;
+      overflow: hidden;
+      padding: 2px;
+    }
+
+    .footer-logo-small img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .footer-brand-title {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      color: #FFFFFF;
+    }
+
+    .footer-brand-sub {
+      font-size: 0.65rem;
+      letter-spacing: 0.22em;
+      color: var(--copper-bright);
+      font-weight: 700;
+    }
+
+    .footer-bottom-info {
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: #8C7E74;
+    }
+
+    /* 7. Mobile Floating Action Bar */
+    .mobile-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.96);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-top: 1px solid var(--border-subtle);
+      padding: 0.5rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      gap: 0.5rem;
+      z-index: 100;
+      box-shadow: 0 -4px 16px rgba(0, 0, 0, 0.06);
+    }
+
+    @media (min-width: 900px) {
+      .mobile-bar {
+        display: none;
+      }
+    }
+
+    .mobile-tab-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-decoration: none;
+      color: var(--text-dark);
+      font-size: 0.68rem;
+      font-weight: 700;
+      gap: 2px;
+      padding: 0.35rem 0.5rem;
+      border-radius: 8px;
+      flex: 1;
+      text-align: center;
+    }
+
+    .mobile-tab-item svg {
+      color: var(--copper);
+    }
+
+    .mobile-tab-item.call-prominent {
+      background: var(--text-dark);
+      color: #FFFFFF;
+      border-radius: 9999px;
+      padding: 0.4rem 0.75rem;
+    }
+
+    .mobile-tab-item.call-prominent svg {
+      color: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Sticky Header -->
+  <header>
+    <div class="header-inner">
+      <a href="#" class="brand-link" title="Capsule Company">
+        <div class="logo-frame">
+          <img src="logo.png" alt="Capsule Company Logo">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">CAPSULE COMPANY</span>
+          <span class="brand-tag">YOUR SPACE MAKER</span>
+        </div>
+      </a>
+
+      <a href="tel:9636124422" class="header-contact-btn">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+        <span>9636124422</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Editorial Hero Section -->
+  <section class="hero">
+    
+    <!-- Official Brand Emblem -->
+    <div class="hero-emblem">
+      <div class="hero-emblem-inner">
+        <img src="logo.png" alt="Capsule Company Monogram">
+      </div>
+    </div>
+
+    <span class="hero-pretitle">Bespoke Architectural Archives</span>
+
+    <h1>Design Collections <br><span class="italic-accent">Volume 2026</span></h1>
+
+    <!-- Architectural Copper Line -->
+    <div class="copper-divider">
+      <span class="copper-diamond"></span>
+    </div>
+
+    <p class="hero-desc">
+      A curated anthology of handcrafted interior woodwork, luxury modular kitchens, bespoke master suites, and architectural living systems. Click any collection to view its original full-resolution PDF.
+    </p>
+  </section>
+
+  <!-- Filter & Search Controls -->
+  <div class="controls-bar">
+    <div class="filter-pills-row">
+      <button class="filter-pill active" onclick="setCategory('all', this)">All Collections (8)</button>
+      <button class="filter-pill" onclick="setCategory('kitchen', this)">Kitchen & Dining</button>
+      <button class="filter-pill" onclick="setCategory('bedroom', this)">Bedrooms & Storage</button>
+      <button class="filter-pill" onclick="setCategory('living', this)">Living & Lounges</button>
+      <button class="filter-pill" onclick="setCategory('sacred', this)">Sacred & Ceilings</button>
+    </div>
+
+    <div class="search-box-wrap">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+      <input type="text" id="catalogueSearch" placeholder="Search catalogues..." oninput="handleSearch()">
+    </div>
+  </div>
+
+  <!-- The Architectural Lookbook Grid (Preserving All Original Downloaded PDFs) -->
+  <main class="lookbook-container">
+    <div class="lookbook-grid" id="lookbookGrid">
+
+      <!-- 1. Wardrobe -->
+      <a href="Capsule_Interiors_Wardrobe_Catalogue.pdf" target="_blank" class="catalogue-item" data-cat="bedroom" data-keywords="wardrobe closets storage sliding walk-in">
+        <div class="item-image-canvas">
+          <img src="covers/wardrobe-cover-reference.jpg" alt="Wardrobe Catalogue Cover" class="item-image" loading="lazy">
+          <div class="item-image-gradient"></div>
+          <span class="item-number-badge">01 / Storage</span>
+          <span class="item-page-badge">📄 32 Pages</span>
+        </div>
+        <div class="item-content">
+          <span class="item-tag">Storage Architecture</span>
+          <h2 class="item-title">Wardrobe</h2>
+          <p class="item-caption">Sliding-door, walk-in, and hinged wardrobe systems with luxury finishes, integrated lighting, and organizers.</p>
+          <div class="item-specs">
+            <span>32 Pages</span>
+            <span class="dot">•</span>
+            <span>4.25 MB</span>
+            <span class="dot">•</span>
+            <span>Original PDF</span>
+          </div>
+          <div class="item-btn">
+            <span>View Catalogue</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 2. Modular Kitchen -->
+      <a href="Capsule_Interiors_Modular_Kitchen_Catalogue.pdf" target="_blank" class="catalogue-item" data-cat="kitchen" data-keywords="modular kitchen island parallel l-shape cabinetry quartz">
+        <div class="item-image-canvas">
+          <img src="covers/kitchen-cover-reference.jpg" alt="Modular Kitchen Catalogue Cover" class="item-image" loading="lazy">
+          <div class="item-image-gradient"></div>
+          <span class="item-number-badge">02 / Kitchen</span>
+          <span class="item-page-badge">📄 42 Pages</span>
+        </div>
+        <div class="item-content">
+          <span class="item-tag">Culinary Spaces</span>
+          <h2 class="item-title">Modular Kitchen</h2>
+          <p class="item-caption">L-shaped, parallel, island, and straight layout kitchens with German mechanisms and quartz surfaces.</p>
+          <div class="item-specs">
+            <span>42 Pages</span>
+            <span class="dot">•</span>
+            <span>9.99 MB</span>
+            <span class="dot">•</span>
+            <span>Original PDF</span>
+          </div>
+          <div class="item-btn">
+            <span>View Catalogue</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 3. Bedrooms -->
+      <a href="Capsule_Interiors_Kids_Bed_Catalogue.pdf" target="_blank" class="catalogue-item" data-cat="bedroom" data-keywords="bedrooms beds kids master bedroom hydraulic storage">
+        <div class="item-image-canvas">
+          <img src="covers/kids-bed-cover-reference.png" alt="Bedrooms Catalogue Cover" class="item-image" loading="lazy">
+          <div class="item-image-gradient"></div>
+          <span class="item-number-badge">03 / Suites</span>
+          <span class="item-page-badge">📄 42 Pages</span>
+        </div>
+        <div class="item-content">
+          <span class="item-tag">Rest & Suites</span>
+          <h2 class="item-title">Bedrooms</h2>
+          <p class="item-caption">Modern master suites, hydraulic storage bedframes, upholstered headboards, and vibrant kids bedrooms.</p>
+          <div class="item-specs">
+            <span>42 Pages</span>
+            <span class="dot">•</span>
+            <span>7.22 MB</span>
+            <span class="dot">•</span>
+            <span>Original PDF</span>
+          </div>
+          <div class="item-btn">
+            <span>View Catalogue</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 4. TV Units -->
+      <a href="Capsule_Interiors_TV_Unit_Catalogue.pdf" target="_blank" class="catalogue-item" data-cat="living" data-keywords="tv units entertainment media consoles fluted panels">
+        <div class="item-image-canvas">
+          <img src="covers/tv-unit-cover-reference.jpg" alt="TV Units Catalogue Cover" class="item-image" loading="lazy">
+          <div class="item-image-gradient"></div>
+          <span class="item-number-badge">04 / Media</span>
+          <span class="item-page-badge">📄 50 Pages</span>
+        </div>
+        <div class="item-content">
+          <span class="item-tag">Living & Media</span>
+          <h2 class="item-title">TV Units</h2>
+          <p class="item-caption">Architectural entertainment walls, fluted wall panels, floating consoles, and hidden cable management.</p>
+          <div class="item-specs">
+            <span>50 Pages</span>
+            <span class="dot">•</span>
+            <span>7.22 MB</span>
+            <span class="dot">•</span>
+            <span>Original PDF</span>
+          </div>
+          <div class="item-btn">
+            <span>View Catalogue</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 5. Bar Counter -->
+      <a href="Capsule_Interiors_Bar_Counter_Catalogue.pdf" target="_blank" class="catalogue-item" data-cat="living" data-keywords="bar counter lounge drinks stemware wine bottle rack">
+        <div class="item-image-canvas">
+          <img src="covers/bar-counter-cover-reference.jpg" alt="Bar Counter Catalogue Cover" class="item-image" loading="lazy">
+          <div class="item-image-gradient"></div>
+          <span class="item-number-badge">05 / Lounge</span>
+          <span class="item-page-badge">📄 41 Pages</span>
+        </div>
+        <div class="item-content">
+          <span class="item-tag">Hospitality</span>
+          <h2 class="item-title">Bar Counter</h2>
+          <p class="item-caption">Bespoke home bar lounges, backlit bottle display shelves, stemware racks, and solid acrylic service counters.</p>
+          <div class="item-specs">
+            <span>41 Pages</span>
+            <span class="dot">•</span>
+            <span>7.29 MB</span>
+            <span class="dot">•</span>
+            <span>Original PDF</span>
+          </div>
+          <div class="item-btn">
+            <span>View Catalogue</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 6. Temple Design -->
+      <a href="Capsule_Interiors_Temple_Design_Catalogue.pdf" target="_blank" class="catalogue-item" data-cat="sacred" data-keywords="temple design pooja mandir sacred cnc jali vastu">
+        <div class="item-image-canvas">
+          <img src="covers/temple-homepage-reference.jpg" alt="Temple Design Catalogue Cover" class="item-image" loading="lazy">
+          <div class="item-image-gradient"></div>
+          <span class="item-number-badge">06 / Sacred</span>
+          <span class="item-page-badge">📄 44 Pages</span>
+        </div>
+        <div class="item-content">
+          <span class="item-tag">Sacred Architecture</span>
+          <h2 class="item-title">Temple Design</h2>
+          <p class="item-caption">Vastu-aligned pooja mandirs, CNC jali screen carvings, brass embellishments, and artisanal solid wood sanctuaries.</p>
+          <div class="item-specs">
+            <span>44 Pages</span>
+            <span class="dot">•</span>
+            <span>7.11 MB</span>
+            <span class="dot">•</span>
+            <span>Original PDF</span>
+          </div>
+          <div class="item-btn">
+            <span>View Catalogue</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 7. POP / Ceiling -->
+      <a href="Capsule_Interiors_POP_Design_Catalogue.pdf" target="_blank" class="catalogue-item" data-cat="sacred" data-keywords="pop false ceiling lighting gypsum cove light rafters">
+        <div class="item-image-canvas">
+          <img src="covers/pop-cover-reference.jpg" alt="POP False Ceiling Catalogue Cover" class="item-image" loading="lazy">
+          <div class="item-image-gradient"></div>
+          <span class="item-number-badge">07 / Ceiling</span>
+          <span class="item-page-badge">📄 32 Pages</span>
+        </div>
+        <div class="item-content">
+          <span class="item-tag">Ceiling Architecture</span>
+          <h2 class="item-title">POP</h2>
+          <p class="item-caption">Architectural false ceilings, perimeter cove lighting profiles, wooden rafter accents, and gypsum geometric plans.</p>
+          <div class="item-specs">
+            <span>32 Pages</span>
+            <span class="dot">•</span>
+            <span>10.64 MB</span>
+            <span class="dot">•</span>
+            <span>Original PDF</span>
+          </div>
+          <div class="item-btn">
+            <span>View Catalogue</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </div>
+        </div>
+      </a>
+
+      <!-- 8. Crockery Unit -->
+      <a href="Capsule_Interiors_Concrete_Unit_Catalogue.pdf" target="_blank" class="catalogue-item" data-cat="kitchen" data-keywords="crockery unit dining display glass sideboard cabinet cu">
+        <div class="item-image-canvas">
+          <img src="covers/concrete-cover-reference.jpg" alt="Crockery Unit Catalogue Cover" class="item-image" loading="lazy">
+          <div class="item-image-gradient"></div>
+          <span class="item-number-badge">08 / Dining</span>
+          <span class="item-page-badge">📄 52 Pages</span>
+        </div>
+        <div class="item-content">
+          <span class="item-tag">Dining & Display</span>
+          <h2 class="item-title">Crockery Unit</h2>
+          <p class="item-caption">Bespoke dining sideboards, fluted and tempered glass display cabinetry, integrated LED strips, and fine storage.</p>
+          <div class="item-specs">
+            <span>52 Pages</span>
+            <span class="dot">•</span>
+            <span>8.11 MB</span>
+            <span class="dot">•</span>
+            <span>Original PDF</span>
+          </div>
+          <div class="item-btn">
+            <span>View Catalogue</span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- Official Company Information & Contact Section -->
+  <section class="contact-section" id="contact">
+    <div class="contact-container">
+      
+      <div class="contact-head-box">
+        <span class="contact-head-sub">Studio Presence</span>
+        <h2 class="contact-head-title">Official Company Details</h2>
+        <p class="contact-head-text">Consult directly with our interior architects for bespoke cabinetry, site measurements, and turnkey execution in Bengaluru.</p>
+      </div>
+
+      <!-- 4 Clean Contact Cards -->
+      <div class="contact-cards-grid">
+
+        <!-- Phone Card -->
+        <a href="tel:9636124422" class="contact-card-item">
+          <div class="card-icon-round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+          </div>
+          <div>
+            <div class="card-label-small">Direct Phone</div>
+            <div class="card-val-text">9636124422</div>
+          </div>
+          <span class="card-action-cue">
+            <span>Call Studio</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </span>
+        </a>
+
+        <!-- General Email Card -->
+        <a href="mailto:works.capsule@gmail.com" class="contact-card-item">
+          <div class="card-icon-round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+          </div>
+          <div>
+            <div class="card-label-small">General Email</div>
+            <div class="card-val-text">works.capsule@gmail.com</div>
+          </div>
+          <span class="card-action-cue">
+            <span>Send Email</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </span>
+        </a>
+
+        <!-- Project Email Card -->
+        <a href="mailto:project@capsulecompany.in" class="contact-card-item">
+          <div class="card-icon-round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+          </div>
+          <div>
+            <div class="card-label-small">Project Enquiries</div>
+            <div class="card-val-text">project@capsulecompany.in</div>
+          </div>
+          <span class="card-action-cue">
+            <span>Submit RFQ</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+          </span>
+        </a>
+
+        <!-- Website Card -->
+        <a href="https://capsulecompany.in" target="_blank" rel="noopener noreferrer" class="contact-card-item">
+          <div class="card-icon-round">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+          </div>
+          <div>
+            <div class="card-label-small">Main Website</div>
+            <div class="card-val-text">capsulecompany.in</div>
+          </div>
+          <span class="card-action-cue">
+            <span>Visit Site</span>
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+          </span>
+        </a>
+
+      </div>
+
+      <!-- Studio Address Showcase Banner -->
+      <div class="studio-address-banner">
+        <div class="address-left-block">
+          <div class="address-icon-wrap">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+          </div>
+          <div>
+            <h3>Capsule Company Studio</h3>
+            <p>SLV COMPLEX, 17/3, Outer Ring Rd, Kariyana Layout, Hebbal Kempapura, Bengaluru, Karnataka 560024.</p>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/search/?api=1&query=SLV+COMPLEX,+17/3,+Outer+Ring+Rd,+Kariyana+Layout,+Hebbal+Kempapura,+Bengaluru,+Karnataka+560024" target="_blank" rel="noopener noreferrer" class="maps-link-btn">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>
+          <span>Open in Google Maps</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Luxury Minimal Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-top-row">
+        <a href="#" class="footer-brand-lockup">
+          <div class="footer-logo-small">
+            <img src="logo.png" alt="Capsule Company">
+          </div>
+          <div>
+            <div class="footer-brand-title">CAPSULE COMPANY</div>
+            <div class="footer-brand-sub">YOUR SPACE MAKER</div>
+          </div>
+        </a>
+
+        <div style="font-size: 0.88rem; color: #A89B91;">
+          SLV COMPLEX, Hebbal Kempapura, Bengaluru 560024
+        </div>
+      </div>
+
+      <div class="footer-bottom-info">
+        <span>© 2026 Capsule Company. All rights reserved.</span>
+        <span>Original Digital Architectural Catalogues</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Phone & Tablet Bottom Action Bar -->
+  <nav class="mobile-bar" aria-label="Quick Actions">
+    <a href="tel:9636124422" class="mobile-tab-item call-prominent">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+      <span>Call</span>
+    </a>
+    <a href="https://wa.me/919636124422?text=Hello%20Capsule%20Company,%20I%20would%20like%20to%20enquire%20about%20your%20interior%20catalogues" target="_blank" rel="noopener noreferrer" class="mobile-tab-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+      <span>WhatsApp</span>
+    </a>
+    <a href="https://www.google.com/maps/search/?api=1&query=SLV+COMPLEX,+17/3,+Outer+Ring+Rd,+Kariyana+Layout,+Hebbal+Kempapura,+Bengaluru,+Karnataka+560024" target="_blank" rel="noopener noreferrer" class="mobile-tab-item">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+      <span>Directions</span>
+    </a>
+  </nav>
+
+  <!-- Interactive Filter Logic -->
+  <script>
+    let activeFilter = 'all';
+
+    function setCategory(cat, btn) {
+      activeFilter = cat;
+      document.querySelectorAll('.filter-pill').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterGrid();
+    }
+
+    function handleSearch() {
+      filterGrid();
+    }
+
+    function filterGrid() {
+      const q = document.getElementById('catalogueSearch').value.toLowerCase().trim();
+      const items = document.querySelectorAll('#lookbookGrid .catalogue-item');
+
+      items.forEach(item => {
+        const cat = item.getAttribute('data-cat');
+        const keywords = (item.getAttribute('data-keywords') || '').toLowerCase();
+        const text = item.innerText.toLowerCase();
+
+        const matchCat = (activeFilter === 'all' || cat === activeFilter);
+        const matchSearch = (!q || keywords.includes(q) || text.includes(q));
+
+        if (matchCat && matchSearch) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+
+</body>
+</html>
