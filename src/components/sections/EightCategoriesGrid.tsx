@@ -95,6 +95,29 @@ const TilesDiamondIcon: React.FC<{ className?: string }> = ({ className = "w-6 h
   </svg>
 );
 
+const UPVCWindowsDoorsIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="3" y="3" width="18" height="18" rx="1.5" stroke="currentColor" strokeWidth="2" />
+    <line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" strokeWidth="2" />
+    <line x1="3" y1="10.5" x2="12" y2="10.5" stroke="currentColor" strokeWidth="1.6" />
+    <line x1="14.5" y1="10.5" x2="14.5" y2="14" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" />
+    <line x1="3" y1="19" x2="21" y2="19" stroke="currentColor" strokeWidth="1.2" />
+    <line x1="5.5" y1="5.5" x2="8" y2="8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeOpacity="0.5" />
+    <line x1="14.5" y1="5.5" x2="17" y2="8" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeOpacity="0.5" />
+  </svg>
+);
+
+const HomeTheatreIcon: React.FC<{ className?: string }> = ({ className = "w-6 h-6" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2.5" y="4" width="19" height="12" rx="1.5" stroke="currentColor" strokeWidth="2" />
+    <polygon points="10.5,7.5 15,10 10.5,12.5" fill="currentColor" stroke="none" />
+    <rect x="5.5" y="18" width="13" height="3" rx="1.5" stroke="currentColor" strokeWidth="1.8" />
+    <circle cx="8" cy="19.5" r="0.75" fill="currentColor" stroke="none" />
+    <circle cx="16" cy="19.5" r="0.75" fill="currentColor" stroke="none" />
+    <line x1="10.5" y1="19.5" x2="13.5" y2="19.5" stroke="currentColor" strokeWidth="1.2" />
+  </svg>
+);
+
 export const EightCategoriesGrid: React.FC<EightCategoriesGridProps> = ({
   onOpenConsultation,
   showAllDetails = false
@@ -112,6 +135,8 @@ export const EightCategoriesGrid: React.FC<EightCategoriesGridProps> = ({
       case 'PlumbingPipe': return <PlumbingPipeIcon className={className} />;
       case 'ElectricalLightning': return <ElectricalLightningIcon className={className} />;
       case 'TilesDiamond': return <TilesDiamondIcon className={className} />;
+      case 'UPVCWindowsDoors': return <UPVCWindowsDoorsIcon className={className} />;
+      case 'HomeTheatre': return <HomeTheatreIcon className={className} />;
       default: return <PaintRollerIcon className={className} />;
     }
   };
@@ -176,7 +201,7 @@ export const EightCategoriesGrid: React.FC<EightCategoriesGridProps> = ({
                         className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-white text-[10px] sm:text-[11px] font-bold tracking-widest uppercase shadow-xs"
                         style={{ backgroundColor: srv.badgeColor }}
                       >
-                        CATEGORY {srv.number} / 08
+                        CATEGORY {srv.number} / 10
                       </span>
                       <span className="text-brand-muted/50 text-[10px] sm:text-[11px] font-medium">—</span>
                       <span className="text-[10px] sm:text-[11px] font-bold text-brand-muted uppercase tracking-wider">
@@ -278,7 +303,7 @@ export const EightCategoriesGrid: React.FC<EightCategoriesGridProps> = ({
                       <span>{srv.title.split('/')[0].trim()}</span>
                     </span>
                     <span className="text-[11px] sm:text-xs font-mono font-bold tracking-widest text-white bg-black/80 backdrop-blur-md px-2.5 py-1 rounded-full border border-white/20 shadow-lg">
-                      {srv.number} / 08
+                      {srv.number} / 10
                     </span>
                   </div>
                 </div>

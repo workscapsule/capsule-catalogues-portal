@@ -31,7 +31,6 @@ const AppContent: React.FC = () => {
   const location = useLocation();
 
   const isCataloguePortal =
-    location.pathname === '/' ||
     location.pathname === '/catalogues' ||
     location.pathname === '/portal';
 
@@ -77,8 +76,16 @@ const AppContent: React.FC = () => {
       {/* Main Content Area Routing */}
       <main className="flex-1 w-full">
         <Routes>
-          {/* ROOT / displays the 17-catalogue portal */}
-          <Route path="/" element={<CataloguePortalPage />} />
+          {/* Main Website Home at ROOT / */}
+          <Route
+            path="/"
+            element={
+              <HomePage
+                onOpenConsultation={handleOpenConsultation}
+                onSelectProject={(p) => setSelectedProject(p)}
+              />
+            }
+          />
           <Route path="/catalogues" element={<CataloguePortalPage />} />
           <Route path="/portal" element={<CataloguePortalPage />} />
 

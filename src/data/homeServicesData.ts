@@ -151,5 +151,41 @@ export const homeServicesCategories: HomeServiceCategory[] = [
     accentColor: '#64748B',
     category: 'interiors',
     image: '/assets/services/service-08-tiles.jpg'
+  },
+  {
+    id: 'upvc-windows-doors',
+    number: '09',
+    title: 'uPVC Windows & Doors',
+    shortDesc: 'Modern Designs. Lasting Performance.',
+    fullDesc: 'Professional uPVC window and door solutions for modern homes and commercial spaces.',
+    features: [
+      'uPVC Window Installation',
+      'uPVC Door Installation',
+      'Sliding Windows & Doors',
+      'Custom Window & Door Designs'
+    ],
+    iconName: 'UPVCWindowsDoors',
+    badgeColor: '#0E7490',
+    accentColor: '#06B6D4',
+    category: 'interiors',
+    image: '/assets/services/service-09-upvc.jpg'
+  },
+  {
+    id: 'personal-home-theatre',
+    number: '10',
+    title: 'Personal Home Theatre',
+    shortDesc: 'Cinema Experience. In Your Home.',
+    fullDesc: 'Customized home theatre solutions featuring premium interiors, comfortable seating, acoustic panels, and immersive entertainment systems.',
+    features: [
+      'Custom Home Theatre Design',
+      'Acoustic Wall Panels',
+      'Screen & Projector Setup',
+      'Surround Sound Integration'
+    ],
+    iconName: 'HomeTheatre',
+    badgeColor: '#4338CA',
+    accentColor: '#6366F1',
+    category: 'interiors',
+    image: '/assets/services/service-10-home-theatre.jpg'
   }
 ];
