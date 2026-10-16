@@ -22,7 +22,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
     { label: 'Why Capsule', to: '/why-capsule' },
     { label: 'FAQ', to: '/faq' },
     { label: 'Contact', to: '/contact' },
-    { label: 'Design Catalogues', to: 'https://capsule-catalogues-portal-ni9l.vercel.app', isExternal: true },
+    { label: 'Catalog Digital', to: 'https://capsule-catalogues-portal-ni9l.vercel.app/catalogues', isExternal: true },
   ];
 
   const serviceLinks = [

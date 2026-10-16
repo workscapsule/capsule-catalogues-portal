@@ -42,13 +42,15 @@ export const BarCounterCatalogueViewer: React.FC = () => {
       {/* Top Controls Toolbar (Hidden during Print) */}
       <header className="no-print sticky top-0 z-30 bg-[#16171B]/95 backdrop-blur-md border-b border-white/10 px-4 sm:px-8 py-3 flex flex-wrap items-center justify-between gap-4 shadow-xl">
         <div className="flex items-center gap-3 sm:gap-4">
-          <Link
-            to="/"
+          <a
+            href="https://capsulecompany.in/"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 text-xs text-neutral-400 hover:text-white transition-colors mr-2"
           >
             <ArrowLeft className="w-4 h-4" />
             <span className="hidden md:inline">Back to Website</span>
-          </Link>
+          </a>
 
           <div className="h-9 w-9 bg-white rounded p-0.5 flex items-center justify-center shadow-sm">
             <img

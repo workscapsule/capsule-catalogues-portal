@@ -36,6 +36,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
     { label: 'WHY CAPSULE', to: '/why-capsule' },
     { label: 'FAQ', to: '/faq' },
     { label: 'CONTACT', to: '/contact' },
+    { label: 'CATALOG DIGITAL', to: 'https://capsule-catalogues-portal-ni9l.vercel.app/catalogues', isExternal: true },
   ];
 
   return (
@@ -66,19 +67,31 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
           {/* Desktop Navigation Links */}
           <nav className="hidden xl:flex items-center space-x-5 2xl:space-x-7" aria-label="Main Navigation">
             {navLinks.map((link) => (
-              <NavLink
-                key={link.label}
-                to={link.to}
-                end={link.to === '/'}
-                className={({ isActive }) =>
-                  `text-[11px] 2xl:text-xs font-bold tracking-widest uppercase transition-all py-1 relative whitespace-nowrap cursor-pointer ${isActive
-                    ? 'text-brand-copper font-extrabold after:content-[\'\'] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-brand-copper'
-                    : 'text-brand-black/85 hover:text-brand-copper after:content-[\'\'] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-copper hover:after:w-full after:transition-all after:duration-200'
-                  }`
-                }
-              >
-                {link.label}
-              </NavLink>
+              (link as any).isExternal ? (
+                <a
+                  key={link.label}
+                  href={link.to}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[11px] 2xl:text-xs font-bold tracking-widest uppercase transition-all py-1 relative whitespace-nowrap cursor-pointer text-brand-black/85 hover:text-brand-copper after:content-[''] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-copper hover:after:w-full after:transition-all after:duration-200"
+                >
+                  {link.label}
+                </a>
+              ) : (
+                <NavLink
+                  key={link.label}
+                  to={link.to}
+                  end={link.to === '/'}
+                  className={({ isActive }) =>
+                    `text-[11px] 2xl:text-xs font-bold tracking-widest uppercase transition-all py-1 relative whitespace-nowrap cursor-pointer ${isActive
+                      ? 'text-brand-copper font-extrabold after:content-[\'\'] after:absolute after:bottom-0 after:left-0 after:w-full after:h-[2px] after:bg-brand-copper'
+                      : 'text-brand-black/85 hover:text-brand-copper after:content-[\'\'] after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-brand-copper hover:after:w-full after:transition-all after:duration-200'
+                    }`
+                  }
+                >
+                  {link.label}
+                </NavLink>
+              )
             ))}
           </nav>
 
@@ -208,21 +221,35 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
             {/* Navigation Links in Drawer */}
             <nav className="flex flex-col space-y-1.5" aria-label="Mobile Navigation">
               {navLinks.map((link) => (
-                <NavLink
-                  key={link.label}
-                  to={link.to}
-                  end={link.to === '/'}
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={({ isActive }) =>
-                    `px-3.5 py-2.5 text-sm font-bold tracking-wider uppercase rounded-xl transition-all flex items-center justify-between ${isActive
-                      ? 'bg-brand-black text-brand-copper shadow-sm pl-4'
-                      : 'text-brand-black hover:text-brand-copper hover:bg-brand-cream/80'
-                    }`
-                  }
-                >
-                  <span>{link.label}</span>
-                  <span className="text-xs opacity-50">→</span>
-                </NavLink>
+                (link as any).isExternal ? (
+                  <a
+                    key={link.label}
+                    href={link.to}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="px-3.5 py-2.5 text-sm font-bold tracking-wider uppercase rounded-xl transition-all flex items-center justify-between text-brand-black hover:text-brand-copper hover:bg-brand-cream/80"
+                  >
+                    <span>{link.label}</span>
+                    <span className="text-xs opacity-50">↗</span>
+                  </a>
+                ) : (
+                  <NavLink
+                    key={link.label}
+                    to={link.to}
+                    end={link.to === '/'}
+                    onClick={() => setMobileMenuOpen(false)}
+                    className={({ isActive }) =>
+                      `px-3.5 py-2.5 text-sm font-bold tracking-wider uppercase rounded-xl transition-all flex items-center justify-between ${isActive
+                        ? 'bg-brand-black text-brand-copper shadow-sm pl-4'
+                        : 'text-brand-black hover:text-brand-copper hover:bg-brand-cream/80'
+                      }`
+                    }
+                  >
+                    <span>{link.label}</span>
+                    <span className="text-xs opacity-50">→</span>
+                  </NavLink>
+                )
               ))}
             </nav>
           </div>

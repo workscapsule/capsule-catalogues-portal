@@ -282,7 +282,7 @@ export const CataloguePortalPage: React.FC = () => {
       {/* Luxury Lookbook Top Header */}
       <header className="sticky top-0 z-40 bg-[#F7F3ED]/90 backdrop-blur-md border-b border-[#E5DDD3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-18 sm:h-20 flex items-center justify-between gap-4">
-          <a href="/" className="flex items-center gap-3.5 group">
+          <a href="https://capsulecompany.in/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3.5 group" title="Capsule Company Website">
             <div className="w-10 h-10 sm:w-11 sm:h-11 rounded-xl bg-white border border-[#B86D43]/20 p-1 flex items-center justify-center shadow-xs">
               <img src="/logo.png" alt="Capsule Company" className="w-full h-full object-contain" />
             </div>
@@ -523,7 +523,7 @@ export const CataloguePortalPage: React.FC = () => {
             </a>
 
             <a
-              href="https://capsulecompany.in"
+              href="https://capsulecompany.in/"
               target="_blank"
               rel="noopener noreferrer"
               className="p-5 rounded-xl border border-[#E5DDD3] hover:border-[#B86D43]/40 bg-[#F7F3ED]/40 hover:bg-[#F7F3ED] transition-all flex items-center gap-4 group"

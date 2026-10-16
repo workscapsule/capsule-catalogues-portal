@@ -27,13 +27,18 @@ for (const target of targets) {
     }
   }
 
-  // Keep the main corporate website as index.html (as built by Vite)
-  // And preserve the 17-catalogue portal as capsule-catalogue-index.html and catalogues.html
+  // Set the 17-catalogue portal as index.html, capsule-catalogue-index.html, catalogues.html, and catalogues/index.html
   const cataloguePortalSrc = path.join(__dirname, 'capsule-catalogue-index.html');
   if (fs.existsSync(cataloguePortalSrc)) {
+    fs.copyFileSync(cataloguePortalSrc, path.join(targetDir, 'index.html'));
     fs.copyFileSync(cataloguePortalSrc, path.join(targetDir, 'capsule-catalogue-index.html'));
     fs.copyFileSync(cataloguePortalSrc, path.join(targetDir, 'catalogues.html'));
-    console.log(`Preserved ${target}/capsule-catalogue-index.html and ${target}/catalogues.html as catalogue portal`);
+    const cataloguesSubdir = path.join(targetDir, 'catalogues');
+    if (!fs.existsSync(cataloguesSubdir)) {
+      fs.mkdirSync(cataloguesSubdir, { recursive: true });
+    }
+    fs.copyFileSync(cataloguePortalSrc, path.join(cataloguesSubdir, 'index.html'));
+    console.log(`Preserved ${target}/index.html, ${target}/capsule-catalogue-index.html, ${target}/catalogues.html, and ${target}/catalogues/index.html as catalogue portal`);
   }
 
   // Copy root web assets (excluding config files like vercel.json)

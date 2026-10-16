@@ -18,13 +18,13 @@ export const WallPanelsCataloguePage: React.FC = () => {
       <header className="sticky top-0 z-40 bg-[#F7F3ED]/95 backdrop-blur-md border-b border-[#E6DFD5] px-4 sm:px-8 py-3.5 shadow-xs">
         <div className="max-w-7xl mx-auto flex items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <Link
-              to="/capsule-catalogue-index.html"
+            <a
+              href="https://capsule-catalogues-portal-ni9l.vercel.app/catalogues"
               className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-[#E6DFD5] text-xs font-semibold text-[#12100E] hover:border-[#B86D43] hover:text-[#B86D43] transition-colors"
             >
               <ArrowLeft className="w-3.5 h-3.5" />
               <span>Catalogues Index</span>
-            </Link>
+            </a>
             <div className="hidden sm:block">
               <span className="text-xs uppercase tracking-widest font-bold text-[#B86D43]">
                 Collection 2026

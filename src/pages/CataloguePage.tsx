@@ -20,13 +20,15 @@ export const CataloguePage: React.FC = () => {
     <div className="w-full">
       {/* Subtle back link bar */}
       <div className="no-print bg-[#0D0E11] border-b border-white/10 px-4 sm:px-8 py-2.5 flex items-center justify-between text-xs text-neutral-400">
-        <Link
-          to="/"
+        <a
+          href="https://capsulecompany.in/"
+          target="_blank"
+          rel="noopener noreferrer"
           className="flex items-center gap-1.5 hover:text-white transition-colors"
         >
           <ArrowLeft className="w-3.5 h-3.5" />
           <span>Back to Capsule Website</span>
-        </Link>
+        </a>
 
         <div className="flex items-center gap-4">
           <span className="hidden sm:flex items-center gap-1.5 text-neutral-400">
