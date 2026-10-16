@@ -138,16 +138,26 @@ export const Hero: React.FC<HeroProps> = ({ onOpenConsultation }) => {
             </div>
           </div>
 
-          {/* Direct Phone Consultation Link */}
-          <div className="flex items-center gap-1.5 text-gray-300 text-[11px] sm:text-xs">
-            <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
-            <span>Direct Site Consultation:</span>
-            <a 
-              href={`tel:${companyConfig.phoneRaw}`} 
-              className="text-white hover:text-brand-copperLight font-bold underline transition-colors"
-            >
-              {companyConfig.phone}
-            </a>
+          {/* Direct Phone Consultation Links */}
+          <div className="w-full md:w-auto flex flex-col sm:flex-row sm:items-center gap-1.5 sm:gap-2.5 text-gray-300 text-[11px] sm:text-xs">
+            <div className="flex items-center gap-1.5 shrink-0 text-white font-medium">
+              <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+              <span>Direct Site Consultation:</span>
+            </div>
+            <div className="flex items-center flex-wrap gap-x-2 gap-y-1">
+              {companyConfig.phones.map((p, idx) => (
+                <span key={p.number} className="inline-flex items-center gap-1.5 sm:gap-2">
+                  {idx > 0 && <span className="text-gray-500 text-[10px] hidden xs:inline">•</span>}
+                  <a 
+                    href={`tel:${p.raw}`} 
+                    className="text-white hover:text-brand-copperLight font-bold underline underline-offset-2 transition-colors whitespace-nowrap text-[11px] sm:text-xs"
+                    title={`Call Line ${idx + 1}: ${p.display}`}
+                  >
+                    {p.display}
+                  </a>
+                </span>
+              ))}
+            </div>
           </div>
 
         </div>

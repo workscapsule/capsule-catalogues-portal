@@ -10,6 +10,7 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [callMenuOpen, setCallMenuOpen] = useState(false);
   const location = useLocation();
 
   useEffect(() => {
@@ -23,6 +24,7 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
   // Close mobile drawer when route changes
   useEffect(() => {
     setMobileMenuOpen(false);
+    setCallMenuOpen(false);
   }, [location.pathname]);
 
   const navLinks = [
@@ -80,36 +82,80 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
             ))}
           </nav>
 
-          {/* Action CTAs Desktop */}
-          <div className="hidden lg:flex items-center gap-2.5 xl:gap-3 shrink-0">
-            <a
-              href={`tel:${companyConfig.phoneRaw}`}
-              className="flex items-center gap-1.5 px-3.5 py-1.5 text-xs font-semibold text-brand-black hover:text-brand-copper border border-brand-border hover:border-brand-copper/50 rounded-full transition-all bg-white/60 whitespace-nowrap shrink-0"
-              title={`Call Capsule Company: ${companyConfig.phone}`}
-            >
+          {/* Action CTAs Desktop (xl and 2xl screens) */}
+          <div className="hidden xl:flex items-center gap-2 2xl:gap-3 shrink-0">
+            <div className="flex items-center gap-1.5 px-2.5 py-1.5 2xl:px-3 text-xs font-semibold text-brand-black border border-brand-border hover:border-brand-copper/50 rounded-full bg-white/80 shadow-2xs">
               <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
-              <span className="whitespace-nowrap">{companyConfig.phone}</span>
-            </a>
+              <div className="flex items-center divide-x divide-brand-border text-[10px] xl:text-[11px] 2xl:text-xs font-bold">
+                {companyConfig.phones.map((p, idx) => (
+                  <a
+                    key={p.number}
+                    href={`tel:${p.raw}`}
+                    className="px-1.5 2xl:px-2 first:pl-0.5 last:pr-0.5 hover:text-brand-copper transition-colors whitespace-nowrap"
+                    title={`Call Line ${idx + 1}: ${p.display}`}
+                  >
+                    {p.number}
+                  </a>
+                ))}
+              </div>
+            </div>
 
             <button
               onClick={onOpenConsultation}
-              className="px-4 py-2 bg-brand-black text-white hover:bg-brand-copper text-[11px] xl:text-xs font-bold tracking-widest uppercase rounded-full transition-all duration-300 shadow-sm hover:shadow active:scale-95 cursor-pointer whitespace-nowrap inline-flex items-center justify-center"
+              className="px-3.5 2xl:px-4 py-2 bg-brand-black text-white hover:bg-brand-copper text-[11px] 2xl:text-xs font-bold tracking-widest uppercase rounded-full transition-all duration-300 shadow-sm hover:shadow active:scale-95 cursor-pointer whitespace-nowrap inline-flex items-center justify-center"
             >
               FREE CONSULTATION
             </button>
           </div>
 
           {/* Mobile / Tablet Right Controls */}
-          <div className="flex xl:hidden items-center gap-2">
-            <a
-              href={`tel:${companyConfig.phoneRaw}`}
-              className="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-full bg-white border border-brand-border text-brand-black hover:text-brand-copper active:scale-95 transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 text-[11px] sm:text-xs font-semibold"
-              aria-label={`Call ${companyConfig.phone}`}
-              title={`Call ${companyConfig.phone}`}
-            >
-              <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
-              <span className="whitespace-nowrap">{companyConfig.phone}</span>
-            </a>
+          <div className="flex xl:hidden items-center gap-2 relative">
+            {/* Quick Call Dropdown Trigger */}
+            <div className="relative">
+              <button
+                type="button"
+                onClick={() => setCallMenuOpen(!callMenuOpen)}
+                className="px-2.5 py-1.5 sm:px-3 sm:py-1.5 rounded-full bg-white border border-brand-border text-brand-black hover:text-brand-copper active:scale-95 transition-all flex items-center gap-1.5 whitespace-nowrap shrink-0 text-[11px] sm:text-xs font-semibold shadow-2xs"
+                aria-label="Call contact numbers"
+                title="Call contact numbers"
+              >
+                <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                <span className="whitespace-nowrap hidden sm:inline">Call Lines</span>
+                <span className="whitespace-nowrap sm:hidden">Call</span>
+              </button>
+
+              {/* Call Menu Popover */}
+              {callMenuOpen && (
+                <>
+                  <div
+                    className="fixed inset-0 z-40"
+                    onClick={() => setCallMenuOpen(false)}
+                  />
+                  <div className="absolute right-0 top-full mt-2 w-60 sm:w-64 max-w-[calc(100vw-1.5rem)] bg-white rounded-2xl shadow-xl border border-brand-border p-2.5 z-50 animate-in fade-in zoom-in-95 duration-150">
+                    <div className="px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider text-brand-copper border-b border-brand-border/60 flex items-center justify-between">
+                      <span>Direct Call Lines</span>
+                      <span className="text-[9px] font-mono text-brand-muted">3 Lines Available</span>
+                    </div>
+                    <div className="py-1 space-y-1">
+                      {companyConfig.phones.map((p, idx) => (
+                        <a
+                          key={p.number}
+                          href={`tel:${p.raw}`}
+                          onClick={() => setCallMenuOpen(false)}
+                          className="flex items-center justify-between px-3 py-2 text-xs font-bold text-brand-black hover:bg-brand-cream/80 hover:text-brand-copper rounded-xl transition-colors whitespace-nowrap"
+                        >
+                          <div className="flex items-center gap-2">
+                            <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                            <span>{p.display}</span>
+                          </div>
+                          <span className="text-[10px] font-mono text-brand-copper uppercase px-1.5 py-0.5 bg-brand-copper/10 rounded">L{idx + 1}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                </>
+              )}
+            </div>
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
@@ -193,24 +239,37 @@ export const Header: React.FC<HeaderProps> = ({ onOpenConsultation }) => {
               GET FREE CONSULTATION
             </button>
 
-            <div className="grid grid-cols-2 gap-2 pt-1">
-              <a
-                href={`tel:${companyConfig.phoneRaw}`}
-                className="flex items-center justify-center gap-1.5 py-2.5 px-3 bg-white border border-brand-border text-xs font-semibold text-brand-black rounded-xl active:scale-95"
-              >
-                <Phone className="w-3.5 h-3.5 text-brand-copper" />
-                <span>Call Us</span>
-              </a>
-              <a
-                href={`https://wa.me/${companyConfig.whatsappNumber}?text=${encodeURIComponent(companyConfig.whatsappMessage)}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center justify-center gap-1.5 py-2.5 px-3 bg-[#25D366]/10 border border-[#25D366]/30 text-xs font-semibold text-[#128C7E] rounded-xl active:scale-95"
-              >
-                <MessageSquare className="w-3.5 h-3.5" />
-                <span>WhatsApp</span>
-              </a>
+            {/* Direct Call Numbers 1, 2, 3 in exact order */}
+            <div className="space-y-1.5 pt-1">
+              <span className="text-[10px] font-bold tracking-widest text-brand-copper uppercase block text-center">
+                Direct Call Lines
+              </span>
+              <div className="flex flex-col gap-1.5">
+                {companyConfig.phones.map((p, idx) => (
+                  <a
+                    key={p.number}
+                    href={`tel:${p.raw}`}
+                    className="flex items-center justify-between py-2.5 px-3 bg-white border border-brand-border text-xs sm:text-sm font-bold text-brand-black rounded-xl active:scale-95 hover:border-brand-copper hover:text-brand-copper transition-all"
+                  >
+                    <div className="flex items-center gap-2 min-w-0">
+                      <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                      <span className="truncate">{p.display}</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-brand-copper uppercase px-1.5 py-0.5 bg-brand-copper/10 rounded shrink-0 ml-2">Line {idx + 1}</span>
+                  </a>
+                ))}
+              </div>
             </div>
+
+            <a
+              href={`https://wa.me/${companyConfig.whatsappNumber}?text=${encodeURIComponent(companyConfig.whatsappMessage)}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 py-2.5 px-3 bg-[#25D366]/10 border border-[#25D366]/30 text-xs font-semibold text-[#128C7E] rounded-xl active:scale-95"
+            >
+              <MessageSquare className="w-3.5 h-3.5" />
+              <span>WhatsApp Us</span>
+            </a>
 
             <p className="text-[11px] text-brand-muted text-center pt-2">
               {companyConfig.addressShort}

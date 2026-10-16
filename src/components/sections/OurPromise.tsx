@@ -79,13 +79,19 @@ export const OurPromise: React.FC<OurPromiseProps> = ({ onOpenConsultation }) =>
                 REQUEST FREE SITE VISIT
               </button>
               
-              <a
-                href={`tel:${companyConfig.phoneRaw}`}
-                className="px-6 py-3.5 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-xs font-bold tracking-widest uppercase rounded-full transition-all text-center flex items-center justify-center gap-2"
-              >
-                <PhoneCall className="w-3.5 h-3.5 text-brand-copper" />
-                <span>{companyConfig.phone}</span>
-              </a>
+              <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-2">
+                {companyConfig.phones.map((p, idx) => (
+                  <a
+                    key={p.number}
+                    href={`tel:${p.raw}`}
+                    className="px-3.5 py-2.5 sm:px-4 sm:py-3 bg-white/10 hover:bg-white/20 text-white border border-white/20 text-[11px] sm:text-xs font-bold tracking-wider uppercase rounded-full transition-all text-center flex items-center justify-center gap-2 whitespace-nowrap active:scale-95"
+                    title={`Call Line ${idx + 1}: ${p.display}`}
+                  >
+                    <PhoneCall className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                    <span>{p.display}</span>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 

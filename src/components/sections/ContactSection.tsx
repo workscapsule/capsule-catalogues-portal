@@ -26,28 +26,45 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenConsultati
           <div className="lg:col-span-5 space-y-4">
             
             {/* Direct Phone Card */}
-            <a
-              href={`tel:${companyConfig.phoneRaw}`}
-              className="block p-6 rounded-2xl bg-white border border-brand-border hover:border-brand-copper transition-all shadow-xs hover:shadow-lg group"
-            >
-              <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-xl bg-brand-cream border border-brand-border flex items-center justify-center shrink-0 group-hover:bg-brand-copper group-hover:text-white transition-colors">
-                  <Phone className="w-5 h-5 text-brand-copper group-hover:text-white transition-colors" />
+            <div className="p-6 rounded-2xl bg-white border border-brand-border shadow-xs">
+              <div className="flex items-start gap-4 mb-3">
+                <div className="w-12 h-12 rounded-xl bg-brand-cream border border-brand-border flex items-center justify-center shrink-0">
+                  <Phone className="w-5 h-5 text-brand-copper" />
                 </div>
                 <div className="flex-1">
                   <span className="text-[10px] font-bold tracking-widest text-brand-copper uppercase block">
-                    Direct Line
+                    Direct Contact Lines
                   </span>
-                  <h4 className="text-lg font-bold text-brand-black group-hover:text-brand-copper transition-colors">
-                    {companyConfig.phone}
+                  <h4 className="text-base font-bold text-brand-black">
+                    Call Our Bengaluru Headquarters
                   </h4>
                   <p className="text-xs text-brand-muted mt-0.5">
-                    Click to call our Bengaluru headquarters
+                    Click any number to call our project managers directly:
                   </p>
                 </div>
-                <ArrowUpRight className="w-4 h-4 text-brand-muted group-hover:text-brand-copper group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
               </div>
-            </a>
+
+              <div className="space-y-2 pt-2 border-t border-brand-border/60">
+                {companyConfig.phones.map((p, idx) => (
+                  <a
+                    key={p.number}
+                    href={`tel:${p.raw}`}
+                    className="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-brand-ivory/50 hover:bg-brand-cream border border-brand-border/60 hover:border-brand-copper transition-all group"
+                  >
+                    <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
+                      <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                      <span className="text-xs sm:text-sm md:text-base font-bold text-brand-black group-hover:text-brand-copper transition-colors truncate">
+                        {p.display}
+                      </span>
+                    </div>
+                    <span className="text-[10px] sm:text-[11px] font-medium text-brand-muted group-hover:text-brand-copper flex items-center gap-1 shrink-0 ml-2">
+                      <span>Line {idx + 1}</span>
+                      <ArrowUpRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </span>
+                  </a>
+                ))}
+              </div>
+            </div>
 
             {/* WhatsApp Card */}
             <a

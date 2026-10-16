@@ -60,15 +60,27 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
             </p>
 
             <div className="pt-2">
-              <span className="inline-block text-xs font-bold tracking-widest text-brand-copper uppercase mb-1.5">
-                Direct Line & WhatsApp
+              <span className="inline-block text-xs font-bold tracking-widest text-brand-copper uppercase mb-2">
+                Direct Contact Lines
               </span>
-              <a
-                href={`tel:${companyConfig.phoneRaw}`}
-                className="block text-xl font-bold tracking-tight text-white hover:text-brand-copper transition-colors"
-              >
-                {companyConfig.phone}
-              </a>
+              <div className="space-y-2">
+                {companyConfig.phones.map((p, idx) => (
+                  <a
+                    key={p.number}
+                    href={`tel:${p.raw}`}
+                    className="flex items-center justify-between sm:justify-start gap-2 text-sm sm:text-base font-bold tracking-tight text-white hover:text-brand-copper transition-colors py-1.5 px-3 sm:p-0 rounded-xl sm:rounded-none bg-white/5 sm:bg-transparent border border-white/10 sm:border-transparent whitespace-nowrap"
+                    title={`Call Line ${idx + 1}: ${p.display}`}
+                  >
+                    <div className="flex items-center gap-2">
+                      <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                      <span>{p.display}</span>
+                    </div>
+                    <span className="text-[10px] font-mono text-brand-copper/80 uppercase px-1.5 py-0.5 rounded bg-brand-copper/10 sm:hidden">
+                      L{idx + 1}
+                    </span>
+                  </a>
+                ))}
+              </div>
             </div>
 
             {/* Social Media Icons */}
@@ -185,11 +197,21 @@ export const Footer: React.FC<FooterProps> = ({ onOpenConsultation }) => {
                   {companyConfig.addressFull}
                 </span>
               </div>
-              <div className="flex items-center gap-2.5">
-                <Phone className="w-4 h-4 text-brand-copper shrink-0" />
-                <a href={`tel:${companyConfig.phoneRaw}`} className="hover:text-brand-copper transition-colors">
-                  {companyConfig.phone}
-                </a>
+              <div className="space-y-1.5 pt-1">
+                <span className="text-[11px] font-bold tracking-wider text-brand-copper uppercase block">
+                  Office Contact Lines:
+                </span>
+                <div className="flex flex-col gap-1.5">
+                  {companyConfig.phones.map((p, idx) => (
+                    <div key={p.number} className="flex items-center gap-2 text-xs sm:text-sm">
+                      <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                      <a href={`tel:${p.raw}`} className="hover:text-brand-copper transition-colors font-medium whitespace-nowrap">
+                        {p.display}
+                      </a>
+                      <span className="text-[10px] font-mono text-gray-500">L{idx + 1}</span>
+                    </div>
+                  ))}
+                </div>
               </div>
               <div className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-brand-copper shrink-0" />

@@ -44,25 +44,34 @@ export const ContactPage: React.FC<ContactPageProps> = () => {
                 CALL OR WHATSAPP
               </span>
               <h3 className="font-display text-xl font-bold uppercase text-brand-black mt-1">
-                Direct Line
+                Direct Lines
               </h3>
               <p className="text-xs text-brand-muted mt-2 leading-relaxed">
                 Connect instantly with our project managers for estimates and queries.
               </p>
             </div>
 
-            <div className="space-y-2 pt-3 border-t border-brand-border/60">
-              <a
-                href={`tel:${companyConfig.phoneRaw}`}
-                className="block text-lg font-bold text-brand-black hover:text-brand-copper transition-colors"
-              >
-                {companyConfig.phone}
-              </a>
+            <div className="space-y-3 pt-3 border-t border-brand-border/60">
+              <div className="space-y-2">
+                {companyConfig.phones.map((p, idx) => (
+                  <a
+                    key={p.number}
+                    href={`tel:${p.raw}`}
+                    className="flex items-center justify-between p-2.5 sm:p-3 rounded-xl bg-brand-ivory/60 hover:bg-brand-cream border border-brand-border/70 hover:border-brand-copper text-xs sm:text-sm md:text-base font-bold text-brand-black hover:text-brand-copper transition-all group"
+                  >
+                    <div className="flex items-center gap-2 sm:gap-2.5 min-w-0">
+                      <Phone className="w-3.5 sm:w-4 h-3.5 sm:h-4 text-brand-copper shrink-0" />
+                      <span className="truncate">{p.display}</span>
+                    </div>
+                    <span className="text-[10px] font-mono uppercase text-brand-muted group-hover:text-brand-copper shrink-0 ml-2 px-1.5 py-0.5 bg-white/80 rounded border border-brand-border/50">Line {idx + 1}</span>
+                  </a>
+                ))}
+              </div>
               <a
                 href={`https://wa.me/${companyConfig.whatsappNumber}?text=${encodeURIComponent(companyConfig.whatsappMessage)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 text-xs font-bold text-[#128C7E] hover:underline"
+                className="inline-flex items-center gap-2 text-xs font-bold text-[#128C7E] hover:underline pt-1"
               >
                 <MessageSquare className="w-4 h-4" />
                 <span>Chat on WhatsApp →</span>

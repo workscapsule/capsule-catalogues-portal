@@ -87,9 +87,13 @@ export const WardrobeContactPage: React.FC = () => {
           <div className="space-y-1 bg-white/5 p-4 rounded-lg border border-white/10">
             <div className="flex items-center gap-1.5 text-[#C5A059] font-semibold text-[11px] uppercase tracking-wider">
               <Phone className="w-3.5 h-3.5" />
-              <span>Phone</span>
+              <span>Direct Phone Lines</span>
             </div>
-            <p className="text-white font-mono text-[13px] font-bold">+91 91879 24723</p>
+            <div className="flex flex-col gap-1 text-white font-mono text-[12px] font-bold">
+              <a href="tel:+919187924723" className="hover:text-[#C5A059] transition-colors whitespace-nowrap" title="Call Line 1">+91 91879 24723</a>
+              <a href="tel:+919187924523" className="hover:text-[#C5A059] transition-colors whitespace-nowrap" title="Call Line 2">+91 91879 24523</a>
+              <a href="tel:+919187924623" className="hover:text-[#C5A059] transition-colors whitespace-nowrap" title="Call Line 3">+91 91879 24623</a>
+            </div>
           </div>
 
           <div className="space-y-1 bg-white/5 p-4 rounded-lg border border-white/10">

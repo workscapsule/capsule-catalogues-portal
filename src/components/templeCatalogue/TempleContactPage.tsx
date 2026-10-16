@@ -58,9 +58,17 @@ export const TempleContactPage: React.FC = () => {
             <Phone className="w-4 h-4 text-[#C59A6F] mt-0.5 shrink-0" />
             <div>
               <span className="block text-[10px] font-mono uppercase text-white/50 tracking-wider">Direct Consultation</span>
-              <a href={`tel:${contact.phone}`} className="text-xs font-semibold text-white hover:text-[#C59A6F] transition-colors">
-                {contact.phone}
-              </a>
+              <div className="flex flex-col gap-1 mt-0.5">
+                <a href="tel:+919187924723" className="text-xs font-semibold text-white hover:text-[#C59A6F] transition-colors whitespace-nowrap" title="Call Line 1">
+                  +91 91879 24723
+                </a>
+                <a href="tel:+919187924523" className="text-xs font-semibold text-white hover:text-[#C59A6F] transition-colors whitespace-nowrap" title="Call Line 2">
+                  +91 91879 24523
+                </a>
+                <a href="tel:+919187924623" className="text-xs font-semibold text-white hover:text-[#C59A6F] transition-colors whitespace-nowrap" title="Call Line 3">
+                  +91 91879 24623
+                </a>
+              </div>
             </div>
           </div>
 

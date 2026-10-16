@@ -71,7 +71,7 @@ export const templeDesignLuxuryData: TempleCatalogueData = {
     tagline: 'BRING DIVINE HARMONY TO YOUR HOME',
     statement:
       'Every Capsule temple unit is custom-scaled and manufactured to order. Connect with our sacred space designers to tailor your devotional sanctum.',
-    phone: '+91 91879 24723',
+    phone: '+91 91879 24723 / +91 91879 24523 / +91 91879 24623',
     email: 'designs@capsulecompany.in',
     website: 'www.capsulecompany.in',
     location: 'Indiranagar & HSR Layout, Bengaluru, Karnataka',

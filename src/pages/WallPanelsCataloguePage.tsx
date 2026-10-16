@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { wallPanelsCatalogueData, WallPanelItem } from '../data/wallPanelsData';
-import { ArrowLeft, ExternalLink, Download, Sparkles, ZoomIn, X, Eye, Grid } from 'lucide-react';
+import { ArrowLeft, ExternalLink, Download, Sparkles, ZoomIn, X, Eye, Grid, Phone } from 'lucide-react';
+import { companyConfig } from '../config/company';
 
 export const WallPanelsCataloguePage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState<string>('all');
@@ -284,9 +285,23 @@ export const WallPanelsCataloguePage: React.FC = () => {
       <footer className="bg-[#151210] text-[#D6CBC1] py-12 px-4 sm:px-8 border-t border-[#B86D43]/20 text-center">
         <div className="max-w-7xl mx-auto">
           <div className="font-serif text-xl font-bold text-white mb-2">CAPSULE COMPANY</div>
-          <p className="text-xs text-[#9C8E84] max-w-md mx-auto mb-4">
+          <p className="text-xs text-[#9C8E84] max-w-md mx-auto mb-3">
             Bespoke Architectural Archives • Wall Panel Design Lookbook 2026. Exactly 60 curated designs across 12 signature categories.
           </p>
+          <div className="flex items-center justify-center gap-2 flex-wrap mb-4">
+            <span className="text-xs text-[#B86D43] font-semibold uppercase tracking-wider mr-1">Direct Lines:</span>
+            {companyConfig.phones.map((p, idx) => (
+              <a
+                key={p.number}
+                href={`tel:${p.raw}`}
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 hover:bg-[#B86D43] text-white text-xs font-semibold transition-colors border border-white/10 whitespace-nowrap"
+                title={`Call Line ${idx + 1}: ${p.display}`}
+              >
+                <Phone className="w-3 h-3 text-[#B86D43] shrink-0" />
+                <span>{p.display}</span>
+              </a>
+            ))}
+          </div>
           <div className="text-[11px] text-[#6B5E54]">
             © 2026 Capsule Company. Sourced exclusively from Pinterest for interior architectural references.
           </div>

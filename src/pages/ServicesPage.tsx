@@ -6,8 +6,10 @@ import {
   ShieldCheck,
   Award,
   PhoneCall,
+  Phone,
   Sparkles
 } from 'lucide-react';
+import { companyConfig } from '../config/company';
 import { servicesData } from '../data/servicesData';
 import { ConsultationForm } from '../components/sections/ConsultationForm';
 
@@ -347,12 +349,33 @@ export const ServicesPage: React.FC<ServicesPageProps> = ({ onOpenConsultation }
             <p className="text-xs sm:text-sm text-gray-300 leading-relaxed mb-5">
               Skip the coordination headache between different sub-contractors. Capsule Company unifies painting, POP false ceilings, carpentry, modular kitchens, metal fabrication, plumbing, electricals, and marble/tile laying under a single dedicated project manager and site engineer.
             </p>
-            <button
-              onClick={() => onOpenConsultation('Book Free Consultation')}
-              className="px-6 py-3.5 bg-brand-copper hover:bg-brand-copperLight text-white text-xs font-bold tracking-widest uppercase rounded-full shadow-xl transition-all active:scale-95 cursor-pointer"
-            >
-              BOOK YOUR FREE SITE CONSULTATION
-            </button>
+            <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-3">
+              <button
+                onClick={() => onOpenConsultation('Book Free Consultation')}
+                className="px-6 py-3.5 bg-brand-copper hover:bg-brand-copperLight text-white text-xs font-bold tracking-widest uppercase rounded-full shadow-xl transition-all active:scale-95 cursor-pointer text-center"
+              >
+                BOOK YOUR FREE SITE CONSULTATION
+              </button>
+            </div>
+
+            <div className="mt-5 pt-4 border-t border-white/15">
+              <span className="text-[11px] font-bold uppercase tracking-widest text-brand-copper block mb-2">
+                Speak directly with our project planners:
+              </span>
+              <div className="flex flex-wrap items-center gap-2">
+                {companyConfig.phones.map((p, idx) => (
+                  <a
+                    key={p.number}
+                    href={`tel:${p.raw}`}
+                    className="px-3 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white/10 hover:bg-brand-copper text-white text-[11px] sm:text-xs font-bold tracking-wider transition-all inline-flex items-center gap-1.5 sm:gap-2 border border-white/20 active:scale-95 whitespace-nowrap"
+                    title={`Call Line ${idx + 1}: ${p.display}`}
+                  >
+                    <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                    <span>{p.display}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </div>

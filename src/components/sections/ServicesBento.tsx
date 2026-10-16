@@ -162,14 +162,23 @@ export const ServicesBento: React.FC<ServicesBentoProps> = ({ onOpenConsultation
               ))}
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-4 border-t border-brand-border">
-              <a
-                href={`tel:${companyConfig.phoneRaw}`}
-                className="flex items-center gap-2 text-xs font-semibold text-brand-black hover:text-brand-copper"
-              >
-                <PhoneCall className="w-4 h-4 text-brand-copper" />
-                <span>Call {companyConfig.phone}</span>
-              </a>
+            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 pt-4 border-t border-brand-border">
+              <div className="flex flex-col gap-1.5 w-full sm:w-auto">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-brand-copper">Direct Call Lines:</span>
+                <div className="flex flex-wrap items-center gap-1.5">
+                  {companyConfig.phones.map((p, idx) => (
+                    <a
+                      key={p.number}
+                      href={`tel:${p.raw}`}
+                      className="inline-flex items-center gap-1 text-[11px] sm:text-xs font-semibold text-brand-black hover:text-brand-copper px-2.5 py-1 rounded-full bg-brand-cream/60 border border-brand-border/60 hover:border-brand-copper transition-colors whitespace-nowrap"
+                      title={`Call Line ${idx + 1}: ${p.display}`}
+                    >
+                      <PhoneCall className="w-3 h-3 text-brand-copper shrink-0" />
+                      <span>{p.display}</span>
+                    </a>
+                  ))}
+                </div>
+              </div>
 
               <button
                 onClick={() => {

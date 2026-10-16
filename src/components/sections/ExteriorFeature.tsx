@@ -55,14 +55,19 @@ export const ExteriorFeature: React.FC<ExteriorFeatureProps> = ({ onOpenConsulta
                 <ArrowRight className="w-4 h-4" />
               </button>
 
-              <a
-                href={`tel:${companyConfig.phoneRaw}`}
-                className="px-5 py-3.5 bg-brand-cream hover:bg-white text-brand-black border border-brand-border hover:border-brand-copper text-xs font-bold tracking-wider uppercase rounded-full transition-all text-center whitespace-nowrap shrink-0 flex items-center justify-center gap-1.5"
-                title={`Call ${companyConfig.phone}`}
-              >
-                <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
-                <span className="whitespace-nowrap">CALL {companyConfig.phone}</span>
-              </a>
+              <div className="flex flex-col sm:flex-row flex-wrap items-stretch sm:items-center gap-2">
+                {companyConfig.phones.map((p, idx) => (
+                  <a
+                    key={p.number}
+                    href={`tel:${p.raw}`}
+                    className="px-3.5 py-2.5 sm:px-4 sm:py-3 bg-brand-cream hover:bg-white text-brand-black border border-brand-border hover:border-brand-copper text-[11px] sm:text-xs font-bold tracking-wider uppercase rounded-full transition-all text-center whitespace-nowrap flex items-center justify-center gap-1.5 active:scale-95"
+                    title={`Call Line ${idx + 1}: ${p.display}`}
+                  >
+                    <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                    <span>{p.display}</span>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
 

@@ -4,6 +4,11 @@ export interface CompanyConfig {
   tagline: string;
   phone: string;
   phoneRaw: string;
+  phone2: string;
+  phone2Raw: string;
+  phone3: string;
+  phone3Raw: string;
+  phones: Array<{ display: string; raw: string; number: string }>;
   whatsappNumber: string;
   whatsappMessage: string;
   email: string;
@@ -34,6 +39,15 @@ export const companyConfig: CompanyConfig = {
   tagline: 'YOUR SPACE MAKER',
   phone: '+91 91879 24723',
   phoneRaw: '+919187924723',
+  phone2: '+91 91879 24523',
+  phone2Raw: '+919187924523',
+  phone3: '+91 91879 24623',
+  phone3Raw: '+919187924623',
+  phones: [
+    { display: '+91 91879 24723', raw: '+919187924723', number: '9187924723' },
+    { display: '+91 91879 24523', raw: '+919187924523', number: '9187924523' },
+    { display: '+91 91879 24623', raw: '+919187924623', number: '9187924623' },
+  ],
   whatsappNumber: '919187924723',
   whatsappMessage: 'Hi Capsule Company, I would like to discuss my project and get a free consultation.',
   email: 'workscapsule@gmail.com',

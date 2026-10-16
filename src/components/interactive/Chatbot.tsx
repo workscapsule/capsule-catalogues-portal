@@ -121,8 +121,19 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onOpenConsultationModal }) => 
           break;
 
         case 'call':
-          window.location.href = `tel:${companyConfig.phoneRaw}`;
-          addMessage('bot', `Dialing our office line: ${companyConfig.phone}`);
+        case 'call_1':
+          window.location.href = `tel:${companyConfig.phones[0].raw}`;
+          addMessage('bot', `Dialing Line 1: ${companyConfig.phones[0].display}\n(Also available on Line 2: ${companyConfig.phones[1].display} & Line 3: ${companyConfig.phones[2].display})`);
+          break;
+
+        case 'call_2':
+          window.location.href = `tel:${companyConfig.phones[1].raw}`;
+          addMessage('bot', `Dialing Line 2: ${companyConfig.phones[1].display}`);
+          break;
+
+        case 'call_3':
+          window.location.href = `tel:${companyConfig.phones[2].raw}`;
+          addMessage('bot', `Dialing Line 3: ${companyConfig.phones[2].display}`);
           break;
 
         default:
@@ -213,6 +224,16 @@ export const Chatbot: React.FC<ChatbotProps> = ({ onOpenConsultationModal }) => 
           'bot',
           `Our office is located at:\n${companyConfig.addressFull}\nNear Outer Ring Road, Hebbal Kempapura.`,
           [{ label: 'View On Google Maps', action: 'map' }]
+        );
+      } else if (lower.includes('phone') || lower.includes('call') || lower.includes('contact') || lower.includes('number')) {
+        addMessage(
+          'bot',
+          `You can reach Capsule Company at any of our 3 direct lines:\n1. ${companyConfig.phones[0].display}\n2. ${companyConfig.phones[1].display}\n3. ${companyConfig.phones[2].display}`,
+          [
+            { label: `Call Line 1 (${companyConfig.phones[0].number})`, action: 'call_1' },
+            { label: `Call Line 2 (${companyConfig.phones[1].number})`, action: 'call_2' },
+            { label: `Call Line 3 (${companyConfig.phones[2].number})`, action: 'call_3' },
+          ]
         );
       } else {
         addMessage(

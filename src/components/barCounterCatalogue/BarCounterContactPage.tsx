@@ -86,9 +86,13 @@ export const BarCounterContactPage: React.FC = () => {
           <div className="space-y-1.5">
             <div className="flex items-center gap-1.5 text-[#C5A059] font-semibold text-[11px] uppercase tracking-wider">
               <Phone className="w-3.5 h-3.5" />
-              <span>DIRECT LINE</span>
+              <span>DIRECT LINES</span>
             </div>
-            <p className="text-white/90 font-mono text-[11px]">+91 91879 24723</p>
+            <div className="flex flex-col gap-1 font-mono text-[11px] text-white/90">
+              <a href="tel:+919187924723" className="hover:text-[#C5A059] transition-colors whitespace-nowrap" title="Call Line 1">+91 91879 24723</a>
+              <a href="tel:+919187924523" className="hover:text-[#C5A059] transition-colors whitespace-nowrap" title="Call Line 2">+91 91879 24523</a>
+              <a href="tel:+919187924623" className="hover:text-[#C5A059] transition-colors whitespace-nowrap" title="Call Line 3">+91 91879 24623</a>
+            </div>
             <p className="text-white/50 text-[10px]">Mon – Sat • 9 AM – 7 PM</p>
           </div>
 

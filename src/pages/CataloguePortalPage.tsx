@@ -296,13 +296,32 @@ export const CataloguePortalPage: React.FC = () => {
             </div>
           </a>
 
-          <a
-            href="tel:9187924723"
-            className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#B86D43]/30 bg-[#B86D43]/10 text-xs sm:text-sm font-bold text-[#B86D43] hover:bg-[#B86D43] hover:text-white transition-all shadow-xs"
-          >
-            <Phone className="w-3.5 h-3.5" />
-            <span>9187924723</span>
-          </a>
+          <div className="flex items-center gap-1.5 sm:gap-2 flex-wrap">
+            <a
+              href="tel:9187924723"
+              className="flex items-center gap-1 sm:gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-full border border-[#B86D43]/30 bg-[#B86D43]/10 text-[11px] sm:text-xs font-bold text-[#B86D43] hover:bg-[#B86D43] hover:text-white transition-all shadow-xs whitespace-nowrap"
+              title="Call Line 1: 9187924723"
+            >
+              <Phone className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
+              <span>9187924723</span>
+            </a>
+            <a
+              href="tel:9187924523"
+              className="flex items-center gap-1 sm:gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-full border border-[#B86D43]/30 bg-[#B86D43]/10 text-[11px] sm:text-xs font-bold text-[#B86D43] hover:bg-[#B86D43] hover:text-white transition-all shadow-xs whitespace-nowrap"
+              title="Call Line 2: 9187924523"
+            >
+              <Phone className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
+              <span>9187924523</span>
+            </a>
+            <a
+              href="tel:9187924623"
+              className="flex items-center gap-1 sm:gap-1.5 px-2 py-1 sm:px-3 sm:py-1.5 rounded-full border border-[#B86D43]/30 bg-[#B86D43]/10 text-[11px] sm:text-xs font-bold text-[#B86D43] hover:bg-[#B86D43] hover:text-white transition-all shadow-xs whitespace-nowrap"
+              title="Call Line 3: 9187924623"
+            >
+              <Phone className="w-3 h-3 sm:w-3.5 sm:h-3.5 shrink-0" />
+              <span>9187924623</span>
+            </a>
+          </div>
         </div>
       </header>
 
@@ -454,18 +473,28 @@ export const CataloguePortalPage: React.FC = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            <a
-              href="tel:9187924723"
-              className="p-5 rounded-xl border border-[#E5DDD3] hover:border-[#B86D43]/40 bg-[#F7F3ED]/40 hover:bg-[#F7F3ED] transition-all flex items-center gap-4 group"
-            >
-              <div className="w-10 h-10 rounded-full bg-[#B86D43]/10 text-[#B86D43] flex items-center justify-center shrink-0 group-hover:bg-[#B86D43] group-hover:text-white transition-all">
-                <Phone className="w-4 h-4" />
+            <div className="p-5 rounded-xl border border-[#E5DDD3] bg-[#F7F3ED]/40 flex flex-col justify-between">
+              <div className="flex items-center gap-3 mb-2.5">
+                <div className="w-10 h-10 rounded-full bg-[#B86D43]/10 text-[#B86D43] flex items-center justify-center shrink-0">
+                  <Phone className="w-4 h-4" />
+                </div>
+                <div>
+                  <div className="text-[11px] text-[#9C8E84] font-semibold uppercase tracking-wider">Direct Phones</div>
+                  <div className="text-xs font-semibold text-[#12100E]">Call Any Line</div>
+                </div>
               </div>
-              <div className="min-w-0 flex-1">
-                <div className="text-[11px] text-[#9C8E84] font-semibold uppercase tracking-wider">Direct Phone</div>
-                <div className="text-sm font-bold text-[#12100E] truncate">9187924723</div>
+              <div className="space-y-1.5 pt-2 border-t border-[#E5DDD3]">
+                <a href="tel:9187924723" className="block text-xs sm:text-sm font-bold text-[#12100E] hover:text-[#B86D43] transition-colors whitespace-nowrap" title="Call Line 1">
+                  1. 9187924723
+                </a>
+                <a href="tel:9187924523" className="block text-xs sm:text-sm font-bold text-[#12100E] hover:text-[#B86D43] transition-colors whitespace-nowrap" title="Call Line 2">
+                  2. 9187924523
+                </a>
+                <a href="tel:9187924623" className="block text-xs sm:text-sm font-bold text-[#12100E] hover:text-[#B86D43] transition-colors whitespace-nowrap" title="Call Line 3">
+                  3. 9187924623
+                </a>
               </div>
-            </a>
+            </div>
 
             <a
               href="mailto:works.capsule@gmail.com"

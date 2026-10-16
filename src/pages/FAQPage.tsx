@@ -125,19 +125,25 @@ export const FAQPage: React.FC = () => {
             </p>
           </div>
 
-          <div className="flex items-center gap-3 w-full sm:w-auto">
-            <a
-              href={`tel:${companyConfig.phoneRaw}`}
-              className="flex-1 sm:flex-none px-5 py-2.5 rounded-full bg-brand-black text-white text-xs font-bold tracking-widest uppercase hover:bg-brand-copper transition-colors flex items-center justify-center gap-2"
-            >
-              <Phone className="w-3.5 h-3.5" />
-              <span>Call Us</span>
-            </a>
+          <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-2 w-full lg:w-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-3 lg:flex lg:flex-wrap items-center gap-2">
+              {companyConfig.phones.map((p, idx) => (
+                <a
+                  key={p.number}
+                  href={`tel:${p.raw}`}
+                  className="px-3 py-2 sm:px-3.5 sm:py-2.5 rounded-full bg-brand-black text-white text-[11px] sm:text-xs font-bold tracking-wider hover:bg-brand-copper transition-colors flex items-center justify-center gap-1.5 whitespace-nowrap active:scale-95"
+                  title={`Call Line ${idx + 1}: ${p.display}`}
+                >
+                  <Phone className="w-3.5 h-3.5 text-brand-copper shrink-0" />
+                  <span>{p.display}</span>
+                </a>
+              ))}
+            </div>
             <a
               href={`https://wa.me/${companyConfig.whatsappNumber}?text=${encodeURIComponent('Hi Capsule Company, I have a question regarding my project.')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 sm:flex-none px-5 py-2.5 rounded-full bg-[#25D366] text-white text-xs font-bold tracking-widest uppercase hover:bg-[#1ebd5b] transition-colors flex items-center justify-center gap-2"
+              className="px-4 py-2.5 rounded-full bg-[#25D366] text-white text-xs font-bold tracking-widest uppercase hover:bg-[#1ebd5b] transition-colors flex items-center justify-center gap-2"
             >
               <MessageSquare className="w-3.5 h-3.5" />
               <span>WhatsApp</span>
